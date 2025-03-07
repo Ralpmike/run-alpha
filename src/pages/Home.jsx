@@ -2,7 +2,7 @@ import LandingPage from "../components/LandingPage"
 
 function Home() {
   return (
-    <div>
+    <div className="">
       <LandingPage  />
     </div>
   )

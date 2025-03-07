@@ -6,14 +6,15 @@ import { RxCross2 } from "react-icons/rx";
 import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion"; // ✅ Added animations
 import Logo from "./Logo";
+import Button from "./button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-6 lg:px-30 bg-white/80">
+    <nav className="fixed eft-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-6 lg:px-30 bg-white/80">
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <Logo />
       </div>
 
@@ -37,9 +38,7 @@ const Navbar = () => {
       {/* Get in Touch Button (Desktop) */}
       <div className="hidden md:block">
         <NavLink to="/getintouch">
-          <button className="bg-secondary text-white md:px-4 md:py-3 rounded-md hover:bg-secondary/90 cursor-pointer transition text-[20px]">
-            Get in Touch
-          </button>
+          <Button title="Get in Touch" type="button"/>
         </NavLink>
       </div>
 
@@ -84,9 +83,7 @@ const Navbar = () => {
 
             {/* Get in Touch Button (Mobile) */}
             <NavLink to="/getintouch">
-              <button className="bg-teal-500 text-white px-4 py-3 rounded-md hover:bg-teal-600 transition w-full">
-                Get in Touch
-              </button>
+              <Button title="Get in Touch" type="button" />
             </NavLink>
           </motion.div>
         )}

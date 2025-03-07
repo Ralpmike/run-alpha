@@ -8,26 +8,28 @@ export default function Button({
   onClick,
   isLoading,
   size = "medium",
-  radius = "small",
-  color = "yellow",
+  className,
+  // radius = "small",
+  color = "green",
   isBorder = false,
+  isWhite = false,
 }) {
   const sizeStyles = {
-    small: "px-4 py-2 text-sm",
-    medium: "px-7 py-3 text-base",
-    large: "px-10 py-3 text-lg",
+    small: "px-2 py-2 ",
+    medium: "px-4 py-3",
+    large: "px-6 py-4",
   };
 
-  const radiusStyles = {
-    small: "rounded-md",
-    medium: "rounded-lg",
-    large: "rounded-xl",
-    full: "rounded-full",
-  };
+  // const radiusStyles = {
+  //   small: "rounded-md",
+  //   medium: "rounded-lg",
+  //   large: "rounded-xl",
+  //   full: "rounded-full",
+  // };
 
   const colorStyles = {
     // red: "bg-red-light text-white hover:bg-red-600",
-    green: "bg-green-dark text-white hover:bg-green-light",
+    green: isWhite ? "bg-white text-secondary hover:text-white hover:bg-secondary/90" : "bg-secondary text-white hover:bg-secondary/90 ",
     yellow: "bg-[#B88E2F] text-white hover:bg-yellow-600",
     blue: "bg-blue-500 text-white hover:bg-blue-600",
     gray: "bg-gray-300 text-gray-800 hover:bg-gray-400",
@@ -48,8 +50,9 @@ export default function Button({
         baseStyles,
         sizeStyles[size],
         colorStyles[color],
-        radiusStyles[radius],
-        "flex items-center justify-center gap-2 text-center"
+        className,
+        // radiusStyles[radius],
+        "flex items-center justify-center gap-2 text-center cursor-pointer"
       )}
     >
       {isLoading ? "Loading..." : title}
