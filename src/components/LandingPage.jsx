@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Button from "../ui/button";
 
 
@@ -13,7 +14,10 @@ export default function LandingPage() {
           <p className="text-[20px] md:text-[2rem] mx-auto max-w-3xl">Combining institutional expertise with AI-driven insights to maximize returns.</p>
         </div>
 
-        <Button title="Get Started" type="button" className="md:text-[1.75rem]" isWhite={true}/>
+
+        <Link to="/getintouch">
+        <Button title="Get in Touch" type="button" className="md:text-[1.75rem]" isWhite={true}/>
+        </Link>
          
        
       </div>
