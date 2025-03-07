@@ -6,7 +6,7 @@ export default function LandingPage() {
     <div className="bg-[url('/image.svg')] bg-cover h-dvh">
       <div className="flex flex-col items-center justify-center h-full text-white text-center  gap-6">
         <div className="space-y-3">
-          <h1 className="text-[2rem] md:text-4xl lg:text-7xl md:max-w-4xl leading-[1.2] mx-auto font-semibold max-w-sm w-full">
+          <h1 className="text-[2rem] md:text-5xl lg:text-7xl md:max-w-[1000px] leading-[1.2] mx-auto font-semibold max-w-sm w-full">
             Redefining Investment with Data & Strategy
           </h1>
 
