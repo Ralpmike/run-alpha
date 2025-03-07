@@ -1,5 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router"
 import Home from "./pages/Home"
+import Aboutus from "./pages/Aboutus"
+import Strategies from "./pages/Strategies"
+import GetInTouch from "./pages/GetInTouch"
+import Applayout from "./ui/Applayout"
+import Team from "./pages/Team"
+import PageNotFound from "./ui/PageNotFound"
 
 
 function App() {
@@ -7,18 +13,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="about" element={<div>About</div> } />
-
-        <Route element={<div>Services</div>}>
-          <Route path="login" element={<div>Login</div>} />
-          <Route path="register" element={<div>Register</div>} />
-        </Route>
-
-        <Route path="route">
-          <Route index element={<div>Concerts</div>} />
-          <Route path=":dynamic" element={<div>Dynamic</div>} />
-          <Route path="" element={<div>Trending</div>} />
+        <Route element={<Applayout />}>
+          <Route index element={<Navigate to="home" replace />} />
+          <Route path="home" element={<Home />} />
+          <Route path="aboutus" element={<Aboutus/> } />
+          <Route path="strategies" element={<Strategies/>} />
+          <Route path="team" element={<Team/>} />
+          <Route path="getintouch" element={<GetInTouch/>} />
+          <Route path="*" element={<PageNotFound/>} />
         </Route>
       </Routes>
     </BrowserRouter>

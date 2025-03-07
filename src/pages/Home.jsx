@@ -1,8 +1,10 @@
-
+import LandingPage from "../components/LandingPage"
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <LandingPage  />
+    </div>
   )
 }
 
