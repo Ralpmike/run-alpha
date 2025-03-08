@@ -1,3 +1,4 @@
+
 export const navLinksItems = [
   { name: "Home", href: "/home" },
   { name: "About Us", href: "/aboutus" },
@@ -5,3 +6,23 @@ export const navLinksItems = [
   { name: "Meet the Team", href: "/team" },
   // { name: "", href: "/getintouch" },
 ];
+
+
+export const socials = [
+  {
+    href: "",
+    name: "LinkedIn",
+  },
+  {
+    href: "",
+    name: "Twitter",
+  },
+  {
+    href: "",
+    name: "Facebook",
+  },
+  {
+    href: "",
+    name: "X(Twitter)",
+  },
+]
