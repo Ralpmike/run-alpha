@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router"
 import Home from "./pages/Home"
-import Aboutus from "./pages/Aboutus"
+import Aboutus from "./pages/AboutUs"
 import Strategies from "./pages/Strategies"
 import GetInTouch from "./pages/GetInTouch"
 import Applayout from "./ui/Applayout"
