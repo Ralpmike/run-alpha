@@ -2,11 +2,11 @@ import classNames from "classnames"
 import { NavLink } from "react-router"
 
 // eslint-disable-next-line react/prop-types
-function Logo({className, src="/logo.svg"}) {
+function Logo({className, src="/run-alpha.png"}) {
   return (
     <div>
       <NavLink to="/home" >
-      <img src={src} alt="Logo" className={classNames("h-8 w-13 ", className)} />
+      <img src={src} alt="Logo" className={classNames("w-28", className)} />
     </NavLink></div>
   )
 }

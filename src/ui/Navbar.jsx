@@ -1,25 +1,47 @@
 import { useState } from "react";
-import { NavLink } from "react-router"; // ✅ Fixed import
+import { NavLink } from "react-router";// Updated import for react-router-dom
 import { navLinksItems } from "../data/data";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import classNames from "classnames";
-import { motion, AnimatePresence } from "framer-motion"; // ✅ Added animations
+import { motion, AnimatePresence } from "framer-motion"; // Removed extra comma
 import Logo from "./Logo";
 import Button from "./button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Variants for animation
+  const menuVar = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, delay: 1, ease: "easeInOut" },
+  };
+
+
+
+  // Toggle menu state
+  const toggleMenu = () => setIsOpen((prevState) => !prevState);
+
   return (
-    <nav className="fixed left-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-6 lg:px-30 bg-white/90">
+    <motion.nav
+      className="fixed left-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 bg-white/90"
+      variants={{
+        hidden: { opacity: 0, y: "-100%" },
+        visible: menuVar,
+      }}
+      initial="hidden"
+      whileInView="visible"
+    >
       {/* Logo */}
-      <div className="flex items-center ">
+      <div className="flex items-center">
         <Logo />
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex gap-3 md:gap-6  grow md:justify-end">
+      <motion.div
+        className="hidden md:flex gap-3 md:gap-6 grow md:justify-end"
+      >
         {navLinksItems.map((link) => (
           <NavLink
             key={link.name}
@@ -33,19 +55,19 @@ const Navbar = () => {
             {link.name}
           </NavLink>
         ))}
-      </div>
+      </motion.div>
 
       {/* Get in Touch Button (Desktop) */}
       <div className="hidden md:block">
         <NavLink to="/getintouch">
-          <Button title="Get in Touch" type="button"/>
+          <Button title="Get in Touch" type="button" />
         </NavLink>
       </div>
 
       {/* Mobile Menu Button */}
       <button
         className="md:hidden text-gray-600"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggleMenu}
         aria-label="Toggle Menu"
       >
         {isOpen ? <RxCross2 size={28} className="text-secondary" /> : <FaBars size={28} className="text-secondary" />}
@@ -88,7 +110,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 
