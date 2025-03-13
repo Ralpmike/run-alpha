@@ -1,7 +1,7 @@
 import LandingPage from "../components/LandingPage"
 import StrategiesHomeSection from "../features/home/StrategiesHomeSection"
 import TeamSection from "../features/team/TeamSection"
-import Aboutus from "./AboutUs"
+import AboutUsHomeSection from "../features/home/AboutUsHomeSection"
 // import GetInTouch from "./GetInTouch"
 // import Strategies from "./Strategies"
 // import Team from "./Team"
@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="">
       <LandingPage  />
-      <Aboutus />
+      <AboutUsHomeSection />
       <StrategiesHomeSection />
       {/* <Strategies /> */}
       <TeamSection />
