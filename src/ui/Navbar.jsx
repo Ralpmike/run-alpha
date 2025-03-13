@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed left-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 bg-white/90"
+      className="fixed left-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 bg-transparent"
       variants={{
         hidden: { opacity: 0, y: "-100%" },
         visible: menuVar,
@@ -47,7 +47,7 @@ const Navbar = () => {
             key={link.name}
             to={link.href}
             className={({ isActive }) =>
-              classNames("text-navcolor hover:text-secondary transition text-[1.25rem]", {
+              classNames("text-white hover:text-secondary transition text-[1.25rem]", {
                 "text-secondary font-normal": isActive,
               })
             }
