@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion"; // Removed extra comma
 import Logo from "./Logo";
 import Button from "./button";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +26,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed left-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 bg-transparent"
+      className="fixed z-10 left-0 top-0 right-0 shadow-sm w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 bg-transparent"
       variants={{
         hidden: { opacity: 0, y: "-100%" },
         visible: menuVar,
@@ -40,14 +41,14 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <motion.div
-        className="hidden md:flex gap-3 md:gap-6 grow md:justify-end"
+        className="hidden md:flex gap-3 md:gap-6 lg:gap-8 xl:gap-16 grow md:justify-end"
       >
         {navLinksItems.map((link) => (
           <NavLink
             key={link.name}
             to={link.href}
             className={({ isActive }) =>
-              classNames("text-white hover:text-secondary transition text-[1.25rem]", {
+              classNames("text-white hover:text-secondary transition text-[1.14rem]", {
                 "text-secondary font-normal": isActive,
               })
             }
@@ -60,7 +61,7 @@ const Navbar = () => {
       {/* Get in Touch Button (Desktop) */}
       <div className="hidden md:block">
         <NavLink to="/getintouch">
-          <Button title="Get in Touch" type="button" />
+          <Button title="Contact Us" type="button" />
         </NavLink>
       </div>
 
@@ -105,7 +106,7 @@ const Navbar = () => {
 
             {/* Get in Touch Button (Mobile) */}
             <NavLink to="/getintouch">
-              <Button title="Get in Touch" type="button" />
+              <Button title="Contact Us" type="button" />
             </NavLink>
           </motion.div>
         )}

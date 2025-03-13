@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import classNames from "classnames";
 
 export default function Button({
@@ -9,10 +8,11 @@ export default function Button({
   isLoading,
   size = "medium",
   className,
-  // radius = "small",
+  radius = "small",
   color = "green",
   isBorder = false,
   isWhite = false,
+  icon,
 }) {
   const sizeStyles = {
     small: "px-2 py-2 ",
@@ -20,12 +20,12 @@ export default function Button({
     large: "px-6 py-4",
   };
 
-  // const radiusStyles = {
-  //   small: "rounded-md",
-  //   medium: "rounded-lg",
-  //   large: "rounded-xl",
-  //   full: "rounded-full",
-  // };
+  const radiusStyles = {
+    small: "rounded-md",
+    medium: "rounded-lg",
+    large: "rounded-xl",
+    full: "rounded-full",
+  };
 
   const colorStyles = {
     // red: "bg-red-light text-white hover:bg-red-600",
@@ -51,11 +51,12 @@ export default function Button({
         sizeStyles[size],
         colorStyles[color],
         className,
-        // radiusStyles[radius],
+        radiusStyles[radius],
         "flex items-center justify-center gap-2 text-center cursor-pointer"
       )}
     >
       {isLoading ? "Loading..." : title}
+      {icon && <span>{icon}</span>}
     </button>
   );
 }
