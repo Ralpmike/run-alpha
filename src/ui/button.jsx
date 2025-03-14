@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 export default function Button({
   title,
@@ -14,6 +15,12 @@ export default function Button({
   isWhite = false,
   icon,
 }) {
+
+  const btnVariant = {
+     opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, y: { type: "spring" }, ease: "easeInOut" },
+  }
   const sizeStyles = {
     small: "px-2 py-2 ",
     medium: "px-4 py-3",
@@ -42,7 +49,14 @@ export default function Button({
   const baseStyles = "transition-all duration-200";
 
   return (
-    <button
+    <motion.button
+      variants={{
+        hidden: { opacity: 0, y: -50 },
+        visible: btnVariant,
+      }}
+      initial="hidden"
+      whileInView="visible"
+      
       type={type}
       onClick={onClick}
       disabled={isLoading}
@@ -57,6 +71,6 @@ export default function Button({
     >
       {isLoading ? "Loading..." : title}
       {icon && <span>{icon}</span>}
-    </button>
+    </motion.button>
   );
 }

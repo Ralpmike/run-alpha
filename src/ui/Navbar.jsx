@@ -67,7 +67,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-10 left-0 top-0 right-0 w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-gray-200 shadow-md" : "bg-transparent"}`}
+      className={`fixed z-50 left-0 top-0 right-0 w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-primary/60 shadow-md" : "bg-transparent"}`}
       // variants={{
       //   hidden: { opacity: 0, y: "-100%" },
       //   visible: menuVar,
@@ -81,7 +81,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-            <motion.div
+          <motion.div
         className="hidden md:flex gap-3 md:gap-6 lg:gap-8 xl:gap-16 grow md:justify-end"
         initial="hidden"
         animate="visible"
@@ -100,7 +100,7 @@ const Navbar = () => {
             key={link.name}
             to={link.href}
             className={({ isActive }) =>
-              classNames("text-white font-thin hover:text-secondary transition text-[1.14rem]", {
+              classNames("text-white font-light hover:text-secondary transition text-[1.14rem]", {
                 "text-secondary font-normal": isActive,
                 "text-secondary hover:text-white": scrolled,
               })

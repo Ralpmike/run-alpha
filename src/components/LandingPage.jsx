@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function LandingPage() {
   return (
-    <div className="h-dvh relative">
+    <div className="h-dvh relative shadow-2xl">
       <video
         autoPlay
         loop
