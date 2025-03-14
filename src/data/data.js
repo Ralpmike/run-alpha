@@ -6,6 +6,7 @@ export const navLinksItems = [
   { name: "About Us", href: "/aboutus" },
   { name: "Strategies", href: "/strategies" },
   { name: "Meet the Team", href: "/team" },
+  { name: "Contact Us", href: "/getintouch" },
   // { name: "", href: "/getintouch" },
 ];
 
@@ -14,22 +15,22 @@ export const socials = [
   {
     href: "",
     name: "LinkedIn",
-    // icon: <FaLinkedin />
+    icon: FaLinkedin
   },
   {
     href: "",
     name: "X(Twitter)",
-    // icon: <FaSquareXTwitter />
+    icon: FaSquareXTwitter 
   },
   {
     href: "",
     name: "Facebook",
-    // icon: <FaFacebook />
+    icon: FaFacebook 
   },
   {
     href: "",
     name: "Instagram",
-    // icon: <FaInstagram />, 
+    icon: FaInstagram , 
   },
 ]
 

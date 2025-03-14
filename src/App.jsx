@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router"
 import Home from "./pages/Home"
 import Strategies from "./pages/Strategies"
-import GetInTouch from "./pages/GetInTouch"
+import GetInTouch from "./pages/ContactUs"
 import Applayout from "./ui/Applayout"
 import Team from "./pages/Team"
 import PageNotFound from "./ui/PageNotFound"
@@ -20,7 +20,7 @@ function App() {
           <Route path="aboutus" element={<AboutUs/> } />
           <Route path="strategies" element={<Strategies/>} />
           <Route path="team" element={<Team/>} />
-          <Route path="getintouch" element={<GetInTouch/>} />
+          <Route path="contact" element={<GetInTouch/>} />
           <Route path="*" element={<PageNotFound/>} />
         </Route>
       </Routes>

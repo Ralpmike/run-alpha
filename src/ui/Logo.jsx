@@ -2,7 +2,7 @@ import classNames from "classnames"
 import { NavLink } from "react-router"
 
 // eslint-disable-next-line react/prop-types
-function Logo({className, src="/run-alpha.png"}) {
+function Logo({className, src="/logos/white-logo.png"}) {
   return (
     <div>
       <NavLink to="/home" >
