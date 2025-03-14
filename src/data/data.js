@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const navLinksItems = [
   { name: "Home", href: "/home" },
@@ -12,18 +14,22 @@ export const socials = [
   {
     href: "",
     name: "LinkedIn",
-  },
-  {
-    href: "",
-    name: "Twitter",
-  },
-  {
-    href: "",
-    name: "Facebook",
+    // icon: <FaLinkedin />
   },
   {
     href: "",
     name: "X(Twitter)",
+    // icon: <FaSquareXTwitter />
+  },
+  {
+    href: "",
+    name: "Facebook",
+    // icon: <FaFacebook />
+  },
+  {
+    href: "",
+    name: "Instagram",
+    // icon: <FaInstagram />, 
   },
 ]
 

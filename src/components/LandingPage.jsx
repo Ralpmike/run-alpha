@@ -16,10 +16,10 @@ export default function LandingPage() {
         <source src="/hero4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-5"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-5"/>
       <div className="flex flex-col items-center justify-center h-full z-20 text-white text-center  gap-6">
         <div className="space-y-3">
-          <motion.h1 className="text-[2rem] md:text-5xl lg:text-7xl md:max-w-[1000px] leading-[1.2] mx-auto font-semibold max-w-sm w-full"
+          <motion.h1 className="text-[2rem] md:text-5xl lg:text-7xl md:max-w-[1000px] leading-[1.2] mx-auto font-semibold max-w-sm w-full dm-serif"
             initial={{ x: '-100%', opacity: 0 }}
             animate={{ x: '0', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
@@ -28,7 +28,7 @@ export default function LandingPage() {
           </motion.h1>
 
           <motion.p
-            className="text-[20px] md:text-[2rem] mx-auto max-w-3xl"
+            className="text-[16px] md:text-[1.8rem] mx-auto max-w-3xl font-thin italic"
             initial={{ x: '100%', opacity: 0 }} // Start off-screen to the right with no opacity
             animate={{ x: '0', opacity: 1 }}    // Move to the normal position with full opacity
             transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }} // Duration, easing, and delay
