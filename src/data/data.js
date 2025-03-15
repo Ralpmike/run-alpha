@@ -181,7 +181,7 @@ export default teamMembers;
 export const strategies = [
   {
     title: "Family Office",
-    image: "/strategies-one.png", // Replace with actual path
+    image: "/strategies-one.png",
   },
   {
     title: "Private Wealth",
@@ -196,3 +196,10 @@ export const strategies = [
     image: "/strategies-four.png",
   },
 ];
+
+export const aboutHeroSectionData = {
+  title: "ABOUT US",
+  backgroundImage: "/pexels.jpg",
+  description:
+    "At Run Alpha, we believe that the future of investment lies in the intersection of technology and human ingenuity. We strive to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth. Our mission is to provide clients with a safe, transparent, and accessible investment experience that aligns with their financial goals and risk tolerance.",
+};
