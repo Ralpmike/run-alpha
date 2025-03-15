@@ -41,7 +41,7 @@ const Navbar = () => {
       x: index, // Adjust X offset for diagonal alignment
       opacity: 1,
       transition: {
-        duration: 0.8 + index * 0.5, // Different speed per item
+        duration: 0.8 + index * 0.1, // Different speed per item
         ease: "easeOut",
       },
     }),
