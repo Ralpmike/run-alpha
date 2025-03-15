@@ -1,10 +1,10 @@
 import HeroSectionCard from "../ui/HeroSectionCard"
-import { aboutHeroSectionData } from "../data/data"
+import { heroSectionData } from "../data/data"
 
 const AboutUs = () => {
   return (
     <div className="w-full relative bg-[#F3F3F3]">
-     <HeroSectionCard data={aboutHeroSectionData} />
+     <HeroSectionCard data={heroSectionData.about} />
 
       <div className="md:px-64 mx-auto px-6 md:py-28 py-28">
 

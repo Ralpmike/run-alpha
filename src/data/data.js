@@ -197,9 +197,17 @@ export const strategies = [
   },
 ];
 
-export const aboutHeroSectionData = {
-  title: "ABOUT US",
-  backgroundImage: "/pexels.jpg",
-  description:
-    "At Run Alpha, we believe that the future of investment lies in the intersection of technology and human ingenuity. We strive to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth. Our mission is to provide clients with a safe, transparent, and accessible investment experience that aligns with their financial goals and risk tolerance.",
+export const heroSectionData = {
+  about: {
+    title: "ABOUT US",
+    backgroundImage: "/pexels.jpg",
+    description:
+      "At Run Alpha, we believe that the future of investment lies in the intersection of technology and human ingenuity. We strive to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth. Our mission is to provide clients with a safe, transparent, and accessible investment experience that aligns with their financial goals and risk tolerance.",
+  },
+  strategies: {
+    title: "OUR STRATEGIES",
+    backgroundImage: "/strategies/splash.jpg",
+    description:
+      "At Run Alpha, our strategies are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities. Our approach focuses on risk management, diversification, and long-term sustainability, ensuring that our clients achieve consistent growth while minimizing uncertainties in the market.",
+  },
 };

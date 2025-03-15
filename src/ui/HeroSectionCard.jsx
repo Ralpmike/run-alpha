@@ -4,7 +4,8 @@
 const HeroSectionCard = ({ data: { backgroundImage, description, title }}) => {
   return (
     <div
-      className={`w-full text-center relative h-dvh bg-cover bg-[url('${backgroundImage}')]`}
+      className={`w-full text-center relative h-dvh bg-cover `}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-6" />
 
