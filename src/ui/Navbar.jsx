@@ -79,7 +79,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-12 left-0 top-0 right-0 w-full h-2g0 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
+      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
     // variants={{
     //   hidden: { opacity: 0, y: "-100%" },
     //   visible: menuVar,
