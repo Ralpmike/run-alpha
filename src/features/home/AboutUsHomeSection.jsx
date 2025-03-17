@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function AboutUsHomeSection() {
   return (
-    <div className="lg:px-30 px-8 bg-[url('/arrow.jpg')] bg-cover bg-center md:py-16 py-6 md:h-[650px] w-full mx-auto text-center md:mb-12 lg:mb-0">
+    <div className="lg:px-30 px-8 bg-[url('/arrow.jpg')] bg-cover bg-center md:py-32 py-6 w-full mx-auto text-center md:mb-12 lg:mb-0">
       <motion.h1
       variants={
         {

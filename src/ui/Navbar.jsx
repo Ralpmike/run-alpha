@@ -79,7 +79,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-10 left-0 top-0 right-0 w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
+      className={`fixed z-90 left-0 top-0 right-0 w-full flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
     // variants={{
     //   hidden: { opacity: 0, y: "-100%" },
     //   visible: menuVar,
@@ -110,13 +110,13 @@ const Navbar = () => {
           >
             {link.name === "Contact Us" ? (
               <NavLink to="/contact">
-                <Button title="Contact Us" type="button" />
+                <Button title="CONTACT US" type="button" />
               </NavLink>
             ) : <NavLink
               key={link.name}
               to={link.href}
               className={({ isActive }) =>
-                classNames(`font-light hover:text-secondary transition text-[1.14rem] ${scrolled ? isActive ? "text-secondary " : "text-slate-500" : ""}`, {
+                classNames(`font-light hover:text-secondary transition text-[1.14rem] ${scrolled ? isActive ? "text-secondary " : "text-white" : ""}`, {
                   "text-secondary font-normal": isActive,
                   "text-white": !isActive && !scrolled,
                   "text-secondary": scrolled,
