@@ -16,7 +16,7 @@ export default function LandingPage() {
         <source src="/hero4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-5"/>
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-5"/> */}
       <div className="flex flex-col items-center justify-center h-full z-20 text-white text-center  gap-6">
         <div className="space-y-3">
           <motion.h1 className="text-[2rem] md:text-5xl lg:text-7xl md:max-w-[1000px] leading-[1.2] mx-auto uppercase max-w-sm w-full dm-serif"

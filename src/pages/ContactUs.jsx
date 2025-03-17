@@ -2,7 +2,9 @@
 
 function ContactUs() {
   return (
-    <div>GetInTouch</div>
+    <div>
+      
+    </div>
   )
 }
 
