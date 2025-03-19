@@ -79,7 +79,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
+      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/50  shadow-md transition-all duration-300 ease-in-out" : "bg-transparent"}`}
     // variants={{
     //   hidden: { opacity: 0, y: "-100%" },
     //   visible: menuVar,
@@ -94,7 +94,7 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <motion.div
-        className="hidden md:flex gap-3 md:gap-6 lg:gap-8 xl:gap-16 grow md:justify-end items-center"
+        className="hidden md:flex gap-3 md:gap-6 lg:gap-8 xl:gap-16 grow md:justify-end items-center "
         initial="hidden"
         animate="visible"
         variants={{
