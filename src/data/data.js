@@ -2,32 +2,36 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const navLinksItems = [
-  { name: "Home", href: "/home" },
-  { name: "About Us", href: "/aboutus" },
-  { name: "Strategies", href: "/strategies" },
-  { name: "Meet the Team", href: "/team" },
-  { name: "Contact Us", href: "/getintouch" },
+  { name: "Home", href: "/home", id: 1 },
+  { name: "About Us", href: "/aboutus", id: 2 },
+  { name: "Strategies", href: "/strategies", id: 3 },
+  { name: "Meet the Team", href: "/team", id: 4 },
+  { name: "Contact Us", href: "/getintouch", id: 5 },
   // { name: "", href: "/getintouch" },
 ];
 
 
 export const socials = [
   {
+    id: 1,
     href: "",
     name: "LinkedIn",
     icon: FaLinkedin
   },
   {
+    id: 2,
     href: "",
     name: "X(Twitter)",
     icon: FaSquareXTwitter 
   },
   {
+    id: 3,
     href: "",
     name: "Facebook",
     icon: FaFacebook 
   },
   {
+    id: 4,
     href: "",
     name: "Instagram",
     icon: FaInstagram , 
@@ -217,3 +221,50 @@ export const heroSectionData = {
       "At Run Alpha, our strategies are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities. Our approach focuses on risk management, diversification, and long-term sustainability, ensuring that our clients achieve consistent growth while minimizing uncertainties in the market.",
   },
 };
+
+
+
+export const strategiesData = [
+  {
+    title: "Growth Investing",
+    description:
+      "Focuses on investing in companies expected to grow at an above-average rate compared to other firms. These companies typically reinvest earnings to accelerate growth, offering potential for substantial capital appreciation.",
+    image: "/strategies/growth.jpg",
+  },
+  {
+    title: "Value Investing",
+    description:
+      "Involves selecting stocks that appear to be trading for less than their intrinsic or book value. Value investors seek out undervalued companies with strong fundamentals, anticipating that their true worth will be recognized over time.",
+    image: "/strategies/valueinvestment.jpg",
+  },
+  {
+    title: "Income Investing",
+    description:
+      "Centers on building a portfolio that generates regular income, typically through dividends or interest payments. This strategy often includes investments in dividend-paying stocks, bonds, and real estate.",
+    image: "/strategies/incomeinvestment.jpg",
+  },
+  {
+    title: "Systematic Investing",
+    description:
+      "Utilizes big data, data science, and human expertise to modernize investment approaches, aiming for consistent portfolio outcomes amidst market unpredictability.",
+    image: "/images/systematic-investing.jpg",
+  },
+  {
+    title: "Dollar-Cost Averaging",
+    description:
+      "Involves investing a fixed amount of money at regular intervals, regardless of the asset's price. This approach can reduce the impact of market volatility over time.",
+    image: "/strategies/dollar-cost-averaging.jpg",
+  },
+  {
+    title: "Momentum Investing",
+    description:
+      "Entails buying securities that have shown an upward price trend or short-selling those with a downward trend. Momentum investors believe that these trends will continue in the short term.",
+    image: "/images/momentum-investing.jpg",
+  },
+  {
+    title: "Tactical Asset Allocation",
+    description:
+      "Combines aspects of both active and passive investing by allowing for periodic adjustments in asset allocation to capitalize on market conditions or economic events.",
+    image: "/images/tactical-asset-allocation.jpg",
+  },
+];

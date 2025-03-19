@@ -4,6 +4,25 @@
 
 @import "tailwindcss";
 
+/* ? Try these fonts */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+font-family: 'Space Grotesk', sans-serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+font-family: 'Playfair Display', serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+font-family: 'Lora', serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+font-family: 'Orbitron', sans-serif;
+ */
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+font-family: 'Quicksand', sans-serif;
+ */
+
 
 @theme {
 
