@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";// Updated import for react-router-dom
 import { navLinksItems } from "../data/data";
-import { FaBars, FaArrowUp } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import classNames from "classnames";
 import { motion, AnimatePresence, } from "framer-motion";
@@ -12,8 +12,6 @@ import Button from "./button";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-
 
   const linkVariants = {
     hidden: { opacity: 0, x: -50 },
@@ -46,25 +44,10 @@ const Navbar = () => {
       } else {
         setScrolled(false);
       }
-
-      if (window.scrollY > 600) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, [])
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Smooth scroll
-    });
-  };
 
   // Toggle menu state
   const toggleMenu = () => setIsOpen((prevState) => !prevState);
@@ -173,154 +156,8 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-
-      <div
-        className={`fixed bottom-6 right-6 z-50 p-2 rounded-full bg-secondary text-white cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100 animate-pulse' : 'opacity-0'}`}
-        onClick={scrollToTop}
-        aria-label="Scroll to top"
-      >
-        <FaArrowUp size={24} />
-      </div>
     </motion.nav>
   );
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const Navbar = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const [scrolled, setScrolled] = useState(false);
-//   const [isVisible, setIsVisible] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       setScrolled(window.scrollY > 80);
-//       setIsVisible(window.scrollY > 600);
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   const toggleMenu = () => {
-//     setIsOpen((prev) => !prev);
-//   };
-
-//   const linkMobileVariants = {
-//     hidden: { x: "50vw", opacity: 0 },
-//     visible: (index) => ({
-//       x: 0,
-//       opacity: 1,
-//       transition: { duration: 0.5, delay: index * 0.1, ease: "easeOut" },
-//     }),
-//     exit: { x: "50vw", opacity: 0, transition: { duration: 0.4, ease: "easeInOut" } },
-//   };
-
-//   return (
-//     <motion.nav
-//       className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${
-//         scrolled ? "bg-black/60 shadow-md" : "bg-transparent"
-//       }`}
-//     >
-//       <Logo />
-
-//       {/* Desktop Navigation */}
-//       <div className="hidden md:flex gap-6 lg:gap-8 xl:gap-16 grow justify-end items-center">
-//         {navLinksItems.map((link) => (
-//           <NavLink
-//             key={link.name}
-//             to={link.href}
-//             className={({ isActive }) =>
-//               classNames(
-//                 "font-light hover:text-secondary transition text-[1.14rem]",
-//                 {
-//                   "text-secondary font-normal": isActive,
-//                   "text-white": !isActive && !scrolled,
-//                   "text-secondary": scrolled,
-//                 }
-//               )
-//             }
-//           >
-//             {link.name}
-//           </NavLink>
-//         ))}
-//       </div>
-
-//       {/* Mobile Menu Button */}
-//       <button className={`md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
-//         <FaBars size={28} className="text-secondary" />
-//       </button>
-
-//       {/* Mobile Nav Menu */}
-//       <AnimatePresence>
-//         {isOpen && (
-//           <motion.div
-//             initial={{ x: "-100vw" }}
-//             animate={{ x: 0 }}
-//             exit={{ x: "-100vw" }}
-//             transition={{ duration: 0.5, ease: "easeOut" }}
-//             className="fixed top-0 left-0 w-[60%] sm:w-[50%] h-full bg-white shadow-lg flex flex-col items-left pt-16 gap-5 md:hidden z-40"
-//           >
-//             <button className="absolute top-4 right-4 text-gray-600" onClick={toggleMenu}>
-//               <RxCross2 size={28} className="text-secondary" />
-//             </button>
-
-//             {navLinksItems.map((link, index) => (
-//               <motion.div
-//                 key={link.name}
-//                 variants={linkMobileVariants}
-//                 custom={index}
-//                 initial="hidden"
-//                 animate="visible"
-//                 exit="exit"
-//               >
-//                 <NavLink
-//                   to={link.href}
-//                   onClick={() => setIsOpen(false)}
-//                   className={({ isActive }) =>
-//                     classNames("font-light hover:text-secondary transition text-[1.14rem]", {
-//                       "text-secondary font-normal": isActive,
-//                     })
-//                   }
-//                 >
-//                   {link.name}
-//                 </NavLink>
-//               </motion.div>
-//             ))}
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
-
-//       {/* Scroll to Top Button */}
-//       <div
-//         className={`fixed bottom-6 right-6 z-50 p-2 rounded-full bg-secondary text-white cursor-pointer transition-opacity duration-300 ${
-//           isVisible ? "opacity-100 animate-pulse" : "opacity-0"
-//         }`}
-//         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-//       >
-//         <FaArrowUp size={24} />
-//       </div>
-//     </motion.nav>
-//   );
-// };
-
