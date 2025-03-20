@@ -10,8 +10,8 @@ const HeroSectionCard = ({ data: { backgroundImage, description, title }}) => {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-6" />
 
       <div className="absolute flex justify-center items-center flex-col top-0 left-0 w-full md:px-8 h-full text-white z-8">
-        <h1 className="text-7xl font-extrabold mb-6">{title}</h1>
-        <p className="leading-relaxed text-base md:text-xl max-w-7xl italic">
+        <h1 className="text-7xl font-extrabold mb-6 font-quicksand">{title}</h1>
+        <p className="leading-relaxed text-base md:text-xl max-w-7xl italic font-inter">
           {description}
         </p>
       </div>

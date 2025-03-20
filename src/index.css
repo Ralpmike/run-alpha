@@ -2,39 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
 @import "tailwindcss";
 
 /* ? Try these fonts */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
-font-family: 'Space Grotesk', sans-serif; */
+/* font-family: 'Space Grotesk', sans-serif; */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
-font-family: 'Playfair Display', serif; */
+/* font-family: 'Playfair Display', serif; */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
-font-family: 'Lora', serif; */
+/* font-family: 'Lora', serif; */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 font-family: 'Orbitron', sans-serif;
  */
 
- /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
-font-family: 'Quicksand', sans-serif;
- */
+/* font-family: 'Quicksand', sans-serif; */
+
 
 
 @theme {
 
   --font-inter: "Inter", sans-serif;
+  --font-lora: "Lora", serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-quicksand: "Quicksand", sans-serif;
   --color-primary: #212121;
   --color-navcolor: #7D7D7D;
   --color-secondary: #6CB4B8;
 }
 
-*{
+/* *{
   font-family: "Inter", sans-serif;
-}
+} */
 
 
 .dm-serif {
