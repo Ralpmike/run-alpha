@@ -17,9 +17,9 @@ export default function Button({
 }) {
 
   const btnVariant = {
-     opacity: 1,
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.5, y: { type: "spring" }, ease: "easeInOut" },
+    transition: { duration: 0.5, ease: "easeInOut" },
   }
   const sizeStyles = {
     small: "px-2 py-2 ",
@@ -66,7 +66,7 @@ export default function Button({
         colorStyles[color],
         className,
         radiusStyles[radius],
-        "flex items-center justify-center gap-2 text-center cursor-pointer"
+        "flex items-center justify-center gap-2 font-quicksand text-center cursor-pointer font-thin"
       )}
     >
       {isLoading ? "Loading..." : title}

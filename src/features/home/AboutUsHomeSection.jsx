@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function AboutUsHomeSection() {
   return (
-    <div className="lg:px-30 h-[800px] px-8 bg-[url('/arrow.jpg')] bg-cover bg-center md:py-32 py-6 w-full mx-auto flex flex-col items-center justify-center md:mb-12 lg:mb-0">
+    <div className="lg:px-73 h-[800px] px-8 bg-[url('/arrow.jpg')] bg-cover bg-center md:py-32 py-6 w-full mx-auto flex flex-col items-center justify-center md:mb-0 lg:mb-0">
       <motion.h1
       variants={
         {
@@ -17,7 +17,7 @@ function AboutUsHomeSection() {
       }
       initial="hidden"
       whileInView="visible"
-      className="text-3xl uppercase mb-12 font-bold">Pioneering innovation</motion.h1>
+      className="text-3xl uppercase mb-12 font-quicksand font-bold">Pioneering innovation</motion.h1>
       <motion.p
        variants={{
       visible: { x: 0, opacity: 1 },
@@ -27,7 +27,7 @@ function AboutUsHomeSection() {
       animate={{ x: '0', opacity: 1 }}
       transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
       whileInView="visible"
-      className="tracking-wider text-gray-600 md:text-xl text-base md:leading-loose font-light italic">We are a forward-thinking hedge fund that combines traditional investment expertise with cutting-<br className="md:hidden"/>edge quantitative strategies to deliver exceptional returns. Our team brings decades of experience <br className="md:hidden"/>in global markets, leveraging deep financial knowledge alongside AI-driven models to identify high-<br className="md:hidden"/> value opportunities. With a disciplined approach to risk management and a commitment to long- <br className="md:hidden"/>term growth, we help investors navigate complex market conditions with confidence...</motion.p>
+      className="tracking-wider text-gray-600 md:text-xl text-base md:leading-loose text-center">We are a forward-thinking hedge fund that combines traditional investment expertise with cutting-<br className="md:hidden"/>edge quantitative strategies to deliver exceptional returns. Our team brings decades of experience <br className="md:hidden"/>in global markets, leveraging deep financial knowledge alongside AI-driven models to identify high-<br className="md:hidden"/> value opportunities. With a disciplined approach to risk management and a commitment to long- <br className="md:hidden"/>term growth, we help investors navigate complex market conditions with confidence...</motion.p>
 
       <Link to="/aboutus">
           <Button title="ABOUT US" type="button" className="md:text-[1rem] mt-8 mx-auto" icon={<BsArrowRight />} />

@@ -8,11 +8,11 @@ import { FaHome, FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="px-4 lg:px-30 py-12 md:py-28 bg-[#162425] h-auto md:h-[500px] md:text-[18.5px]">
+    <footer className="px-4 lg:px-72 py-12 md:py-28 bg-[#162425] h-auto md:h-[500px] md:text-[18.5px] font-lora">
       <div className="flex">
         <div className="w-full text-white flex flex-col md:flex-row justify-between gap-8 mx-auto  font-normal ">
 
-          <Logo className={"min-w-25 h-32 w-31 grow "} src="/logo.png" />
+          <Logo className={"min-w-25 h-32 w-31 grow "} src="/logos/white-logo.png" />
 
           <ul className="flex gap-4 flex-col text-base">
             {

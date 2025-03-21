@@ -2,7 +2,7 @@ import CountUp from "react-countup"
 
 const StatisticsSection = () => {
   return (
-    <div className="h-[625px] flex justify-center lg:gap-48 gap-8 lg:p-32 py-28 items-center bg-secondary w-full text-white">
+    <div className="h-[625px] flex justify-center lg:gap-48 gap-8 lg:p-32 py-28 items-center font-quicksand bg-secondary w-full text-white">
       <div className="space-y-4">
         <h1 className="text-8xl font-bold">1986</h1>
         <p className="px-4 text-xl">Est. since</p>

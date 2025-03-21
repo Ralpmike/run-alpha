@@ -5,7 +5,7 @@ export const navLinksItems = [
   { name: "Home", href: "/home", id: 1 },
   { name: "About Us", href: "/aboutus", id: 2 },
   { name: "Strategies", href: "/strategies", id: 3 },
-  { name: "Meet the Team", href: "/team", id: 4 },
+  { name: "Team", href: "/team", id: 4 },
   { name: "Contact Us", href: "/getintouch", id: 5 },
   // { name: "", href: "/getintouch" },
 ];
@@ -40,33 +40,38 @@ export const socials = [
 
 const teamMembers = [
   {
-    id: 1,
+       id: 1,
     name: "Doron Breen",
     title: "Co-Founder & Managing Partner",
+    quote: "In our journey, we always aim to inspire the next generation of leaders. We believe in creating innovative solutions that push the boundaries of what is possible. Our vision is clear, and our commitment is unwavering, working together to turn our goals into reality. By working hand-in-hand with our clients and partners, we bring lasting change to the industries we touch. The future is filled with opportunities, and we are ready to seize them.",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     id: 2,
     name: "Ron Senator",
     title: "Managing Partner, PM Sphera Strategy",
+    quote: "Success in any business requires vision, resilience, and a willingness to constantly evolve. At PM Sphera, we are dedicated to providing tailored solutions that address the unique needs of each client. We understand the complexities of the market and are always ready to adapt to new challenges. With passion and expertise, we create strategies that enable long-term success for both our clients and our team.",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
   {
     id: 3,
     name: "Amir Levi",
     title: "Managing Partner, CEO",
+    quote: "Leadership is about inspiring others to reach their full potential. At our company, we foster an environment where collaboration and creativity thrive. We believe in empowering our team members, providing them with the tools and support they need to succeed. Together, we can overcome challenges, create opportunities, and continue to grow as a company. Our mission is to make a positive impact and deliver meaningful results for all stakeholders.",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
     id: 4,
     name: "Sophia Green",
     title: "Chief Technology Officer",
+    quote: "Technology is the key to unlocking new possibilities and driving innovation in all industries. We are committed to staying at the forefront of technological advancements, using cutting-edge solutions to solve complex problems. Our team of experts works tirelessly to ensure we are delivering the most efficient and effective solutions to our clients. By embracing new technologies, we are constantly pushing boundaries to help businesses thrive in an ever-changing digital landscape.",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     id: 5,
     name: "Michael Thompson",
     title: "Lead Software Engineer",
+    quote: "Engineering is at the heart of every product we create. We approach every project with a focus on quality, precision, and scalability. Our team works diligently to design and implement solutions that not only meet but exceed the expectations of our clients. We believe in building software that has a lasting impact, delivering value and performance that helps our clients achieve their goals. Every line of code is a step towards delivering a product that solves real-world problems.",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {

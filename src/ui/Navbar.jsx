@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
+      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center xl:px-72 px-6 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md h-30 duration-300 ease-in-out" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -85,7 +85,7 @@ const Navbar = () => {
               key={link.name}
               to={link.href}
               className={({ isActive }) =>
-                classNames(`font-light hover:text-secondary transition text-[1.14rem] ${scrolled ? isActive ? "text-secondary " : "text-white" : ""}`, {
+                classNames(`hover:text-secondary font-quicksand font-light uppercase transition text-[1rem] ${scrolled ? isActive ? "text-secondary " : "text-white" : ""}`, {
                   "text-secondary font-normal": isActive,
                   "text-white": !isActive && !scrolled,
                   "text-secondary": scrolled,

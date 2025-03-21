@@ -1,6 +1,6 @@
 import LandingPage from "../components/LandingPage"
 import StrategiesHomeSection from "../features/home/StrategiesHomeSection"
-import TeamSection from "../features/team/TeamSection"
+// import TeamSection from "../features/team/TeamSection"
 import AboutUsHomeSection from "../features/home/AboutUsHomeSection"
 import StatisticsSection from "../features/home/StatisticsSection"
 // import GetInTouch from "./GetInTouch"
@@ -15,7 +15,7 @@ function Home() {
       <StatisticsSection />
       <StrategiesHomeSection />
       {/* <Strategies /> */}
-      <TeamSection />
+      {/* <TeamSection /> */}
       {/* <Team /> */}
       {/* <GetInTouch /> */}
     </div>
