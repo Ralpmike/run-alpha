@@ -1,7 +1,5 @@
-import { Link } from "react-router";
-import Button from "../ui/button";
+
 import { motion } from "framer-motion";
-import { BsChevronRight } from "react-icons/bs";
 
 
 export default function LandingPage() {
@@ -17,7 +15,7 @@ export default function LandingPage() {
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-5"/>
-      <div className="flex flex-col items-start lg:px-70 justify-center h-full z-20 text-white gap-6">
+      <div className="flex flex-col items-start lg:px-30 justify-center h-full z-20 text-white gap-6">
         <div className="space-y-3 mt-64 px-6">
           <motion.h1 className="text-[2.4rem] md:text-5xl lg:text-7xl md:max-w-[1300px] leading-[1.2] capitalize max-w-sm w-[600px] font-inter text-start font-extrabold"
             initial={{ x: '-100%', opacity: 0 }}
@@ -37,11 +35,7 @@ export default function LandingPage() {
           </motion.p>
 
         </div>
-        {/* <Link to="/getintouch">
-          <Button title="Read more" type="button" className="md:text-[1.25rem]" isWhite={true} icon={<BsChevronRight />} />
-        </Link> */}
-
-
+      
       </div>
 
     </div>

@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center xl:px-72 px-6 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md h-30 duration-300 ease-in-out" : "bg-transparent"}`}
+      className={`fixed z-12 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between items-center px-4 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -85,7 +85,7 @@ const Navbar = () => {
               key={link.name}
               to={link.href}
               className={({ isActive }) =>
-                classNames(`hover:text-secondary font-quicksand font-light uppercase transition text-[1rem] ${scrolled ? isActive ? "text-secondary " : "text-white" : ""}`, {
+                classNames(`font-light hover:cursor-none hover:text-secondary transition text-[1.14rem] ${scrolled ? isActive ? "text-secondary " : "text-white" : ""}`, {
                   "text-secondary font-normal": isActive,
                   "text-white": !isActive && !scrolled,
                   "text-secondary": scrolled,
@@ -102,7 +102,7 @@ const Navbar = () => {
 
 
       {/* Mobile Menu Button */}
-      <button className={`md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
+      <button className={` md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
         <FaBars size={28} className="text-secondary" />
       </button>
 
@@ -143,7 +143,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
                     classNames(`font-light hover:text-secondary transition text-[1.14rem]`, {
-                      "text-secondary font-normal": isActive,
+                      "text-secondary font-normal hover:cursor-none": isActive,
                     })
                   }
                 >

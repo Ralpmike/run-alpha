@@ -66,7 +66,7 @@ export default function Button({
         colorStyles[color],
         className,
         radiusStyles[radius],
-        "flex items-center justify-center gap-2 font-quicksand text-center cursor-pointer font-thin"
+        "flex items-center justify-center gap-2 text-center hover:cursor-none motion-button"
       )}
     >
       {isLoading ? "Loading..." : title}

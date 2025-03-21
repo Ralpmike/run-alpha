@@ -44,4 +44,11 @@ font-family: 'Orbitron', sans-serif;
 /* *{
   font-family: "Inter", sans-serif;
 } */
+*:hover{
+  cursor: none
+}
+
+body{
+  cursor: none
+}
 
