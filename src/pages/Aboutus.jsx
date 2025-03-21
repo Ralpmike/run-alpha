@@ -34,7 +34,7 @@ const fadeInLeft = {
             viewport={{ once: true }}
             variants={fadeInRight}
             className="min-w-3/6">
-            <h1 className="lg:text-6xl text-3xl font-playfair md:text-5xl mb-8 font-bold">WHO WE ARE</h1>
+             <h1 className="lg:text-6xl text-3xl font-playfair md:text-5xl mb-8 font-bold relative before:block before:absolute before:left-2 before:-bottom-4 before:w-[100px] before:h-[4px] before:bg-secondary">WHO WE ARE</h1>
             <p className="md:text-base tracking-[2] text-base lg:text-[19px] leading-relaxed font-lora">
               We are a forward-thinking hedge fund that leverages decades of experience in global financial markets, blending traditional investment strategies with cutting-edge quantitative models to create a unique approach to wealth management.
 

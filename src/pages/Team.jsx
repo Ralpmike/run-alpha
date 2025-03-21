@@ -97,7 +97,7 @@ function Team() {
           {[
           "/team/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg",
           "/team/helena-lopes-PGnqT0rXWLs-unsplash.jpg",
-          "/team/charlesdeluvio-Lks7vei-eAg-unsplash.jpg",
+          "/team/helena-lopes-e3OUQGT9bWU-unsplash.jpg",
           "/team/chang-duong-Sj0iMtq_Z4w-unsplash.jpg",
         ].map((src, index) => (
           <motion.img

@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-12 left-0 top-0 right-0 w-full h-20 flex justify-between items-center xl:px-72 px-6 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md h-30 duration-300 ease-in-out" : "bg-transparent"}`}
+      className={`fixed z-90 left-0 top-0 right-0 w-full h-20 flex justify-between items-center xl:px-72 px-6 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md h-30 duration-300 ease-in-out" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -114,7 +114,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "-100vw" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="fixed top-0 left-0 w-[60%] sm:w-[50%] h-full bg-white shadow-lg md:hidden flex items-start pt-32 flex-col space-y-8 p-6 z-50"
+            className="fixed top-0 left-0 w-[80%] sm:w-[70%] h-full bg-[url('/v1016-a-08.jpg')] bg-cover bg-right-top shadow-lg md:hidden flex items-start pt-32 flex-col space-y-8 p-6 z-50"
           >
             <button
               className="absolute top-4 right-4 text-gray-600"
@@ -123,6 +123,7 @@ const Navbar = () => {
             >
               <RxCross2 size={28} className="text-secondary" />
             </button>
+            
 
             {/* Mobile Links */}
             {navLinksItems.map((link, index) => (
@@ -142,7 +143,7 @@ const Navbar = () => {
                   to={link.href}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    classNames(`font-light hover:text-secondary transition text-[1.14rem]`, {
+                    classNames(`font-light hover:text-secondary transition text-[1.2rem]`, {
                       "text-secondary font-normal": isActive,
                     })
                   }

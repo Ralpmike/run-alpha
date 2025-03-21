@@ -6,6 +6,7 @@ import { BsChevronRight } from "react-icons/bs";
 
 export default function LandingPage() {
   return (
+    
     <div className="h-[700px] relative lg:h-dvh shadow-2xl">
       <video
         autoPlay
@@ -24,7 +25,9 @@ export default function LandingPage() {
             animate={{ x: '0', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
           >
-            Redefining Investment with Data & Strategy
+            Redefining 
+            <span className="text-secondary"> Investment
+              </span> with Data  <span className="text-secondary">& Strategy</span>
           </motion.h1>
 
           <motion.p
