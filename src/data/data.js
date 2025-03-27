@@ -239,13 +239,13 @@ export const heroSectionData = {
     title: "ABOUT US",
     backgroundImage: "/pexels.jpg",
     description:
-      "At Run Alpha, we believe that the future of investment lies in the intersection of technology and human ingenuity. We strive to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth. Our mission is to provide clients with a safe, transparent, and accessible investment experience that aligns with their financial goals and risk tolerance.",
+      "At Run Alpha, we believe that the future of investment lies in the intersection of technology and human ingenuity. We strive to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth."
   },
   strategies: {
     title: "OUR STRATEGIES",
     backgroundImage: "/skyline.jpg",
     description:
-      "At Run Alpha, our strategies are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities. Our approach focuses on risk management, diversification, and long-term sustainability, ensuring that our clients achieve consistent growth while minimizing uncertainties in the market.",
+      "Our strategies are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities."
   },  
   teams: {
     title: "MEET OUR TEAM",
@@ -261,25 +261,98 @@ export const strategiesData = [
   {
     title: "Family Office",
     description:
-      "A comprehensive financial and investment management service tailored for high-net-worth families. Family offices oversee wealth preservation, estate planning, tax optimization, philanthropic efforts, and investment strategies, ensuring long-term prosperity across generations.",
-    image: "/strategies-one.png",
+      `The event that will go down in history as the most significant transfer of wealth is right around the corner. Globally, it is projected that baby boomers will transfer more than USD60 trillion in wealth to millennials over the course of the next decade.
+The great wealth transfer is happening. Millennials are on the cusp of an unprecedented shift in wealth. Beyond investment management, we provide an exclusive suite of family office services, ensuring a smooth transition of wealth to Millennials and Gen Z and aligning investment strategies with the family’s evolving investment preferences. Our services include:
+Wealth planning and preservation – structuring portfolios for long-term financial security
+Estate and planning succession – ensuring seamless wealth transfer across generations
+Tax and legal coordination – collaborating with top-tier professionals for optimal financial efficiency
+Philanthropy and legacy building – setting common family values and crafting strategies to align wealth with purpose
+At Run Alpha, we believe that true alpha comes from resilience, innovation, adaptability, and a relentless pursuit of excellence. Whether in bull or bear markets, we remain committed to protecting and growing our investor’s capital with integrity, transparency, and a long-term perspective.
+`,
+    image: "/pexels-rdne-7951553.jpg",
   },
   {
     title: "Private Wealth",
     description:
-      "A personalized financial planning and investment management service designed for individuals with substantial assets. Private wealth solutions focus on portfolio diversification, risk mitigation, tax efficiency, and legacy planning to safeguard and grow wealth while maintaining financial stability.",
-    image: "/strategies-two.png",
+      `Your wealth is more than money. At Run Alpha, our Private Wealth services are designed to help high-net-worth individuals and ultra high-net-worth individuals navigate the complexities of wealth management with confidence, transparency and clarity. We provide personalized strategies that focus on  liquidity management, financial planning and long-term wealth preservation, ensuring that your financial resources are optimized for both immediate needs and future goals.
+Strategic Liquidity Management – we help clients:
+Maintain the right balance between liquid and invested assets
+Structure cash flows for major purchases, business investments or unforeseen expenses
+Access customized lending solutions to maximize financial flexibility
+Comprehensive Financial Planning – our team provides tailored guidance on:
+Investment and portfolio management – building strategies that align with your risk tolerance and long-term objectives
+Tax and estate planning – working alongside legal and tax professionals to structure assets efficiently
+Wealth transfer and legacy planning- ensuring a seamless transition of wealth to future generations
+Risk management – protecting assets against market volatility and economic shifts
+`,
+    image: "/meditation-2262835.jpg",
   },
   {
     title: "Hedge Fund",
     description:
-      "An advanced investment vehicle employing diverse strategies to maximize returns while mitigating risks. Hedge funds utilize techniques such as long-short equity, global macro trading, arbitrage, and derivatives to generate profits in fluctuating market conditions, catering to sophisticated investors.",
-    image: "/strategies-three.png",
+      `At Run Alpha, we provide strategic foreign exchange (FX) solutions to help clients manage currency exposure, optimize international transactions, and hedge against market volatility. Whether you are an investor, business owner, or family office managing global wealth, our FX services are designed to enhance financial efficiency and mitigate currency risks.
+Our FX Currency Solutions include:
+Currency Risk Management – we offer:
+Hedging strategies to protect against currency depreciation and volatility
+Forward contracts and options to lock in favourbale exchange rates
+Customized FX risk assessments tailored to individual financial goals
+Global Payments and Transactions – we facilitate seamless international payments for clients with cross-border financial commitments including liquidity management, fast and secure executin of FX transactions, efficient multi-currency transfers with competitive exchange rates.
+`,
+    image: "/pexels-rickyrecap-2295433.jpg",
   },
   {
     title: "FX Currency Solution",
     description:
-      "A specialized financial service aimed at optimizing foreign exchange transactions for individuals and businesses. FX currency solutions help mitigate currency risks, enhance international trade efficiency, and provide strategic guidance on foreign exchange markets to navigate volatility and maximize profitability.",
-    image: "/strategies-four.png",
+      'Just include a disclaimer that the offering cannot be accessed. Contact us for more information.',
+    image: "/strategies/valueinvestment.jpg",
   },
+];
+
+
+export const aboutSections = [
+  {
+    title: "WHO WE ARE",
+    text: `We are a forward-thinking hedge fund that leverages decades of experience in global financial markets, blending traditional investment strategies with cutting-edge quantitative models to create a unique approach to wealth management.
+
+    Our firm's philosophy revolves around utilizing advanced technology, including artificial intelligence (AI), alongside established investment principles to identify high-value opportunities and mitigate risk, ensuring that our clients experience exceptional returns while maintaining peace of mind in an unpredictable market.`,
+    buttonText: "READ MORE",
+    imageUrl: "/office.jpg",
+  },
+  {
+    title: "A Legacy of Expertise",
+    text: `Our journey began many years ago when a group of seasoned professionals in the investment world realized that the traditional ways of asset management were no longer sufficient to tackle the growing complexity of global financial markets. With decades of collective experience in hedge funds, investment banking, and global asset management, our team had a deep understanding of market dynamics and recognized the opportunities that advanced quantitative strategies could offer.
+
+    Our team, composed of financial professionals, data scientists, and experienced quantitative analysts, understands that the financial markets are constantly evolving. In this dynamic environment, it is crucial for investors to adopt innovative approaches and strategies that not only keep pace with the changing landscape but also position them for sustainable, long-term success.`,
+    buttonText: "OUR TEAM",
+    imageUrl: "/people-office-work-day.jpg",
+  },
+  {
+    title: "Quantitative Strategies",
+    text: `One of the key pillars of our investment strategy is the use of quantitative methods. These strategies allow us to manage investments with a level of precision that traditional methods simply cannot achieve. By applying mathematical models and algorithms to vast datasets, we are able to identify trends and patterns that may not be immediately apparent to the human eye. This ability to process and analyze large sets of information quickly and accurately allows us to make informed, data-driven decisions in real-time.
+
+    In addition to machine learning models that help us predict price movements, our team also uses sophisticated risk models to measure and manage potential losses. These tools allow us to assess the risk-reward profile of each investment opportunity and make adjustments as necessary. Whether it's through automated trading algorithms that execute trades based on pre-determined criteria or utilizing AI to forecast economic shifts, our goal is always the same: to maximize returns while managing risk.`,
+    buttonText: "STRATEGIES",
+    imageUrl: "/business.jpg",
+  },
+  {
+    title: "A Disciplined Approach to Risk Management",
+text: `Risk management is an integral part of any investment strategy, and we place a strong emphasis on safeguarding our clients' capital. While achieving high returns is important, we believe that managing risk is just as crucial in the pursuit of long-term growth. Our risk management framework is designed to protect against extreme market events and prevent significant losses during periods of high volatility.
+
+    Our approach includes diversification, dynamic hedging, and sophisticated risk modeling to ensure that we can adjust our positions based on changes in market conditions. Additionally, our AI models are equipped with risk mitigation protocols that can automatically adjust portfolios to limit exposure to certain sectors or regions when needed. This combination of human expertise and machine-driven insights allows us to create a robust risk management system that offers our clients confidence, even in times of uncertainty.
+
+    We also believe in a conservative approach to leverage. While some hedge funds take on significant amounts of leverage to amplify their returns, we believe that using leverage prudently is the key to maintaining long-term stability. By focusing on strategic investments that offer strong risk-adjusted returns, we aim to maximize growth while minimizing unnecessary exposure to potential downside risks.`,    buttonText: "LEARN MORE",
+    imageUrl: "/unsplash.jpg",
+  },
+];
+
+
+
+export const logos = [
+  "/strategies/growth.jpg",
+  "/strategies/valueinvestment.jpg",
+  "/strategies/splash.jpg",
+  "/strategies/spooky.jpg",
+  "/strategies/strategy-one.jpg",
+  "/strategies/redd-francisco.jpg",
+  "/strategies/incomeinvestment.jpg",
 ];

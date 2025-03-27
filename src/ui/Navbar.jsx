@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";// Updated import for react-router-dom
 import { navLinksItems } from "../data/data";
-import { FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import classNames from "classnames";
 import { motion, AnimatePresence, } from "framer-motion";
@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-12 gap-4 md:gap-12 py-0 lg:px-48 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
+      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-12 gap-4 md:gap-12 py-0 lg:px-36 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button className={` md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
-        <FaBars size={28} className="text-secondary" />
+        <FaBars size={40} className="text-alpha" />
       </button>
 
       {/* Mobile Nav Menu with Animation */}
@@ -121,7 +121,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               aria-label="Close Menu"
             >
-              <RxCross2 size={28} className="text-secondary" />
+              <RxCross2 size={40} className="text-alpha" />
             </button>
             
 
@@ -136,7 +136,7 @@ const Navbar = () => {
               >
                 {link.name === "Contact Us" ? (
                   <NavLink to="/contact">
-                    <Button title="Contact Us" type="button" />
+                    <Button title="Contact Us" type="button" size="small" />
                   </NavLink>
                 ) : <NavLink
                   key={link.name}

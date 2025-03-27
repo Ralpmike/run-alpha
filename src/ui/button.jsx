@@ -14,6 +14,7 @@ export default function Button({
   isBorder = false,
   isWhite = false,
   icon,
+  children
 }) {
 
   const btnVariant = {
@@ -56,7 +57,7 @@ export default function Button({
       }}
       initial="hidden"
       whileInView="visible"
-      
+
       type={type}
       onClick={onClick}
       disabled={isLoading}
@@ -69,6 +70,7 @@ export default function Button({
         "flex items-center justify-center gap-2 text-center font-lora hover:cursor-none motion-button"
       )}
     >
+      {children}
       {isLoading ? "Loading..." : title}
       {icon && <span>{icon}</span>}
     </motion.button>

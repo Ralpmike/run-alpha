@@ -2,6 +2,9 @@ import { Link } from "react-router";
 import { strategies } from "../../data/data";
 import { motion } from "framer-motion";
 
+
+
+
 const StrategiesHomeSection = () => {
   return (
     <section className="text-center bg-alpha pt-32">

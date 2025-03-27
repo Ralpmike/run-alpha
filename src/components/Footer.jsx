@@ -8,7 +8,7 @@ import { FaHome, FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="px-4 lg:px-30 py-12 md:py-28 bg-alpha/90 bg-cover bg-center h-auto md:h-[500px] md:text-[18.5px] font-lora relative ">
+    <footer className="px-6 sm:px-12 lg:px-36 py-12 md:py-28 bg-alpha/90 bg-cover bg-center h-auto md:h-[500px] md:text-[18.5px] font-lora relative ">
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/map.jpg')] -z-1" />
       <div className="flex">
         <div className="w-full text-white flex flex-col md:flex-row justify-between gap-8 mx-auto font-normal ">
