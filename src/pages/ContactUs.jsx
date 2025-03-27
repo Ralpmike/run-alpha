@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { FaHome, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { motion } from "framer-motion";
 

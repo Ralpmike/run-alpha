@@ -7,10 +7,10 @@ export default function Button({
   type = "button",
   onClick,
   isLoading,
-  size = "medium",
+  size = "medium" ,
   className,
-  radius = "small",
-  color = "green",
+  radius = "full",
+  color = "blue",
   isBorder = false,
   isWhite = false,
   icon,
@@ -23,7 +23,7 @@ export default function Button({
   }
   const sizeStyles = {
     small: "px-2 py-2 ",
-    medium: "px-4 py-3",
+    medium: "px-6 py-4",
     large: "px-6 py-4",
   };
 
@@ -38,7 +38,7 @@ export default function Button({
     // red: "bg-red-light text-white hover:bg-red-600",
     green: isWhite ? "bg-white text-secondary hover:text-white hover:bg-secondary/90" : "bg-secondary text-white hover:bg-secondary/90 ",
     yellow: "bg-[#B88E2F] text-white hover:bg-yellow-600",
-    blue: "bg-blue-500 text-white hover:bg-blue-600",
+    blue: "text-alpha bg-white border border-alpha hover:bg-alpha hover:text-white",
     gray: "bg-gray-300 text-gray-800 hover:bg-gray-400",
     black: "bg-black text-white hover:bg-black-200",
     red: isBorder
@@ -46,7 +46,7 @@ export default function Button({
       : "bg-red-600 text-white hover:bg-red-light",
   };
 
-  const baseStyles = "transition-all duration-200";
+  const baseStyles = "transition-all duration-300";
 
   return (
     <motion.button
@@ -66,7 +66,7 @@ export default function Button({
         colorStyles[color],
         className,
         radiusStyles[radius],
-        "flex items-center justify-center gap-2 font-quicksand text-center cursor-pointer font-thin"
+        "flex items-center justify-center gap-2 text-center font-lora hover:cursor-none motion-button"
       )}
     >
       {isLoading ? "Loading..." : title}

@@ -54,11 +54,11 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-90 left-0 top-0 right-0 w-full h-20 flex justify-between items-center xl:px-72 px-6 gap-4 md:gap-12 py-0 lg:px-30 ${scrolled ? "bg-black/60 shadow-md h-30 duration-300 ease-in-out" : "bg-transparent"}`}
+      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-12 gap-4 md:gap-12 py-0 lg:px-48 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
-        <Logo />
+        <Logo src={scrolled ? '/logos/RUN ALPHA Logo - Black with White Background - 5000x5000.png' : "/logos/white-logo.png" } />
       </div>
 
       {/* Desktop Navigation */}
@@ -79,16 +79,16 @@ const Navbar = () => {
           >
             {link.name === "Contact Us" ? (
               <NavLink to="/contact">
-                <Button title="CONTACT US" type="button" />
+                <Button title="Contact Us" type="button" />
               </NavLink>
             ) : <NavLink
               key={link.name}
               to={link.href}
               className={({ isActive }) =>
-                classNames(`hover:text-secondary font-quicksand font-light uppercase transition text-[1rem] ${scrolled ? isActive ? "text-secondary " : "text-white" : ""}`, {
-                  "text-secondary font-normal": isActive,
+                classNames(`font-lora hover:cursor-none hover:text-[#e9cf87] transition text-[1.14rem] ${scrolled ? isActive ? "text-[#e9cf87] font-bold" : "text-alpha" : ""}`, {
+                  "text-[#e9cf87] text-base font-bold": isActive,
                   "text-white": !isActive && !scrolled,
-                  "text-secondary": scrolled,
+                  "text-[#e9cf87]": scrolled,
                 })
               }
             >
@@ -102,7 +102,7 @@ const Navbar = () => {
 
 
       {/* Mobile Menu Button */}
-      <button className={`md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
+      <button className={` md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
         <FaBars size={28} className="text-secondary" />
       </button>
 
@@ -143,8 +143,8 @@ const Navbar = () => {
                   to={link.href}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    classNames(`font-light hover:text-secondary transition text-[1.2rem]`, {
-                      "text-secondary font-normal": isActive,
+                    classNames(`font-light hover:text-secondary transition text-[1.14rem]`, {
+                      "text-secondary font-normal hover:cursor-none": isActive,
                     })
                   }
                 >

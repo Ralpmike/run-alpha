@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     // Function to track the mouse movement
@@ -17,25 +18,36 @@ const CustomCursor = () => {
   }, []);
 
   useEffect(() => {
-    // Remove the default cursor (this will remove the arrow cursor)
-    document.body.style.cursor = "none";
+    const buttons = document.querySelectorAll(".motion-button");
 
-    // Cleanup to restore the cursor when the component unmounts
+    const handleMouseEnter = () => setIsHovering(true);
+    const handleMouseLeave = () => setIsHovering(false);
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("mouseenter", handleMouseEnter);
+      btn.addEventListener("mouseleave", handleMouseLeave);
+    });
+
     return () => {
-      document.body.style.cursor = "default";
+      buttons.forEach((btn) => {
+        btn.removeEventListener("mouseenter", handleMouseEnter);
+        btn.removeEventListener("mouseleave", handleMouseLeave);
+      });
     };
   }, []);
 
   return (
-    <div
-      className="fixed z-100 w-6 h-6 rounded-full pointer-events-none transition-transform ease-out"
-      style={{
-        left: `${position.x - 12}px`, // Center the cursor on the mouse
-        top: `${position.y - 12}px`,
-      }}
-    >
-      <div className="absolute w-full h-full rounded-full border-secondary border-2 border-goldenrod pointer-events-none cursor-none" />
-    </div>
+      <div
+        className={`fixed z-50 pointer-events-none transition-transform duration-700 ease-out`}
+        style={{
+          width: isHovering ? "30px" : "20px",
+          height: isHovering ? "30px" : "20px",
+          left: `${position.x - (isHovering ? 25 : 12)}px`,
+          top: `${position.y - (isHovering ? 25 : 12)}px`,
+        }}
+      >
+        <div className="absolute w-full h-full rounded-full border-2 border-red-300 bg-transparent" />
+      </div>
   );
 };
 

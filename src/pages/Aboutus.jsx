@@ -25,7 +25,7 @@ const fadeInLeft = {
             </motion.div>
      
 
-      <div className="2xl:px-56 lg:px-36 px-12 md:py-28 py-28">
+      <div className="2xl:px-48 lg:px-36 px-12 md:py-28 py-28">
 
         <div className="flex items-center flex-wrap lg:flex-nowrap gap-8 mb-16">
           <motion.div 

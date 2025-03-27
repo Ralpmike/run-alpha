@@ -17,6 +17,7 @@ export default [
         sourceType: 'module',
       },
     },
+   "react/prop-types": "any",
     settings: { react: { version: '18.3' } },
     plugins: {
       react,

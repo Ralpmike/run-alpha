@@ -190,21 +190,49 @@ export default teamMembers;
 export const strategies = [
   {
     title: "Family Office",
-    image: "/strategies-one.png",
+    image: "/pexels-rdne-7951553.jpg",
   },
   {
     title: "Private Wealth",
-    image: "/strategies-two.png",
+    image: "/meditation-2262835.jpg",
   },
   {
     title: "Hedge Fund",
-    image: "/strategies-three.png",
+    image: "/pexels-rickyrecap-2295433.jpg",
   },
   {
     title: "FX Currency Solution",
-    image: "/strategies-four.png",
+    image: "/strategies/valueinvestment.jpg",
   },
 ];
+
+export const statisticsData = {
+  founded: {
+    year: 2021,
+    description: "We have crafted winning investing strategies which have demonstrated resilience and adaptability across market cycles and attracted a diverse group of high-net-worth individuals.",
+  },
+  assets: {
+    title: "Assets Management",
+    amount: 1500000000, 
+    description: "We currently manage over NGN 1.50bn in assets, driving strong returns for our investors.",
+  },
+  clients: {
+    title: "Client Retention Rate",
+    percent: 95,
+    description: "Our client rate is a testament to our commitment to excellence, reflecting trust and satisfaction within our service",
+  },
+  team: {
+    title: "Experienced Team",
+    count: 6,
+    description: "Our team of experts is dedicated to providing you with the best investment opportunities.",
+  },
+  years: {
+    title: "Cumulative Experience",
+    count: 36,
+    description: "With a combined 36 years of experience, our team excels at navigating complex market conditions.",
+  },
+};
+
 
 export const heroSectionData = {
   about: {
@@ -231,45 +259,27 @@ export const heroSectionData = {
 
 export const strategiesData = [
   {
-    title: "Growth Investing",
+    title: "Family Office",
     description:
-      "Focuses on investing in companies expected to grow at an above-average rate compared to other firms. These companies typically reinvest earnings to accelerate growth, offering potential for substantial capital appreciation.",
-    image: "/strategies/growth.jpg",
+      "A comprehensive financial and investment management service tailored for high-net-worth families. Family offices oversee wealth preservation, estate planning, tax optimization, philanthropic efforts, and investment strategies, ensuring long-term prosperity across generations.",
+    image: "/strategies-one.png",
   },
   {
-    title: "Value Investing",
+    title: "Private Wealth",
     description:
-      "Involves selecting stocks that appear to be trading for less than their intrinsic or book value. Value investors seek out undervalued companies with strong fundamentals, anticipating that their true worth will be recognized over time.",
-    image: "/strategies/valueinvestment.jpg",
+      "A personalized financial planning and investment management service designed for individuals with substantial assets. Private wealth solutions focus on portfolio diversification, risk mitigation, tax efficiency, and legacy planning to safeguard and grow wealth while maintaining financial stability.",
+    image: "/strategies-two.png",
   },
   {
-    title: "Income Investing",
+    title: "Hedge Fund",
     description:
-      "Centers on building a portfolio that generates regular income, typically through dividends or interest payments. This strategy often includes investments in dividend-paying stocks, bonds, and real estate.",
-    image: "/strategies/incomeinvestment.jpg",
+      "An advanced investment vehicle employing diverse strategies to maximize returns while mitigating risks. Hedge funds utilize techniques such as long-short equity, global macro trading, arbitrage, and derivatives to generate profits in fluctuating market conditions, catering to sophisticated investors.",
+    image: "/strategies-three.png",
   },
   {
-    title: "Systematic Investing",
+    title: "FX Currency Solution",
     description:
-      "Utilizes big data, data science, and human expertise to modernize investment approaches, aiming for consistent portfolio outcomes amidst market unpredictability.",
-    image: "/images/systematic-investing.jpg",
-  },
-  {
-    title: "Dollar-Cost Averaging",
-    description:
-      "Involves investing a fixed amount of money at regular intervals, regardless of the asset's price. This approach can reduce the impact of market volatility over time.",
-    image: "/strategies/dollar-cost-averaging.jpg",
-  },
-  {
-    title: "Momentum Investing",
-    description:
-      "Entails buying securities that have shown an upward price trend or short-selling those with a downward trend. Momentum investors believe that these trends will continue in the short term.",
-    image: "/images/momentum-investing.jpg",
-  },
-  {
-    title: "Tactical Asset Allocation",
-    description:
-      "Combines aspects of both active and passive investing by allowing for periodic adjustments in asset allocation to capitalize on market conditions or economic events.",
-    image: "/images/tactical-asset-allocation.jpg",
+      "A specialized financial service aimed at optimizing foreign exchange transactions for individuals and businesses. FX currency solutions help mitigate currency risks, enhance international trade efficiency, and provide strategic guidance on foreign exchange markets to navigate volatility and maximize profitability.",
+    image: "/strategies-four.png",
   },
 ];

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
   return (
     <div
-      className="w-full text-center relative md:h-[70vh] h-[600px] bg-right-top bg-cover"
+      className="w-full text-center relative md:h-[80vh] h-[600px] bg-center bg-cover"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark Overlay */}
@@ -13,7 +13,7 @@ const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
       {/* Content */}
       <div className="absolute flex justify-center items-center flex-col top-0 left-0 w-full md:px-8 h-full text-white z-8">
         <motion.h1
-          className="text-7xl font-extrabold mb-6 font-quicksand"
+          className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 font-quicksand"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -22,7 +22,7 @@ const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
         </motion.h1>
 
         <motion.p
-          className="leading-relaxed text-base md:text-xl max-w-7xl italic font-inter"
+          className="leading-relaxed text-sm sm:text-base md:text-xl px-4 md:max-w-3xl italic font-inter"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}

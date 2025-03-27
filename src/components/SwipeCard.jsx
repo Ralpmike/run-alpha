@@ -57,14 +57,5 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
   )
 }
 
-SwipeCard.propTypes = {
-  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  cards: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    })
-  ).isRequired,
-  setCards: PropTypes.func.isRequired,
-}
 
 export default SwipeCard

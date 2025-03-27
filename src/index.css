@@ -36,12 +36,64 @@ font-family: 'Orbitron', sans-serif;
   --font-playfair: "Playfair Display", serif;
   --font-quicksand: "Quicksand", sans-serif;
   --font-dm-serif: "DM Serif Text", serif;
-  --color-primary: #212121;
+  --color-yellow: #e9cf87
   --color-navcolor: #7D7D7D;
   --color-secondary: #6CB4B8;
+  --color-alpha: #01386e
 }
 
 /* *{
   font-family: "Inter", sans-serif;
+  darker shade of blue: #0a2239
 } */
+*:hover{
+  cursor: none
+}
 
+body{
+  cursor: none
+}
+
+/* Fade-in animation when the component enters the viewport */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceScale {
+  0% {
+    transform: scale(0.8) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateY(-20px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Card hover effect */
+.card:hover {
+  /* transform: scale(1.05); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add animation classes */
+.fadeIn {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+
+/* Card hover effect */
+.statistics-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
