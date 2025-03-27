@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button className={` md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
-        <FaBars size={28} className="text-secondary" />
+        <FaBars size={40} className="text-alpha" />
       </button>
 
       {/* Mobile Nav Menu with Animation */}
@@ -121,7 +121,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               aria-label="Close Menu"
             >
-              <RxCross2 size={28} className="text-secondary" />
+              <RxCross2 size={40} className="text-alpha" />
             </button>
             
 
