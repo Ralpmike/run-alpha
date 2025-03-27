@@ -37,17 +37,17 @@ const CustomCursor = () => {
   }, []);
 
   return (
-      <div
-        className={`fixed z-50 pointer-events-none transition-transform duration-700 ease-out`}
-        style={{
-          width: isHovering ? "30px" : "20px",
-          height: isHovering ? "30px" : "20px",
-          left: `${position.x - (isHovering ? 25 : 12)}px`,
-          top: `${position.y - (isHovering ? 25 : 12)}px`,
-        }}
-      >
-        <div className="absolute w-full h-full rounded-full border-2 border-red-300 bg-transparent" />
-      </div>
+    <div
+      className={`fixed z-50 pointer-events-none transition-transform duration-700 ease-out`}
+      style={{
+        width: isHovering ? "30px" : "20px",
+        height: isHovering ? "30px" : "20px",
+        left: `${position.x - (isHovering ? 25 : 12)}px`,
+        top: `${position.y - (isHovering ? 25 : 12)}px`,
+      }}
+    >
+      <div className="absolute w-full h-full rounded-full border-2 border-gray-500 bg-transparent" />
+    </div>
   );
 };
 

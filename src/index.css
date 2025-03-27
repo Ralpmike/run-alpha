@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
 
 @import "tailwindcss";
 
@@ -36,10 +37,11 @@ font-family: 'Orbitron', sans-serif;
   --font-playfair: "Playfair Display", serif;
   --font-quicksand: "Quicksand", sans-serif;
   --font-dm-serif: "DM Serif Text", serif;
-  --color-yellow: #e9cf87
+  --font-roboto: "Roboto", sans-serif;
+  --color-primary: #212121;
   --color-navcolor: #7D7D7D;
   --color-secondary: #6CB4B8;
-  --color-alpha: #01386e
+  --color-alpha: #01386e;
 }
 
 /* *{
@@ -51,7 +53,9 @@ font-family: 'Orbitron', sans-serif;
 }
 
 body{
-  cursor: none
+  cursor: none;
+  overflow-x: hidden;
+
 }
 
 /* Fade-in animation when the component enters the viewport */
@@ -96,4 +100,29 @@ body{
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
+}
+/* 
+*{
+  border: solid red 2px
+} */
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.slider {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Control the speed with the duration (15s) */
+}
+
+/* Keyframes for the sliding effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

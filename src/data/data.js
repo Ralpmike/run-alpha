@@ -283,3 +283,52 @@ export const strategiesData = [
     image: "/strategies-four.png",
   },
 ];
+
+
+export const aboutSections = [
+  {
+    title: "WHO WE ARE",
+    text: `We are a forward-thinking hedge fund that leverages decades of experience in global financial markets, blending traditional investment strategies with cutting-edge quantitative models to create a unique approach to wealth management.
+
+    Our firm's philosophy revolves around utilizing advanced technology, including artificial intelligence (AI), alongside established investment principles to identify high-value opportunities and mitigate risk, ensuring that our clients experience exceptional returns while maintaining peace of mind in an unpredictable market.`,
+    buttonText: "READ MORE",
+    imageUrl: "/office.jpg",
+  },
+  {
+    title: "A Legacy of Expertise",
+    text: `Our journey began many years ago when a group of seasoned professionals in the investment world realized that the traditional ways of asset management were no longer sufficient to tackle the growing complexity of global financial markets. With decades of collective experience in hedge funds, investment banking, and global asset management, our team had a deep understanding of market dynamics and recognized the opportunities that advanced quantitative strategies could offer.
+
+    Our team, composed of financial professionals, data scientists, and experienced quantitative analysts, understands that the financial markets are constantly evolving. In this dynamic environment, it is crucial for investors to adopt innovative approaches and strategies that not only keep pace with the changing landscape but also position them for sustainable, long-term success.`,
+    buttonText: "OUR TEAM",
+    imageUrl: "/people-office-work-day.jpg",
+  },
+  {
+    title: "Quantitative Strategies",
+    text: `One of the key pillars of our investment strategy is the use of quantitative methods. These strategies allow us to manage investments with a level of precision that traditional methods simply cannot achieve. By applying mathematical models and algorithms to vast datasets, we are able to identify trends and patterns that may not be immediately apparent to the human eye. This ability to process and analyze large sets of information quickly and accurately allows us to make informed, data-driven decisions in real-time.
+
+    In addition to machine learning models that help us predict price movements, our team also uses sophisticated risk models to measure and manage potential losses. These tools allow us to assess the risk-reward profile of each investment opportunity and make adjustments as necessary. Whether it's through automated trading algorithms that execute trades based on pre-determined criteria or utilizing AI to forecast economic shifts, our goal is always the same: to maximize returns while managing risk.`,
+    buttonText: "STRATEGIES",
+    imageUrl: "/business.jpg",
+  },
+  {
+    title: "A Disciplined Approach to Risk Management",
+text: `Risk management is an integral part of any investment strategy, and we place a strong emphasis on safeguarding our clients' capital. While achieving high returns is important, we believe that managing risk is just as crucial in the pursuit of long-term growth. Our risk management framework is designed to protect against extreme market events and prevent significant losses during periods of high volatility.
+
+    Our approach includes diversification, dynamic hedging, and sophisticated risk modeling to ensure that we can adjust our positions based on changes in market conditions. Additionally, our AI models are equipped with risk mitigation protocols that can automatically adjust portfolios to limit exposure to certain sectors or regions when needed. This combination of human expertise and machine-driven insights allows us to create a robust risk management system that offers our clients confidence, even in times of uncertainty.
+
+    We also believe in a conservative approach to leverage. While some hedge funds take on significant amounts of leverage to amplify their returns, we believe that using leverage prudently is the key to maintaining long-term stability. By focusing on strategic investments that offer strong risk-adjusted returns, we aim to maximize growth while minimizing unnecessary exposure to potential downside risks.`,    buttonText: "LEARN MORE",
+    imageUrl: "/unsplash.jpg",
+  },
+];
+
+
+
+export const logos = [
+  "/strategies/growth.jpg",
+  "/strategies/valueinvestment.jpg",
+  "/strategies/splash.jpg",
+  "/strategies/spooky.jpg",
+  "/strategies/strategy-one.jpg",
+  "/strategies/redd-francisco.jpg",
+  "/strategies/incomeinvestment.jpg",
+];

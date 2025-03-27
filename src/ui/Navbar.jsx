@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";// Updated import for react-router-dom
 import { navLinksItems } from "../data/data";
-import { FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import classNames from "classnames";
 import { motion, AnimatePresence, } from "framer-motion";
@@ -136,7 +136,7 @@ const Navbar = () => {
               >
                 {link.name === "Contact Us" ? (
                   <NavLink to="/contact">
-                    <Button title="Contact Us" type="button" />
+                    <Button title="Contact Us" type="button" size="small" />
                   </NavLink>
                 ) : <NavLink
                   key={link.name}

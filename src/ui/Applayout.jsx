@@ -4,9 +4,10 @@ import Footer from "../components/Footer"
 import CustomCursor from "./CustomCursor"
 import Jump from "./Jump"
 
+
 function Applayout() {
   return (
-    <div className="mx-auto w-full grid grid-cols-[auto] grid-rows-[auto,1fr]">
+    <div className="mx-auto grid grid-cols-[auto] grid-rows-[auto,1fr,auto,auto] max-w-screen overflow-hidden">
       <div className="hidden lg:flex">
         <CustomCursor />
 
@@ -16,7 +17,10 @@ function Applayout() {
         <Outlet />
       </main>
       <Jump />
+  
+        
       <Footer />
+
     </div>
   )
 }
