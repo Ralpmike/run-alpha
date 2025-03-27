@@ -78,19 +78,27 @@ function Team() {
         />
       </motion.div>
 
-      <div className="mb-16">
-        <div className="grid grid-cols-1 xl:grid-cols-2">
-          <div className="text-center bg-secondary text-white md:px-32 px-6 md:py-16 py-6">
+      <div className="mb-16 ">
+        <div className="grid grid-cols-1 xl:grid-cols-2 ">
+          <motion.div 
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center bg-alpha text-white md:px-32 text-center px-6 md:py-16 py-6">
             <h2 className="text-3xl mb-8 font-playfair uppercase font-extrabold row-start-2">
               WHAT WE DO
             </h2>
-            <p className="tracking-[2] text-base lg:text-lg leading-relaxed font-lora">
-              At Run Alpha, we strive to offer a comprehensive and transparent investment experience that aligns with our clients&apos; financial goals and risk tolerance. We believe that by providing a safe, transparent, and accessible platform, we can help clients make informed decisions while also fostering a culture of continuous learning and growth. Our mission is to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth.
+            <p className="tracking-[2] text-base lg:text-xl leading-relaxed font-lora">
+              We specialize in developing innovative and sustainable solutions that help our clients achieve their goals. Our team of experts combines expertise in various fields, such as engineering, environmental science, and business management. We continuously strive to improve our processes, technology, and communication to ensure that our clients receive the best possible results.
             </p>
-          </div>
-          <div className="">
+          </motion.div>
+          <motion.div 
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="">
             <img src="/team/thisisengineering-1dwyU46p7eE-unsplash.jpg" alt="" />
-          </div>
+          </motion.div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4">
           {[
@@ -104,9 +112,9 @@ function Team() {
             src={src}
             alt={`Gallery ${index}`}
             className="object-cover w-full h-full"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.2 }}
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.4 }}
           />
         ))}
         </div>
@@ -121,13 +129,13 @@ function Team() {
         </p>
       </div>
 
-      <div className="flex flex-col items-center min-h-screen bg-gray-100 py-12 w-full">
+      <div className="flex flex-col items-center min-h-screen bg-amber-300 py-12 w-full">
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-3xl font-playfair uppercase font-extrabold text-center  text-secondary">MEET THE TEAM</motion.p>
-        <div className="grid min-h-[70vh] place-items-center pr-20 xl:pr-72">
+          className="text-4xl font-playfair uppercase font-extrabold text-center  text-white">MEET THE TEAM</motion.p>
+        <div className="grid min-h-[55vh] place-items-center pr-20 xl:pr-72">
           {teamMembers.slice(0, 5).map((card) => (
             <SwipeCard
               key={card.id}

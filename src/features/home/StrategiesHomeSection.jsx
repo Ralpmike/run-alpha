@@ -5,20 +5,24 @@ import { motion } from "framer-motion";
 const StrategiesHomeSection = () => {
   return (
     <section className="text-center bg-alpha pt-32">
-      <h2 className="mb-12 text-3xl capitalize w-[480px] mx-auto font-semibold py-2 font-quicksand text-[#ffca28]">Offerings</h2>
+      <h2 className="mb-12 text-3xl capitalize w-[480px] mx-auto font-semibold py-2 font-quicksand text-[#ffca28]">Our Offerings</h2>
       {/* <p className="text-gray-600 py-3 md:tracking-wider md:text-xl md:leading-loose">
         Strategic Investing, Powered by Data and Driven by Experience.
       </p> */}
 
      <div className="flex flex-col">
   {strategies.map((strategy, index) => (
-    <Link
+    <Link>
+    <motion.div
       to={`about/${strategy.title}`}
       key={index}
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 1 }}
+      transition={{ duration: 0.6, ease: "easeInOut", delay: index * 0.4 }}
       className="relative h-[350px] border-b border-gray-600 group hover:h-[450px] ease-in-out duration-300"
     >
       {/* Image */}
-        <div className="absolute top-0 left-0 w-full h-full bg-alpha opacity-90 z-5 group-hover:opacity-60 transition-opacity duration-300" />    
+        <div className="absolute top-0 left-0 w-full h-full bg-alpha opacity-80 z-5 group-hover:opacity-60 transition-opacity duration-300" />    
           <img
           src={strategy.image}
           alt={strategy.title}
@@ -35,7 +39,8 @@ const StrategiesHomeSection = () => {
           </h3>
         </div>
       </div>
-    </Link>
+    </motion.div>
+  </Link>
   ))}
 </div>
 

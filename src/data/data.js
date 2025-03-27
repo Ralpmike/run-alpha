@@ -251,7 +251,7 @@ export const heroSectionData = {
     title: "MEET OUR TEAM",
     backgroundImage: "/strategies/splash.jpg",
     description:
-      "At Run Alpha, our strategies are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities. Our approach focuses on risk management, diversification, and long-term sustainability, ensuring that our clients achieve consistent growth while minimizing uncertainties in the market.",
+      "Our team is comprised of seasoned professionals with diverse backgrounds and expertise. We are dedicated to providing innovative solutions that drive success for our clients. Our collaborative approach ensures that we deliver tailored strategies that meet the unique needs of each client. Together, we are committed to creating value and fostering growth in the investment landscape.",
   },
 };
 

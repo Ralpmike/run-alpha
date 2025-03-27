@@ -42,14 +42,14 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
       drag="x"
       onDragEnd={handleDragEnd}
     >
-      <div className="bg-white w-[400px] xl:w-[550px] shadow-md rounded-xl p-6 flex flex-col items-center text-center space-y-8 cursor-pointer hover:bg-secondary hover:text-white ease-in-out duration-300">
+      <div className="bg-white w-[400px] xl:w-[550px] shadow-md rounded-xl p-6 flex flex-col items-center text-center space-y-8 cursor-pointer group hover:bg-alpha hover:text-white ease-in-out duration-300">
         <img src={image} alt={name} className="rounded-full object-cover" />
-        <blockquote className="text-gray-600 lg:text-xl italic font-inter">
+        <blockquote className="text-gray-600 lg:text-xl italic font-inter group-hover:text-white">
           &apos;{quote}
         </blockquote>
         <div>
           <h2 className="text-lg font-semibold">{name}</h2>
-          <p className="text-gray-500">{title}</p>
+          <p className=" ">{title}</p>
         </div>
         <span className="text-gray-400 text-xl">›</span>
       </div>
