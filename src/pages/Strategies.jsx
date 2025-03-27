@@ -8,7 +8,6 @@ function Strategies() {
       <HeroSectionCard data={heroSectionData.strategies} />
       <div className="w-full">
         {strategiesData.map((strategy, index) => (
-          <div key={index} className={`w-full  ${(index + 1) % 2 === 0 ? "bg-gray-100" : ""} py-6 sm:py-12`}>
             <StrategyAnimatedCard
               key={index}
               title={strategy.title}
@@ -17,7 +16,7 @@ function Strategies() {
               reverse={index % 2 == 0}
               index={index} // Alternates layout direction
             />
-          </div>
+        
         ))}
 
       </div>
