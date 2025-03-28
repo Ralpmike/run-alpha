@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export const navLinksItems = [
   { name: "Home", href: "/home", id: 1 },
   { name: "About Us", href: "/aboutus", id: 2 },
-  { name: "Strategies", href: "/strategies", id: 3 },
+  { name: "Business Offerings", href: "/offerings", id: 3 },
   { name: "Team", href: "/team", id: 4 },
   { name: "Contact Us", href: "/getintouch", id: 5 },
   // { name: "", href: "/getintouch" },
@@ -17,24 +17,24 @@ export const socials = [
     name: "LinkedIn",
     icon: FaLinkedin,
   },
-  {
-    id: 2,
-    href: "",
-    name: "X(Twitter)",
-    icon: FaSquareXTwitter,
-  },
-  {
-    id: 3,
-    href: "",
-    name: "Facebook",
-    icon: FaFacebook,
-  },
-  {
-    id: 4,
-    href: "",
-    name: "Instagram",
-    icon: FaInstagram,
-  },
+  // {
+  //   id: 2,
+  //   href: "",
+  //   name: "X(Twitter)",
+  //   icon: FaSquareXTwitter,
+  // },
+  // {
+  //   id: 3,
+  //   href: "",
+  //   name: "Facebook",
+  //   icon: FaFacebook,
+  // },
+  // {
+  //   id: 4,
+  //   href: "",
+  //   name: "Instagram",
+  //   icon: FaInstagram,
+  // },
 ];
 
 const teamMembers = [

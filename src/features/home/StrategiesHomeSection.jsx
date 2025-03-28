@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const StrategiesHomeSection = () => {
   return (
     <section className="text-center bg-alpha pt-32 max-w-screen">
-      <h2 className="mb-12 text-3xl capitalize  mx-auto font-semibold py-2 font-quicksand text-[#ffca28]">Our Offerings</h2>
+      <h2 className="mb-12 text-3xl capitalize  mx-auto font-semibold py-2 font-quicksand text-white">Business Offerings</h2>
       {/* <p className="text-gray-600 py-3 md:tracking-wider md:text-xl md:leading-loose">
         Strategic Investing, Powered by Data and Driven by Experience.
       </p> */}
@@ -28,7 +28,7 @@ const StrategiesHomeSection = () => {
       className="relative h-[350px] border-b border-gray-600 group hover:h-[450px] ease-in-out duration-300"
     >
       {/* Image */}
-        <div className="absolute top-0 left-0 w-full h-full bg-alpha opacity-80 z-5 group-hover:opacity-60 transition-opacity duration-300" />    
+        <div className="absolute top-0 left-0 w-full h-full bg-alpha/30 backdrop-blur-xs  z-5 group-hover:opacity-0 transition-opacity duration-300" />    
           <img
           src={strategy.image}
           alt={strategy.title}

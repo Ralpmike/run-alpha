@@ -41,8 +41,8 @@ function Team() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="md:text-3xl text-2xl mb-8 font-playfair uppercase font-extrabold text-">JOIN US</h2>
-          <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-lora">
+          <h2 className="md:text-3xl text-2xl mb-8 font-quicksand uppercase font-extrabold text-">JOIN US</h2>
+          <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand">
             We develop systematic investment models based on scientific methods, rigorous research and analysis that rely on advanced technology. In order to achieve success, we rely on our most important asset: the collaborative effort, resourcefulness and talent of our employees. Our continued success is truly determined by our ability to attract and retain exceptional talent. We are always on the lookout for team-oriented individuals with a capacity to apply creative and scientific thinking to solve challenging problems. Perhaps you can join us?
           </p>
         </motion.div>
@@ -60,10 +60,10 @@ function Team() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="md:text-3xl text-xl mb-8 font-playfair uppercase font-extrabold row-start-2">
+          <h2 className="md:text-3xl text-xl mb-8 font-quicksand uppercase font-extrabold row-start-2">
             WORKPLACE & CULTURE
           </h2>
-          <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-lora">
+          <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand">
             We believe that a successful and productive team is one where everyone feels valued and respected. Our culture values open communication, collaboration, and a growth mindset. We also strive to create a work environment that fosters a sense of belonging and purpose. Our focus is on providing a supportive and inclusive environment where employees feel comfortable expressing their thoughts, ideas, and concerns. As a team-oriented company, we believe that every member contributes to the success of our organization. We encourage collaboration, empathy, and a shared goal to create a harmonious and fulfilling work environment.
           </p>
         </motion.div>
@@ -85,10 +85,10 @@ function Team() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col md:items-center justify-center bg-alpha text-white md:px-32 md:text-center px-6 md:py-16 py-6">
-            <h2 className="text-2xl md:text-3xl  mb-8 font-playfair uppercase font-extrabold row-start-2">
+            <h2 className="text-2xl md:text-3xl  mb-8 font-quicksand uppercase font-extrabold row-start-2">
               WHAT WE DO
             </h2>
-            <p className="tracking-[2] max-w-sm text-sm lg:text-xl leading-relaxed font-lora">
+            <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand">
               We specialize in developing innovative and sustainable solutions that help our clients achieve their goals. Our team of experts combines expertise in various fields, such as engineering, environmental science, and business management. We continuously strive to improve our processes, technology, and communication to ensure that our clients receive the best possible results.
             </p>
           </motion.div>
@@ -121,10 +121,10 @@ function Team() {
       </div>
 
       <div className="my-28 px-6 md:text-center max-w-3xl md:mx-auto">
-        <h2 className="text-xl md:text-3xl mb-8 font-playfair uppercase font-extrabold">
+        <h2 className="text-xl md:text-3xl mb-8 font-quicksand uppercase font-extrabold">
           WHAT WE OFFER
         </h2>
-        <p className="tracking-[2] text-sm lg:text-[22px] max-w-sm md:max-w-4xl  md:mx-auto  leading-relaxed font-lora">
+        <p className="tracking-[2] text-sm lg:text-[22px] max-w-sm md:max-w-4xl  md:mx-auto  leading-relaxed font-quicksand">
           At Run Alpha, we strive to offer a comprehensive and transparent investment experience that aligns with our clients&apos; financial goals and risk tolerance. We believe that by providing a safe, transparent, and accessible platform, we can help clients make informed decisions while also fostering a culture of continuous learning and growth. Our mission is to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth.
         </p>
       </div>
@@ -134,7 +134,7 @@ function Team() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-xl md:text-4xl font-playfair uppercase font-extrabold text-alpha text-center mb-6">MEET THE TEAM</motion.p>
+          className="text-xl md:text-4xl font-quicksand uppercase font-extrabold text-alpha text-center mb-6">MEET THE TEAM</motion.p>
         <div className="grid min-h-[62vh] place-items-center pl-10 sm:pl-10 md:pl-0 md:pr-20 xl:pr-72">
           {teamMembers.slice(0, 4).map((card) => (
             <SwipeCard

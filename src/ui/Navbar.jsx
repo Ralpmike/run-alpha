@@ -77,23 +77,19 @@ const Navbar = () => {
             variants={linkVariants}
             custom={index}  // Pass the index to control stagger
           >
-            {link.name === "Contact Us" ? (
-              <NavLink to="/contact">
-                <Button title="Contact Us" type="button" />
-              </NavLink>
-            ) : <NavLink
+             <NavLink
               key={link.name}
               to={link.href}
               className={({ isActive }) =>
-                classNames(`font-lora hover:cursor-none hover:text-[#e9cf87] transition text-[1.14rem] ${scrolled ? isActive ? "text-[#e9cf87] font-bold" : "text-alpha" : ""}`, {
-                  "text-[#e9cf87] text-base font-bold": isActive,
+                classNames(`font-quicksand hover:cursor-none hover:text-secondary transition text-[1.14rem] ${scrolled ? isActive ? "text-secondary font-bold" : "text-alpha" : ""}`, {
+                  "text-secondary text-base font-bold": isActive,
                   "text-white": !isActive && !scrolled,
-                  "text-[#e9cf87]": scrolled,
+                  "text-alpha": scrolled,
                 })
               }
             >
               {link.name}
-            </NavLink>}
+            </NavLink>
           </motion.div>
         ))}
       </motion.div>

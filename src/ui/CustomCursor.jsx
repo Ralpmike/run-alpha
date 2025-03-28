@@ -46,7 +46,7 @@ const CustomCursor = () => {
         top: `${position.y - (isHovering ? 25 : 12)}px`,
       }}
     >
-      <div className="absolute w-full h-full rounded-full border-2 border-gray-500 bg-transparent" />
+      <div className="absolute w-full h-full rounded-full border-3 border-secondary bg-transparent" />
     </div>
   );
 };

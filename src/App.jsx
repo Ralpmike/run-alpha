@@ -18,7 +18,7 @@ function App() {
           <Route index element={<Navigate to="home" replace />} />
           <Route path="home" element={<Home />} />
           <Route path="aboutus" element={<AboutUs />} />
-          <Route path="strategies" element={<Strategies />} />
+          <Route path="offerings" element={<Strategies />} />
           <Route path="team" element={<Team />} />
           <Route path="contact" element={<GetInTouch />} />
           <Route path="*" element={<PageNotFound />} />

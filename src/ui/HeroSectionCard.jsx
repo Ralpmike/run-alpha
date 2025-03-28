@@ -22,7 +22,7 @@ const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
         </motion.h1>
 
         <motion.p
-          className="leading-relaxed text-sm sm:text-base md:text-xl px-4 md:max-w-3xl italic font-quicksand"
+          className="leading-relaxed text-sm sm:text-base md:text-xl px-4 md:max-w-3xl font-quicksand"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
