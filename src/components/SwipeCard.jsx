@@ -43,11 +43,11 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
       drag="x"
       onDragEnd={handleDragEnd}
     >
-      <div className="bg-alpha w-[400px] lg:w-[720px] lg:h-[670px] shadow-md rounded-xl p-12 flex flex-col items-center text-center space-y-8 cursor-pointer group hover:text-white text-white ease-in-out duration-300 border border-white">
+      <div className="bg-alpha w-[350px] md:w-[400px] lg:w-[720px] lg:h-[600px] shadow-md rounded-xl p-12 flex flex-col items-center text-center space-y-8 cursor-pointer group hover:text-white text-white ease-in-out duration-300 border border-white">
         <img src={image} alt={name} className="rounded-full h-30 w-30 object-cover" />
         <blockquote className="text-white lg:text-xl italic leading-7 font-inter group-hover:text-white">
           <FaQuoteLeft size={25} className="inline-block"/>
-          {quote}
+          {quote.slice(0,550)}...
           <FaQuoteRight size={25} className="inline-block" />
         </blockquote>
         <div>

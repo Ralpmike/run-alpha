@@ -5,12 +5,12 @@ import { FaNairaSign } from "react-icons/fa6"
 const StatisticsSection = () => {
   
   return (
-    <div className="md:h-[625px] flex flex-col md:flex-row justify-center lg:gap-48 gap-8 px-8 lg:p-32 py-28 items-center font-quicksand h-screen text-alpha bg-gray-100">
+    <div className="md:h-[625px] flex flex-col md:flex-row justify-center lg:gap-48 gap-8 px-8 lg:p-32 py-28 items-center font-quicksand h-screen text-alpha bg-gray-100 max-w-screen">
       <motion.div 
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-      className="space-y-4 text-center mt-12 md:mt-0 md:text-start">
+      className="space-y-4 text-center mt-24 md:mt-0 md:text-start">
         <p className="md:text-xl">Est. since</p>
         <h1 className="text-2xl md:text-6xl  font-bold">2021</h1>
         <p className="text-sm md:text-base max-w-xs">Founded in 2021, we have crafted winning investing strategies which have demonstrated resilience and adaptability across market cycles and attracted a diverse group of high-net-worth individuals.</p>
@@ -40,7 +40,7 @@ const StatisticsSection = () => {
           </h1>
           <p className="md:text-lg">Experienced team</p>
         </div>
-        <div className="text-center">
+        <div className="text-center mb-24 sm:mb-0">
          <h1 className="text-2xl md:text-4xl font-bold">
             <CountUp start={1} end={36} duration={2.5} />
           </h1>

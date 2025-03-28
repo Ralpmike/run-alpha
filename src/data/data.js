@@ -172,7 +172,7 @@ export const heroSectionData = {
   },
   teams: {
     title: "MEET OUR TEAM",
-    backgroundImage: "/strategies/splash.jpg",
+    backgroundImage: "/pexels-edmond-dantes-8553867.jpg",
     description:
       "Our team is comprised of seasoned professionals with diverse backgrounds and expertise. We are dedicated to providing innovative solutions that drive success for our clients.",
   },
@@ -242,7 +242,7 @@ export const aboutSections = [
     text: `At Run Alpha, our commitment to delivering consistent returns has led to a growing track record of success and increasing investor confidence. As our performance continues to strengthen, we have attracted a diverse group of high-net-worth individuals and institutional investors. By refining our portfolio strategies and leveraging data-driven insights, we have further optimized risk-adjusted performance, deepening trust among our investors and partners. Our dedication to excellence and innovation has positioned us as a trusted partner in the investment community, driving long-term growth and success for our clients.`,
     buttonText: "OUR STRATEGIES",
     // buttonText: "OUR TEAM",
-    imageUrl: "/pexels-mart-production-7550289.jpg",
+    imageUrl: "/two-african-businessman-sitting-outside-cafe.jpg",
   },
   {
     title: "Our Investment Philosophy",

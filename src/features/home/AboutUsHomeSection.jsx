@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function AboutUsHomeSection() {
   return (
-    <div className="lg:px-48 h-full md:h-full px-6 text-alpha bg-cover bg-center md:py-32 py-12 w-full md:mb-0 lg:mb-0">
+    <div className="lg:px-48 h-full md:h-full px-6 text-alpha bg-cover bg-center md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen">
      <div className="flex relative justify-between gap-6 lg:gap-0">
        <div className="flex flex-col items-start mb-16">
          <motion.h1
@@ -99,7 +99,7 @@ function AboutUsHomeSection() {
      </div>
 
       <Link to="/aboutus">
-          <Button title="Read More" type="button" className="md:text-[1rem] font-lora px-12" icon={<BsChevronRight />} />
+          <Button title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora`} icon={<BsChevronRight />} />
         </Link>
     </div>
   )

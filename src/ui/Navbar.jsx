@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-12 gap-4 md:gap-12 py-0 lg:px-36 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
+      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-12 gap-4 md:gap-12 py-0 lg:px-48 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button className={` md:hidden text-gray-600 ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
-        <FaBars size={40} className="text-alpha" />
+        <FaBars size={30} className={`${scrolled ? 'text-alpha' : 'text-white'}`} />
       </button>
 
       {/* Mobile Nav Menu with Animation */}
@@ -121,7 +121,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               aria-label="Close Menu"
             >
-              <RxCross2 size={40} className="text-alpha" />
+              <RxCross2 size={30} className={`${scrolled ? 'text-white' : 'text-alpha'}`} />
             </button>
             
 
@@ -133,18 +133,19 @@ const Navbar = () => {
                 custom={index}
                 initial="hidden"
                 animate="visible"
+                className="flex justify-center w-full"
               >
                 {link.name === "Contact Us" ? (
                   <NavLink to="/contact">
-                    <Button title="Contact Us" type="button" size="small" />
+                    <Button title="Contact Us" type="button" size="medium" />
                   </NavLink>
                 ) : <NavLink
                   key={link.name}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    classNames(`font-light hover:text-secondary transition text-[1.14rem]`, {
-                      "text-secondary font-normal hover:cursor-none": isActive,
+                    classNames(`font-light text-alpha transition text-[1.14rem]`, {
+                      "text-yellow font-lora hover:cursor-none": isActive,
                     })
                   }
                 >
