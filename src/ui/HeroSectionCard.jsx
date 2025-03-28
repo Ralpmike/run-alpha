@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
   return (
     <div
-      className="w-full text-center relative md:h-[80vh] h-[600px] bg-center bg-cover"
+      className="w-full text-center relative h- md:h-[80vh] h-[400px] bg-center bg-cover"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark Overlay */}
@@ -22,7 +22,7 @@ const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
         </motion.h1>
 
         <motion.p
-          className="leading-relaxed text-sm sm:text-base md:text-xl px-4 md:max-w-3xl italic font-inter"
+          className="leading-relaxed text-sm sm:text-base md:text-xl px-4 md:max-w-3xl italic font-quicksand"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}

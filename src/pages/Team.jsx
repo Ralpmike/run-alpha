@@ -18,7 +18,7 @@ function Team() {
       </motion.div>
 
       <motion.div
-        className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 px-12 md:px-32 py-12 place-items-center gap-16 my-24"
+        className="max-w-[1500px] mx-auto grid grid-cols-1 lg:grid-cols-2 px-12 md:px-32 py-12 place-items-center gap-16 my-24"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -49,7 +49,7 @@ function Team() {
       </motion.div>
 
       <motion.div
-        className="max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 px-12 md:px-32 py-12 place-items-center gap-16 my-24"
+        className="max-w-[1500px] mx-auto grid grid-cols-1 lg:grid-cols-2 px-12 md:px-32 py-12 place-items-center gap-16 my-24"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -97,14 +97,14 @@ function Team() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="">
-            <img src="/team/thisisengineering-1dwyU46p7eE-unsplash.jpg" alt="" />
+            <img src="/pexels-olly-3769021.jpg" alt="" />
           </motion.div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4">
           {[
           "/team/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg",
           "/team/helena-lopes-PGnqT0rXWLs-unsplash.jpg",
-          "/team/helena-lopes-e3OUQGT9bWU-unsplash.jpg",
+          "/pexels-edmond-dantes-8553867.jpg",
           "/team/chang-duong-Sj0iMtq_Z4w-unsplash.jpg",
         ].map((src, index) => (
           <motion.img
@@ -124,19 +124,19 @@ function Team() {
         <h2 className="text-3xl mb-8 font-playfair uppercase font-extrabold">
           WHAT WE OFFER
         </h2>
-        <p className="tracking-[2] text-base lg:text-[22px] leading-relaxed font-lora">
+        <p className="tracking-[2] text-base lg:text-[22px] max-w-xl md:max-w-4xl mx-auto leading-relaxed font-lora">
           At Run Alpha, we strive to offer a comprehensive and transparent investment experience that aligns with our clients&apos; financial goals and risk tolerance. We believe that by providing a safe, transparent, and accessible platform, we can help clients make informed decisions while also fostering a culture of continuous learning and growth. Our mission is to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth.
         </p>
       </div>
 
-      <div className="flex flex-col items-center min-h-screen bg-amber-300 py-12 w-full">
+      <div className="flex flex-col items-center min-h-screen bg-gray-300 py-12 w-full">
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl font-playfair uppercase font-extrabold text-center  text-white">MEET THE TEAM</motion.p>
-        <div className="grid min-h-[55vh] place-items-center pr-20 xl:pr-72">
-          {teamMembers.slice(0, 5).map((card) => (
+          className="text-4xl font-playfair uppercase font-extrabold text-center text-alpha">MEET THE TEAM</motion.p>
+        <div className="grid min-h-[59vh] place-items-center pr-20 xl:pr-72">
+          {teamMembers.slice(0, 4).map((card) => (
             <SwipeCard
               key={card.id}
               id={card.id}

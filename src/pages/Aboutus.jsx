@@ -15,7 +15,7 @@ const AboutUs = () => {
         <HeroSectionCard data={heroSectionData.about} />
       </motion.div>
 
-      <div className="2xl:px-56 lg:px-36 px-6 md:py-12 font-roboto">
+      <div className=" font-lora">
         {aboutSections.map((section, index) => (
           <AboutCard key={index} {...section} reverse={index % 2 !== 0} />
         ))}

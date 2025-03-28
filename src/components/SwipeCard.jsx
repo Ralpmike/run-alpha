@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useTransform } from "framer-motion"
 import PropTypes from "prop-types"
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6"
 
 const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
   const x = useMotionValue(0)
@@ -26,7 +27,7 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
 
   return (
     <motion.div
-      className="h-96 w-72 rounded-lg origin-bottom object-cover hover:cursor-grab active:cursor-grabbing"
+      className="h-105 w-150 xl:w-96 mx-auto rounded-lg origin-bottom object-cover hover:cursor-grab active:cursor-grabbing"
       style={{
         gridRow: 1,
         gridColumn: 1,
@@ -42,16 +43,17 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
       drag="x"
       onDragEnd={handleDragEnd}
     >
-      <div className="bg-white w-[400px] xl:w-[550px] shadow-md rounded-xl p-6 flex flex-col items-center text-center space-y-8 cursor-pointer group hover:bg-alpha hover:text-white ease-in-out duration-300">
-        <img src={image} alt={name} className="rounded-full object-cover" />
-        <blockquote className="text-gray-600 lg:text-xl italic font-inter group-hover:text-white">
-          &apos;{quote}
+      <div className="bg-alpha w-[400px] lg:w-[720px] lg:h-[670px] shadow-md rounded-xl p-12 flex flex-col items-center text-center space-y-8 cursor-pointer group hover:text-white text-white ease-in-out duration-300 border border-white">
+        <img src={image} alt={name} className="rounded-full h-30 w-30 object-cover" />
+        <blockquote className="text-white lg:text-xl italic leading-7 font-inter group-hover:text-white">
+          <FaQuoteLeft size={25} className="inline-block"/>
+          {quote}
+          <FaQuoteRight size={25} className="inline-block" />
         </blockquote>
         <div>
           <h2 className="text-lg font-semibold">{name}</h2>
-          <p className=" ">{title}</p>
+          <p className="mb-8">{title}</p>
         </div>
-        <span className="text-gray-400 text-xl">›</span>
       </div>
     </motion.div>
   )
