@@ -24,25 +24,25 @@ const StatisticsSection = () => {
         <div className="text-center">
           <h1 className="text-2xl flex justify-center md:text-4xl font-bold">
             <FaNairaSign />
-            <CountUp start={0} end={1.50} duration={2.5} decimals={2} />bn
+            <CountUp start={0} end={1.50} duration={9.5} decimals={2} />bn
           </h1>
           <p className="md:text-lg">Assets under Management</p>
         </div>
         <div className="text-center">
          <h1 className="text-2xl md:text-4xl font-bold">
-            <CountUp start={1} end={95} duration={2.5} />%
+            <CountUp start={1} end={95} duration={9.5} />%
           </h1>
           <p className="md:text-lg">Client Retention Rate</p>
         </div>
         <div className="text-center">
          <h1 className="text-2xl md:text-4xl font-bold">
-            <CountUp start={1} end={6} duration={2.5} />
+            <CountUp start={1} end={6} duration={9.5} />
           </h1>
           <p className="md:text-lg">Experienced team</p>
         </div>
         <div className="text-center mb-24 sm:mb-0">
          <h1 className="text-2xl md:text-4xl font-bold">
-            <CountUp start={1} end={36} duration={2.5} />
+            <CountUp start={1} end={36} duration={9.5} />
           </h1>
            <p className="md:text-lg">Years cumulative experience </p>
         </div>

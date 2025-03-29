@@ -58,7 +58,15 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="flex items-center">
-        <Logo src={scrolled ? '/logos/RUN ALPHA Logo - Black with White Background - 5000x5000.png' : "/logos/white-logo.png" } />
+        <img 
+          src="/logos/run-logo.png" 
+          className={`${!scrolled && 'mt-8' } text-black w-33`} 
+          alt="" 
+          style={{
+              filter: `${scrolled ?  'invert(100%) grayscale(100%)' : ''}`
+          }}
+        />
+
       </div>
 
       {/* Desktop Navigation */}

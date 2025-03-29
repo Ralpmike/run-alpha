@@ -6,7 +6,7 @@ function Logo({className, src="/logos/white-logo.png"}) {
   return (
     <div>
       <NavLink to="/home" >
-      <img src={src} alt="Logo" className={classNames("w-28", className)} />
+      <img src={src} alt="Logo" className={classNames("w-28 h-28", className)} />
     </NavLink></div>
   )
 }

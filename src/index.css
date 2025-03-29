@@ -56,8 +56,9 @@ font-family: 'Orbitron', sans-serif;
 body{
   cursor: none;
   overflow-x: hidden;
-
 }
+
+
 
 /* Fade-in animation when the component enters the viewport */
 @keyframes fadeIn {

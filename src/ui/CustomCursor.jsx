@@ -40,8 +40,8 @@ const CustomCursor = () => {
     <div
       className={`fixed z-50 pointer-events-none transition-transform duration-700 ease-out`}
       style={{
-        width: isHovering ? "30px" : "20px",
-        height: isHovering ? "30px" : "20px",
+        width: isHovering ? "40px" : "30px",
+        height: isHovering ? "40px" : "30px",
         left: `${position.x - (isHovering ? 25 : 12)}px`,
         top: `${position.y - (isHovering ? 25 : 12)}px`,
       }}
