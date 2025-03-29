@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 const StrategyAnimatedCard = ({ title, description, image, index }) => {
   return (
     <div
-      className={`flex  flex-col overflow-hidden w-full mx-auto  sm:flex-row relative  gap-6 sm:gap-12 items-center h-fit md:h-[700px]
+      className={`flex  flex-col overflow-hidden w-full mx-auto  sm:flex-row relative py-12 md:py-0  gap-6 sm:gap-12 items-center h-auto md:h-[700px]
       `}
     >
       <motion.img
-        className="flex flex-col absolute top-0 right-0 -z-2"
+        className="flex flex-col absolute top-0 right-0 -z-2 object-cover w-full h-full"
         src={image}
         alt={title}
       />
@@ -17,7 +17,7 @@ const StrategyAnimatedCard = ({ title, description, image, index }) => {
 
       <div className="flex h-full w-full px-6 lg:px-36 py-6 sm:py-12 items-center justify-content-center rounded-md">
 
-        <div className={`flex flex-col max-w-7xl z-30 text-white gap-3 sm:gap-6 ${(index + 1) % 2 === 0 ? "ml-auto" : "mr-auto"} mx-0  md:p-8`}>
+        <div className={`flex flex-col max-w-5xl text-white gap-3 md:backdrop-blur-3xl sm:gap-6 ${(index + 1) % 2 === 0 ? "ml-auto" : "mr-auto"} mx-0  md:p-8`}>
           <motion.h2
             className={`text-2xl sm:text-3xl md:text-5xl font-semibold font-lora underline decoration-alpha mb-8 underline-offset-8`}
             initial={{ opacity: 0, x: -50 }}

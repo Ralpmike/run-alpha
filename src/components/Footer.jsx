@@ -14,7 +14,7 @@ function Footer() {
         <div className="w-full text-white flex flex-col md:flex-row justify-between gap-8 mx-auto font-normal ">
 
          <div className="flex flex-col items">
-           <Logo className={"min-w-25 h-32 w-31 grow "} src="/logos/white-logo.png" />
+           <Logo className={"min-w-25  grow "} src="/logos/white-logo.png" />
            <p className="text-white text-sm">Driven by Alpha. Powered by Data</p>
          </div>
 

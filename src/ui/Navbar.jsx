@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-12 gap-4 md:gap-12 py-0 lg:px-48 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
+      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-8 gap-4 md:gap-12 py-0 lg:px-36 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -131,17 +131,14 @@ const Navbar = () => {
                 animate="visible"
                 className="flex justify-center w-full"
               >
-                {link.name === "Contact Us" ? (
-                  <NavLink to="/contact">
-                    <Button title="Contact Us" type="button" size="medium" />
-                  </NavLink>
-                ) : <NavLink
+                
+                {<NavLink
                   key={link.name}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
                     classNames(`font-light text-alpha transition text-[1.14rem]`, {
-                      "text-yellow font-lora hover:cursor-none": isActive,
+                      "text-secondary font-lora hover:cursor-none": isActive,
                     })
                   }
                 >
