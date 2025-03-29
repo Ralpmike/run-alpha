@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const HeroSectionCard = ({ data: { backgroundImage, description, title } }) => {
   return (
     <div
-      className="w-full text-center relative h- md:h-[80vh] h-[400px] bg-center bg-cover"
+      className="w-full text-center relative md:h-[50vh] lg:h-[80vh] h-[400px] bg-center bg-cover"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark Overlay */}

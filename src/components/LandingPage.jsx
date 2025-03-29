@@ -29,13 +29,15 @@ export default function LandingPage() {
 </div>
       <div className="flex flex-col items-start justify-center lg:px-48 h-full z-20 text-white gap-6">
         <div className="space-y-3 px-8 pt-48">
-          <motion.h1 className="text-[1.8rem] md:text-5xl lg:text-7xl md:max-w-[1300px] leading-[1.2] max-w-sm w-[600px] font-quicksand font-bold"
+          <motion.h1 className="text-[1.8rem] md:text-5xl inline lg:text-7xl md:max-w-[1300px] leading-[1.2] max-w-sm w-[600px] font-quicksand font-bold"
             initial={{ y: '50%', opacity: 0 }}
             animate={{ y: '0', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
           >
-           <span className="">Ru</span>n Alpha. 
-            Driven by Alpha
+            Run Alpha. 
+            <span className="block">
+              Driven by Alpha
+              </span>
           </motion.h1>
 
           <motion.p
