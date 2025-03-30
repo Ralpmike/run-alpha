@@ -41,7 +41,7 @@ function Team() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="md:text-3xl text-2xl mb-8 font-quicksand uppercase font-extrabold text-">JOIN US</h2>
+          <h2 className="md:text-3xl text-2xl mb-4 font-quicksand uppercase font-extrabold text-">JOIN US</h2>
           <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand">
             We develop systematic investment models based on scientific methods, rigorous research and analysis that rely on advanced technology. In order to achieve success, we rely on our most important asset: the collaborative effort, resourcefulness and talent of our employees. Our continued success is truly determined by our ability to attract and retain exceptional talent. We are always on the lookout for team-oriented individuals with a capacity to apply creative and scientific thinking to solve challenging problems. Perhaps you can join us?
           </p>
@@ -49,7 +49,7 @@ function Team() {
       </motion.div>
 
       <motion.div
-        className="md:max-w-[1500px] max-w-lg w-full md:mx-auto  grid grid-cols-1 lg:grid-cols-2 px-8 md:px-32 py-12 place-items-center gap-16 my-24"
+        className="md:max-w-[1500px] max-w-lg w-full md:mx-auto grid grid-cols-1 lg:grid-cols-2 px-8 md:px-32 py-4 place-items-center gap-4 my-12"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

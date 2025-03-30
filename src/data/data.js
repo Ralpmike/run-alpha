@@ -6,7 +6,7 @@ export const navLinksItems = [
   { name: "About Us", href: "/aboutus", id: 2 },
   { name: "Business Offerings", href: "/offerings", id: 3 },
   { name: "Team", href: "/team", id: 4 },
-  { name: "Contact Us", href: "/getintouch", id: 5 },
+  { name: "Contact Us", href: "/contact", id: 5 },
   // { name: "", href: "/getintouch" },
 ];
 
@@ -176,6 +176,11 @@ export const heroSectionData = {
     description:
       "Our team is comprised of seasoned professionals with diverse backgrounds and expertise. We are dedicated to providing innovative solutions that drive success for our clients.",
   },
+  contact: {
+    title: "Contact Us",
+    backgroundImage: "/pexels-mart-production-7709242.jpg",
+    description: "Contact"
+  }
 };
 
 export const strategiesData = [

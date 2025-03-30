@@ -60,7 +60,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <img 
           src="/logos/run-logo.png" 
-          className={`${!scrolled && 'mt-8' } text-black w-25`} 
+          className={`${!scrolled && '' } text-black w-25`} 
           alt="" 
           style={{
               filter: `${scrolled ?  'invert(100%) grayscale(100%)' : ''}`

@@ -5,7 +5,7 @@ import { fadeInLeft, fadeInRight } from "../../utilities/animations";
 
 // eslint-disable-next-line react/prop-types
 const AboutCard = ({ title, text, buttonText, imageUrl, reverse }) => (
-  <div className={`flex ${reverse ? "flex-row-reverse bg-gray-200" : ""} items-center flex-wrap lg:flex-nowrap gap-8 mb-16 2xl:px-56 lg:px-36 px-6 md:py-12`}>
+  <div className={`flex ${reverse ? "flex-row-reverse bg-gray-200" : ""} items-center flex-wrap lg:flex-nowrap gap-8 mb-16 2xl:px-40 lg:px-36 px-6 md:py-12`}>
     <motion.div
       initial="hidden"
       whileInView="visible"
