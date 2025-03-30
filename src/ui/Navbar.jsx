@@ -54,13 +54,13 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-8 gap-4 md:gap-12 py-0 lg:px-36 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
+      className={`fixed z-49 w-full left-0 hover:cursor-none top-0 right-0 h-20 flex justify-between ease-in-out duration-500 items-center px-6 sm:px-8 gap-4 md:gap-12 py-0 lg:px-28 xl:px-36 ${scrolled ? "bg-white shadow-md ease-in-out duration-500 py-14" : "bg-transparent"}`}
     >
       {/* Logo */}
       <div className="flex items-center">
         <img 
           src="/logos/run-logo.png" 
-          className={`${!scrolled && 'mt-8' } text-black w-33`} 
+          className={`${!scrolled && 'mt-8' } text-black w-25`} 
           alt="" 
           style={{
               filter: `${scrolled ?  'invert(100%) grayscale(100%)' : ''}`

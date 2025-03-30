@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const StrategiesHomeSection = () => {
   return (
     <section className="text-center bg-alpha pt-32 max-w-screen">
-      <h2 className="mb-12 text-3xl md:text-4xl capitalize  mx-auto font-semibold py-2 font-quicksand text-white">Business Offerings</h2>
+      <h2 className="mb-12 text-3xl md:text-4xl xl:text-5xl capitalize  mx-auto font-semibold py-2 font-lora text-white">Business Offerings</h2>
       {/* <p className="text-gray-600 py-3 md:tracking-wider md:text-xl md:leading-loose">
         Strategic Investing, Powered by Data and Driven by Experience.
       </p> */}
