@@ -216,21 +216,21 @@ export const strategiesData = [
   {
     id: "hedge-fund",
     title: "Hedge Fund",
-    description: `At Run Alpha, we provide strategic foreign exchange (FX) solutions to help clients manage currency exposure, optimize international transactions, and hedge against market volatility. Whether you are an investor, business owner, or family office managing global wealth, our FX services are designed to enhance financial efficiency and mitigate currency risks.
-    Our FX Currency Solutions include:
-    Currency Risk Management – we offer:
-    Hedging strategies to protect against currency depreciation and volatility
-    Forward contracts and options to lock in favourbale exchange rates
-    Customized FX risk assessments tailored to individual financial goals
-    Global Payments and Transactions – we facilitate seamless international payments for clients with cross-border financial commitments including liquidity management, fast and secure executin of FX transactions, efficient multi-currency transfers with competitive exchange rates.
+    description: ` Just include a disclaimer that the offering cannot be accessed. Contact us for more information.,
+
 `,
     image: "/pexels-rickyrecap-2295433.jpg",
   },
   {
     id: "fx-currency-solution",
     title: "FX Currency Solution",
-    description:
-      "Just include a disclaimer that the offering cannot be accessed. Contact us for more information.",
+    description:`At Run Alpha, we provide strategic foreign exchange (FX) solutions to help clients manage currency exposure, optimize international transactions, and hedge against market volatility. Whether you are an investor, business owner, or family office managing global wealth, our FX services are designed to enhance financial efficiency and mitigate currency risks.
+    Our FX Currency Solutions include:
+    Currency Risk Management – we offer:
+    Hedging strategies to protect against currency depreciation and volatility
+    Forward contracts and options to lock in favourbale exchange rates
+    Customized FX risk assessments tailored to individual financial goals
+    Global Payments and Transactions – we facilitate seamless international payments for clients with cross-border financial commitments including liquidity management, fast and secure executin of FX transactions, efficient multi-currency transfers with competitive exchange rates.`,
     image: "/pexels-pixabay-210600.jpg",
   },
 ];
