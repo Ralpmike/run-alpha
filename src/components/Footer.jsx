@@ -15,7 +15,7 @@ function Footer() {
 
          <div className="flex flex-col items">
            <Logo className={"min-w-25 grow "} src="/logos/run-logo.png" />
-           <p className="text-white text-sm">Driven by Alpha. Powered by Data</p>
+           <p className="text-white text-sm pl-6">Driven by Alpha. Powered by Data</p>
          </div>
 
           <ul className="flex gap-4 flex-col text-base">

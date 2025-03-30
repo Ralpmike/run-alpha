@@ -6,9 +6,9 @@ import { motion } from "framer-motion"
 
 function AboutUsHomeSection() {
   return (
-    <div className="lg:px-48 h-full md:h-full px-6 text-alpha bg-cover bg-center md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen">
+    <div className="lg:px-28 xl:px-36 h-full md:h-full px-6 text-alpha md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen">
      <div className="flex relative justify-between gap-6 lg:gap-0">
-       <div className="flex flex-col items-start mb-16">
+       <div className="flex flex-col items-start mb-16 xl:px-8">
          <motion.h1
         variants={{
           visible: { y: 0, opacity: 1 },
@@ -18,7 +18,7 @@ function AboutUsHomeSection() {
       animate={{ y: '0', opacity: 1 }}
       transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
       whileInView="visible"
-      className="text-2xl md:text-6xl capitalize mb-8 font-quicksand font-medium md:max-w-6xl leading-snug">
+      className="text-2xl md:text-6xl capitalize mb-8 font-lora font-medium md:max-w-6xl leading-snug">
         About <span className="text-[]">Us</span>
         {/* Run Alpha is a premier hedge fund firm headquartered in Nigeria, specializing in delivering<span className="text-[#ffca28]"> exceptional returns</span> for our investors through dynamic market <span className="text-[#ffca28]">strategies and data-driven</span> insights. */}
        
@@ -103,7 +103,7 @@ function AboutUsHomeSection() {
      </div>
 
       <Link to="/aboutus">
-          <Button title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora`} icon={<BsChevronRight />} />
+          <Button title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora  xl:ml-8`} icon={<BsChevronRight />} />
         </Link>
     </div>
   )

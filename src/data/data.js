@@ -121,7 +121,7 @@ export const strategies = [
     id: "fx-currency-solution",  // Added an id field
     title: "FX Currency Solution",
     description: "Just include a disclaimer that the offering cannot be accessed...",
-    image: "/pexels-anna-nekrashevich-6801874.jpg",
+    image: "/pexels-pixabay-210600.jpg",
   },
 ];
 
@@ -165,10 +165,10 @@ export const heroSectionData = {
       "At Run Alpha, we believe that the future of investment lies in the intersection of technology and human ingenuity. We strive to create a platform that empowers individuals to make informed decisions, while also fostering a culture of continuous learning and growth.",
   },
   strategies: {
-    title: "OUR STRATEGIES",
+    title: "OFFERINGS",
     backgroundImage: "/skyline.jpg",
     description:
-      "Our strategies are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities.",
+      "Our offerings are built on data-driven insights, advanced algorithms, and expert analysis. We harness the power of artificial intelligence and machine learning to optimize investment opportunities.",
   },
   teams: {
     title: "MEET OUR TEAM",
@@ -226,7 +226,7 @@ export const strategiesData = [
     title: "FX Currency Solution",
     description:
       "Just include a disclaimer that the offering cannot be accessed. Contact us for more information.",
-    image: "/pexels-anna-nekrashevich-6801874.jpg",
+    image: "/pexels-pixabay-210600.jpg",
   },
 ];
 

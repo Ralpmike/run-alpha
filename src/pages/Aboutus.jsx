@@ -15,7 +15,7 @@ const AboutUs = () => {
         <HeroSectionCard data={heroSectionData.about} />
       </motion.div>
 
-      <div className=" font-quicksand">
+      <div className="">
         {aboutSections.map((section, index) => (
           <AboutCard key={index} {...section} reverse={index % 2 !== 0} />
         ))}
