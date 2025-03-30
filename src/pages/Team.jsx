@@ -3,10 +3,14 @@ import SwipeCard from "../components/SwipeCard"
 import teamMembers, { heroSectionData } from "../data/data"
 import HeroSectionCard from "../ui/HeroSectionCard"
 import { motion } from "framer-motion"
+import TeamSection from "../features/team/TeamSection"
+import { BiArrowFromRight, BiChevronLeft, BiChevronRight } from "react-icons/bi"
+import { PiArrowBendUpLeftBold, PiArrowBendUpRightBold } from "react-icons/pi"
 
 function Team() {
 
   const [cards, setCards] = useState(teamMembers)
+  
   return (
     <section>
       <motion.div
@@ -129,13 +133,18 @@ function Team() {
         </p>
       </div>
 
-      <div className="min-h-screen bg-gray-300 py-12 w-full max-w-screen">
+      <div className="min-h-screen bg-gray-300 py-12 w-full max-w-screen relative">
+        <div className="">
+          <PiArrowBendUpRightBold  size={70} className="hidden lg:block absolute top-1/3 rotate-45 right-12 text-alpha cursor-pointer"  />
+          <PiArrowBendUpLeftBold  size={70} className="hidden lg:block absolute top-1/3 -rotate-45 left-12 text-alpha cursor-pointer" />
+        </div>
+        
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-xl md:text-4xl font-quicksand uppercase font-extrabold text-alpha text-center mb-6">MEET THE TEAM</motion.p>
-        <div className="grid min-h-[62vh] place-items-center pl-10 sm:pl-10 md:pl-0 md:pr-20 xl:pr-72">
+        <div className="hidden lg:grid place-items-center mt-12">
           {teamMembers.slice(0, 4).map((card) => (
             <SwipeCard
               key={card.id}
@@ -145,6 +154,9 @@ function Team() {
               {...card}
             />
           ))}
+        </div>
+        <div className=" lg:hidden flex flex-wrap">
+              <TeamSection />
         </div>
       </div>
 
