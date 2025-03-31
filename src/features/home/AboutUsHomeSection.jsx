@@ -1,10 +1,16 @@
-import { Link } from "react-router"
+import { Link, useNavigate } from "react-router"
 import Button from "../../ui/button"
 import { BsChevronRight } from "react-icons/bs"
 import { motion } from "framer-motion"
 
 
 function AboutUsHomeSection() {
+  const navigate = useNavigate();
+
+    const handleScrollToTop = () => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+    navigate("/aboutus"); // Navigates to the /aboutus route
+  };
   return (
     <div className="lg:px-28 xl:px-36 h-full md:h-full px-6 text-alpha md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen">
      <div className="flex relative justify-between gap-6 lg:gap-8">
@@ -112,10 +118,7 @@ function AboutUsHomeSection() {
     </div>
 
      </div>
-
-      <Link to="/aboutus">
-          <Button title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora  xl:ml-8`} icon={<BsChevronRight />} />
-        </Link>
+          <Button onClick={handleScrollToTop} title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora  xl:ml-8`} icon={<BsChevronRight />} />
     </div>
   )
 }

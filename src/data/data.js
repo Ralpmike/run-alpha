@@ -43,38 +43,63 @@ const teamMembers = [
     name: "Ajoke Toluwaloju",
     title: "Head, Fund Management",
     quote:
-      `Ajoke Toluwaloju has over 6 years of experience spanning accounting, audit, tax, research, and fund and portfolio management. She is experienced in formulating complex investment management solutions to institutional investors and high net worth investors. Previously, she worked at FBNQuest Asset Management, curating investment/trading strategies for over NGN300bn in funds under management, guided by adequate research and analysis to grow wealth sustainably. 
-      Ajoke holds a Bachelor of Science degree from The University of Lagos, Nigeria. She is an affiliate of the Association of Certified Chartered Accountants (ACCA) and is currently enrolled as a candidate in the Certified Financial Analyst (CFA) Program.`,
+      `Ajoke Toluwaloju has over 6 years of experience spanning accounting, audit, tax, research,
+      and fund and portfolio management. She is experienced in formulating complex investment
+      management solutions to institutional investors and high net worth investors.
+      Previously, she worked at FBNQuest Asset Management, curating investment/trading
+      strategies for over NGN300bn in funds under management.`,
+      qualification: {
+        degree: "BSc. Accounting University of Lagos, Nigeria",
+        institute: "Institute of Certified Chartered Accountant of Nigeria (ACCA)",
+      },
     image: "/team/Picture3.jpg",
   },
   {
     id: 2,
     name: "Ayooluwade Ogunwale",
-    title: "Fund Management",
+    title: "Head, Fixed Income/Strategy",
     quote:
-      `Ayooluwade Ogunwale has over 4 years of experience in the financial services industry, spanning Research, Portfolio/Fund management. Prior to joining Run Alpha, he worked at FBNQuest Asset Management Ltd where he developed macro-driven investment strategies for NGN500bn in funds managed under his purview. He leverages macro data to maximize financial returns by identifying optimal investment opportunities. In his role, he provides insights through comprehensive analyses of fiscal and monetary policies, along with other influencing factors.
-      Ayooluwade holds a BSc. Accounting Ekiti State University, Nigeria. He is  a member of the Institute of Chartered Accountant of Nigeria (ACA) and is currently enrolled as a candidate in the Certified Financial Analyst (CFA) Program.`,
+      `Ayooluwade Ogunwale has over 4 years of experience in the financial services industry,
+      spanning Research, Portfolio/Fund management. He leverages macro data to maximize
+      financial returns by identifying optimal investment opportunities.
+      Prior to joining Run Alpha, he worked at FBNQuest Asset Management Ltd where he
+      developed macro-driven investment strategies for NGN500bn in funds managed under his
+      purview.`,
     image: "/team/Picture1.jpg",
+    qualification: {
+      degree: "BSc. Accounting,Ekiti State University, Nigeria",
+      institute: "Institute of Chartered Accountant of Nigeria (ACA)",
+    },
   },
   {
     id: 3,
     name: "Reanat Adamson",
     title: "Head, Finance",
     quote:
-      `Reanat Adamson has over six years in the Audit practice specializing in the financial statement audits of corporate listed and regulated entities in the UK. With extensive experience in auditing complex financial structures and internal controls, she has developed a deep understanding of regulatory requirements, risk assessment, and compliance within highly regulated industries.
-      She plays a key role in ensuring audit quality, identifying financial reporting risks, and advising clients on best practices to meet evolving regulatory standards.
-      Reanat holds a Bachelor of Science degree from The University of Swansea, England. She is an affiliate of the Association of Certified Chartered Accountants (ACCA).
+      `Reanat Adamson has over six years in the Audit practice specializing in the financial
+      statement audits of corporate listed and regulated entities in the UK.
+      With extensive experience in auditing complex financial structures and internal controls, she
+      has developed a deep understanding of regulatory requirements, risk assessment, and
+      compliance within highly regulated industries.  
 `,
     image: "/team/Picture4.jpg",
+    qualification: {
+      degree: "B.Sc. Accounting, University of Swansea, England",
+      institute: "Member, Association of Certified Chartered Accountants (ACCA)",
+    },
   },
   {
     id: 4,
     name: "Folashade Adedun",
     title: "Head, Risk Management",
     quote:
-      `Folashade previously worked in Ernst & Young in the Financial Services Risk Management practice where she helped shape the compliance initiatives for Systemically Important Banks within the Nigerian financial industry. She currently works within the Internet Regulation department of Deloitte UK leading regulatory change management initiatives for FAANG companies.
-      Folashade holds a Bachelor of Science degree from The University of Lagos, Nigeria.`,
+      `Folashade has over six years in Risk Management specializing in developing compliance
+      initiatives for Systemically Important Banks and leading regulatory change management
+      initiatives for FAANG companies.`,
     image: "/team/Picture2.jpg",
+     qualification: {
+      degree: "B.Sc. Accounting, University of Lagos, Nigeria",
+     }
   },
   {
     id: 5,
@@ -83,15 +108,9 @@ const teamMembers = [
     quote:
       "Bashir Lawal has over 5 years of experience in the financial services industry, spanning Research, Portfolio/Fund management. Prior to joining Run Alpha, he worked at FBNQuest Asset Management Ltd where he developed macro-driven investment strategies for NGN500bn in funds managed under his purview. He leverages macro data to maximize financial returns by identifying optimal investment opportunities. In his role, he provides insights through comprehensive analyses of fiscal and monetary policies, along with other influencing factors.",
     image: "/team/Picture5.jpg",
-  },
-  {
-    id: 6,
-    name: "Adeola Ogunwale",
-    title: "Head, Operations",
-    quote:
-      `Adeola Ogunwale has over 5 years of experience in the financial services industry, spanning Research, Portfolio/Fund management. Prior to joining Run Alpha, he worked at FBNQuest Asset Management Ltd where he developed macro-driven investment strategies for NGN500bn in funds managed under his purview. He leverages macro data to maximize financial returns by identifying optimal investment opportunities. In his role, he provides insights through comprehensive analyses of fiscal and monetary policies, along with other influencing factors.
-      Adeola holds a BSc. Accounting Ekiti State University, Nigeria. He is  a member of the Institute of Chartered Accountant of Nigeria (ACA) and is currently enrolled as a candidate in the Certified Financial Analyst (CFA) Program.`,
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+    qualification: {
+      degree: "B.Sc. Accounting, University of Lagos, Nigeria",
+     }
   },
   
 ];
@@ -109,7 +128,7 @@ export const strategies = [
     id: "private-wealth",  // Added an id field
     title: "Private Wealth",
     description: `Your wealth is more than money...`,
-    image: "/meditation-2262835.jpg",
+    image: "/pexels-pixabay-235990.jpg",
   },
   {
     id: "hedge-fund",  // Added an id field
@@ -239,27 +258,22 @@ export const aboutSections = [
   {
     title: "Driven by Alpha. Powered by Data",
     text: `At Run Alpha, we believe that true alpha comes from resilience, innovation, adaptability, and a relentless pursuit of excellence. We combine institutional expertise with a boutique, client-centric approach, offering tailored solutions that align with your financial goals. Whether navigating volatile markets or securing multi-generational wealth, our commitment remains unwavering: to protect, grow and optimize your financial legacy with integrity, transparency and a long-term perspective.`,
-    buttonText: "READ MORE",
     imageUrl: "/about/pexels-filipgrobgaard-28426645.jpg",
   },
   {
     title: "Proven Performance, Trusted by Investors",
     text: `At Run Alpha, our commitment to delivering consistent returns has led to a growing track record of success and increasing investor confidence. As our performance continues to strengthen, we have attracted a diverse group of high-net-worth individuals and institutional investors. By refining our portfolio strategies and leveraging data-driven insights, we have further optimized risk-adjusted performance, deepening trust among our investors and partners. Our dedication to excellence and innovation has positioned us as a trusted partner in the investment community, driving long-term growth and success for our clients.`,
-    buttonText: "OUR STRATEGIES",
-    // buttonText: "OUR TEAM",
     imageUrl: "/two-african-businessman-sitting-outside-cafe.jpg",
   },
   {
     title: "Our Investment Philosophy",
     text: `We specialize in generating consistent, risk-adjusted returns by employing a dynamic mix of fundamental research, quantitative analysis, and macroeconomic insights. Our investment strategies span across equities, fixed income, derivatives, and alternative assets, providing diversified exposure while maintaining a strong focus on risk management. By staying nimble and adaptable, we aim to protect and grow our clients’ wealth over the long term. Our quantitative strategies are designed to deliver alpha in any market environment, providing a competitive edge and driving long-term success for our clients.`,
-    // buttonText: "STRATEGIES",
-    imageUrl: "/business.jpg",
+    imageUrl: "/pexels-googledeepmind-17485658.jpg",
   },
   {
     title: "Building for the future",
     text: `Investor confidence is built on transparency, integrity and a relentless focus on delivering results. We maintain open communication, providing insights and strategic guidance to our clients. With a track record of success, we continue to refine and expand our approach, ensuring alignment with evolving market opportunities. As we grow, our mission remains unchanged: to generate data-driven alpha and create lasting value for our clients.
     At Run Alpha, our momentum is strong, our strategies are refined, and our clients’ trust continues to grow as we scale new heights, we remain focused on delivering excellence and positioning our clients for long-term success. `,
-    buttonText: "LEARN MORE",
     imageUrl: "/unsplash.jpg",
   },
 ];

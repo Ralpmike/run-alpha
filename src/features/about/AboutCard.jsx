@@ -13,10 +13,10 @@ const AboutCard = ({ title, text, buttonText, imageUrl, reverse }) => (
       variants={fadeInRight} className="min-w-3/6">
       <h2 className="md:text-3xl font-lora text-xl capitalize text-alpha my-8 font-bold">{title}</h2>
       <p className="text-sm sm:text-base xl:text-lg leading-relaxed font-quicksand">{text}</p>
-      <button className="group hover:bg-alpha hover:rounded-full hover:pr-4 font-quicksand px-3 py-4 mt-8 text-sm hover:text-white transition-all duration-300 flex items-center gap-4 motion-button">
+      {/* <button className="group hover:bg-alpha hover:rounded-full hover:pr-4 font-quicksand px-3 py-4 mt-8 text-sm hover:text-white transition-all duration-300 flex items-center gap-4 motion-button">
         {buttonText}
         <FaChevronRight size={12} className="group-hover:mx-2 transition-all" />
-      </button>
+      </button> */}
     </motion.div>
     <div className={`${reverse ? "2xl:pr-16" : "2xl:pl-16"} px-0 flex items-center xl:h-[500px]`}>
       <motion.img src={imageUrl} alt={title} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInLeft} className="object-contain rounded-2xl shadow-lg" />

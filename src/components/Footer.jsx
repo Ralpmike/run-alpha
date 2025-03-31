@@ -2,15 +2,14 @@ import Logo from "../ui/Logo"
 import { Link } from "react-router"
 import { navLinksItems } from "../data/data"
 import { socials } from "../data/data"
-import { MdEmail } from "react-icons/md";
-import { FaHome, FaPhoneAlt } from "react-icons/fa";
+
 
 
 function Footer() {
   return (
-    <footer className="px-12 sm:px-8 lg:px-36 py-12 md:py-28 bg-alpha/90 bg-cover bg-center h-auto md:h-[500px] md:text-[18.5px] relative font-quicksand">
+    <footer className="px-12 sm:px-8 lg:px-36 py-12 md:py-28 bg-alpha/90 bg-cover bg-center h-auto md:h-[500px] md:text-[18.5px] relative font-quicksand max-w-screen">
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/map.jpg')] -z-1" />
-      <Logo className={"min-w-25 grow md:translate-x-0 w-100 h-100 absolute object-contain top-0 left-10"} src="/logos/run-logo.png" />
+      <Logo className={"min-w-25 grow md:translate-x-0 w-50 h-50 absolute object-contain top-0 left-10"} src="/logos/run-logo.png" />
 
       <div className="w-full text-white flex flex-row justify-between gap-8 font-normal max-w-6xl ml-auto">
 

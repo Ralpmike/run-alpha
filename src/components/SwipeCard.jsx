@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 
-const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
+const SwipeCard = ({ id, cards, setCards, image, quote, title, name, qualification }) => {
   const x = useMotionValue(0);
   const opacity = useTransform(x, [-150, 0, 150], [0, 1, 0]);
   const rotateR = useTransform(x, [-150, 150], [-18, 18]);
@@ -77,6 +77,15 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
             <FaQuoteRight size={25} />
           </div>
         </blockquote>
+        <div className="text-start">
+          <h2 className="text-lg font-semibold">Qualification</h2>
+          <p className="flex items-center gap-2 pl-4">
+            <div className="w-2 h-2 rounded-full bg-white"/>
+            {qualification.degree}</p>
+          <p className="flex items-center gap-2 pl-4">
+             <div className="w-2 h-2 rounded-full bg-white"/>
+            {qualification.institute}</p>
+        </div>
         <div>
           <h2 className="text-lg font-semibold">{name}</h2>
           <p className="mb-8">{title}</p>

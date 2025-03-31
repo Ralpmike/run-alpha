@@ -1,3 +1,4 @@
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 
 // eslint-disable-next-line react/prop-types
@@ -9,9 +10,15 @@ const ProfileCard = ({ image, name, title,quote }) => {
         alt={name}
         className="rounded-full h-30 w-30 object-cover"
       />
-      <blockquote className=" text-sm text-justify font-quicksand ">
-        &apos;
-        {quote}</blockquote>
+      <blockquote className=" text-sm text-justify font-quicksand">
+       <div className="w-full flex justify-start mt-6">
+          <FaQuoteLeft size={16} className="mb-6" />
+        </div>
+              {quote}
+        <div className="w-full flex justify-end mt-6">
+            <FaQuoteRight size={16} />
+        </div>
+        </blockquote>
      <div className="text-center ">
        <h2 className="text-lg font-semibold">{name}</h2>
       <p className=" ">{title}</p>

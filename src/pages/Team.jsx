@@ -12,17 +12,17 @@ function Team() {
   const [cards, setCards] = useState(teamMembers)
 
     const handleSwipe = (direction) => {
-    const currentCard = cards[cards.length - 1]; // Get the top card
-    if (!currentCard) return;
+      setCards((prevCards) => {
+        if (prevCards.length < 2) return prevCards; // Prevent errors
 
-    // Call the swipe action depending on direction
-    setCards((prev) => {
-      const newCards = prev.filter((card) => card.id !== currentCard.id);
-      return direction === "right"
-        ? [...newCards, currentCard]
-        : [currentCard, ...newCards]; // Add the card back at the beginning for a left swipe
-    });
-  };
+        if (direction === "right") {
+          return [...prevCards.slice(1), prevCards[0]]; // Move first card to the end
+        } else {
+          return [prevCards[prevCards.length - 1], ...prevCards.slice(0, -1)]; // Move last card to the front
+        }
+      });
+    };
+
   
   return (
     <section>
@@ -147,13 +147,19 @@ function Team() {
       </div>
 
       <div className="min-h-screen bg-gray-300 py-12 w-full max-w-screen relative">
-        <div className="">
-          <p className="text-alpha text-2xl font-quicksand font-extrabold hidden right-0 lg:block absolute top-1/3 rotate-90">
-            Swipe Right
-          </p>
-        <p className="text-alpha text-2xl font-quicksand font-extrabold hidden left-0 lg:block absolute top-1/3 -rotate-90">
-            Swipe Left
-          </p>
+             <div className="flex justify-between absolute my-auto top-1/3 w-full px-4 mb-6">
+          <button
+            onClick={() => handleSwipe("left")}
+            className="bg-alpha text-white p-3 rounded-full shadow-md hover:bg-opacity-80 transition"
+          >
+            <PiArrowBendUpLeftBold size={32} />
+          </button>
+          <button
+            onClick={() => handleSwipe("right")}
+            className="bg-alpha text-white p-3 rounded-full shadow-md hover:bg-opacity-80 transition"
+          >
+            <PiArrowBendUpRightBold size={32} />
+          </button>
         </div>
         
         <motion.p
