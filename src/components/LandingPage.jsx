@@ -27,9 +27,9 @@ export default function LandingPage() {
     <path fill="url(#gradient1)" d="M19.35 4.8L16.325 0H.115L3.14 4.8zM.115 24h16.21l3.025-4.8H3.14zM6.163 9.6h16.21l1.512 2.4l-1.512 2.4H6.163L7.675 12z"/>
   </svg>
 </div> */}
-      <div className="flex flex-col items-start justify-center lg:px-28 xl:px-36 h-full z-20 text-white gap-6">
+      <div className="flex flex-col items-start justify-center lg:px-28 xl:px-36 h-full tracking-wider z-20 text-white gap-6">
         <div className="space-y-3 px-8 pt-48">
-          <motion.h1 className="text-[1.8rem] md:text-5xl inline lg:text-8xl md:max-w-[1300px] leading-[1.2] max-w-sm w-[600px] font-quicksand font-bold"
+          <motion.h1 className="text-[1.8rem] md:text-5xl lg:text-8xl md:max-w-[1300px] leading-6 sm:leading-[1.2] max-w-sm w-[600px] font-quicksand font-bold"
             initial={{ y: '50%', opacity: 0 }}
             animate={{ y: '0', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
@@ -38,12 +38,12 @@ export default function LandingPage() {
           </motion.h1>
 
           <motion.p
-            className="text-[1.8rem] md:text-5xl lg:text-7xl font-quicksand  flex flex-col text-white font-semibold "
+            className="text-[1.8rem] md:text-5xl lg:text-7xl font-quicksand leading-8 sm:leading-none flex flex-col text-white font-semibold "
             initial={{ y: '100%', opacity: 0 }} // Start off-screen to the right with no opacity
             animate={{ y: '0', opacity: 1 }}    // Move to the normal position with full opacity
             transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.4 }} // Duration, easing, and delay
           >
-             <span className="text-secondary text-7xl">
+             <span className="text-secondary">
               Driven by Alpha
               </span>
               <span className="inline-flex">
