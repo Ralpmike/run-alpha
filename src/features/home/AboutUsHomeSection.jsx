@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 function AboutUsHomeSection() {
   return (
     <div className="lg:px-28 xl:px-36 h-full md:h-full px-6 text-alpha md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen">
-     <div className="flex relative justify-between gap-6 lg:gap-0">
+     <div className="flex relative justify-between gap-6 lg:gap-8">
        <div className="flex flex-col items-start mb-16 xl:px-8">
          <motion.h1
         variants={{
@@ -32,20 +32,20 @@ function AboutUsHomeSection() {
       animate={{ x: '0', opacity: 1 }}
       transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
       whileInView="visible"
-      className="lg:tracking-wider text-gray-600 font-quicksand lg:text-3xl md:text-2xl text-xl leading-8 lg:leading-9 w-full md:max-w-xl lg:max-w-3xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
+      className="lg:tracking-wider text-gray-600 font-quicksand xl:text-3xl md:text-2xl text-xl leading-8 lg:leading-9 w-full md:max-w-xl lg:max-w-3xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
       
       </motion.p>
 
-      <p className="mt-12 max-w-3xl text-gray-500 font-quicksand text-lg">
+      <p className="mt-12 lg:max-w-lg xl:max-w-3xl max-w-xl text-gray-500 font-quicksand text-base lg:text-lg">
         We are committed to providing our investors with the highest level of service and transparency, and we strive to build long-term relationships based on trust and mutual respect. Our team of experienced professionals is dedicated to delivering exceptional results for our clients, and we are constantly seeking new opportunities to enhance our investment strategies and drive growth.
     </p>
       </div>
 
-       <div className="hidden md:grid grid-cols-5 h-[500px] w-[500px] gap-1 perspective-[1000px]">
+       <div className="hidden md:grid grid-cols-6 h-[500px] w-[500px] gap-1 perspective-[1000px] justify-items-end">
         <motion.img
         src="/team/pexels-vanessa-loring-5082960.jpg"
         alt=""
-        className="hidden h-full translate-y-4 md:block object-cover object-[4%] rounded-2xl shadow-2xl"
+        className="hidden h-full translate-y-4 lg:block object-cover object-[14%] rounded-2xl shadow-2xl"
         initial={{ scale: 0.8, y: 0 }}
         animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
         transition={{
@@ -56,7 +56,7 @@ function AboutUsHomeSection() {
       <motion.img
         src="/team/pexels-vanessa-loring-5082960.jpg"
         alt=""
-        className="hidden h-full translate-y-4 md:block object-cover object-[19%] rounded-2xl shadow-2xl"
+        className="hidden h-full translate-y-4 md:block object-cover object-[26%] rounded-2xl shadow-2xl"
         initial={{ scale: 0.8, y: 0 }}
         animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
         transition={{
@@ -78,7 +78,7 @@ function AboutUsHomeSection() {
       <motion.img
         src="/team/pexels-vanessa-loring-5082960.jpg"
         alt=""
-        className="hidden h-full md:block object-cover object-[62%] rounded-2xl shadow-2xl"
+        className="hidden h-full md:block object-cover object-[54%] rounded-2xl shadow-2xl"
         initial={{ scale: 0.8, y: 0 }}
         animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
         transition={{
@@ -89,7 +89,18 @@ function AboutUsHomeSection() {
       <motion.img
         src="/team/pexels-vanessa-loring-5082960.jpg"
         alt=""
-        className="hidden h-full lg:block object-cover object-[79%] rounded-2xl translate-y-0 shadow-2xl"
+        className="hidden h-full md:block object-cover object-[67%] rounded-2xl shadow-2xl"
+        initial={{ scale: 0.8, y: 0 }}
+        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
+        transition={{
+          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
+          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
+        }}
+      />
+      <motion.img
+        src="/team/pexels-vanessa-loring-5082960.jpg"
+        alt=""
+        className="hidden h-full md:block object-cover object-[79%] rounded-2xl translate-y-0 shadow-2xl"
         initial={{ scale: 0.8, y: 0 }}
         animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
         transition={{

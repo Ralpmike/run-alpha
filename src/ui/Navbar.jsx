@@ -59,13 +59,14 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img 
-          src="/logos/run-logo.png" 
-          className={`${!scrolled && '' } text-black w-25`} 
-          alt="" 
-          style={{
-              filter: `${scrolled ?  'invert(100%) grayscale(100%)' : ''}`
-          }}
-        />
+            src="/logos/run-logo.png" 
+            className={`${!scrolled && 'mt-3'} text-black w-20 md:w-25`} 
+            alt="" 
+            style={{
+                filter: `${scrolled ? 'invert(74%) sepia(59%) saturate(497%) hue-rotate(176deg) brightness(92%) contrast(100%)' : ''}`
+            }}
+          />
+
 
       </div>
 

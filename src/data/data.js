@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export const navLinksItems = [
   { name: "Home", href: "/home", id: 1 },
   { name: "About Us", href: "/aboutus", id: 2 },
-  { name: "Business Offerings", href: "/offerings", id: 3 },
+  { name: "What we Offer", href: "/offerings", id: 3 },
   { name: "Team", href: "/team", id: 4 },
   { name: "Contact Us", href: "/contact", id: 5 },
   // { name: "", href: "/getintouch" },

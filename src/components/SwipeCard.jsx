@@ -14,16 +14,23 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
     return `${rotateR.get() + offset}deg`;
   });
 
-  // Handles swipe & remove logic
+  // Handles swipe & reorder logic for infinite swipe
   const handleSwipe = (direction) => {
     x.set(direction === "right" ? 300 : -300);
     opacity.set(0);
 
     setTimeout(() => {
       setCards((prev) => {
-        const newCards = prev.filter((card) => card.id !== id);
-        const swipedCard = prev.find((card) => card.id === id);
-        return swipedCard ? [...newCards, swipedCard] : newCards;
+        // Remove the first card (current front card)
+        const newCards = prev.slice(1); 
+        const swipedCard = prev[0]; // The first card is the one we are swiping
+        if (direction === "right" || direction === "left") {
+          // If swiped right, move the swiped card to the end
+          return [...newCards, swipedCard];
+        } else {
+          // If swiped left, move the swiped card to the front
+          return [swipedCard, ...newCards];
+        }
       });
 
       // Reset animation values
@@ -38,7 +45,6 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
       handleSwipe(info.offset.x > 0 ? "right" : "left");
     }
   };
-
 
   return (
     <motion.div
@@ -59,25 +65,17 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name }) => {
       drag="x"
       onDragEnd={handleDragEnd}
     >
-      {/* Swipe Navigation Arrows */}
-      <BiChevronLeft
-        size={100}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 text-alpha cursor-pointer"
-        onClick={() => handleSwipe("left")}
-      />
-      <BiChevronRight
-        size={100}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 text-alpha cursor-pointer"
-        onClick={() => handleSwipe("right")}
-      />
-
       {/* Card Content */}
       <div className="bg-alpha w-[350px] md:w-[400px] lg:w-[720px] h-auto shadow-md rounded-xl p-12 flex flex-col items-center text-center space-y-8 cursor-pointer group hover:text-white text-white ease-in-out duration-300 border border-white">
         <img src={image} alt={name} className="rounded-full h-30 w-30 object-cover" />
-        <blockquote className="text-white lg:text-xl italic leading-7 font-inter group-hover:text-white">
-          <FaQuoteLeft size={25} className="inline-block" />
-          {quote}...
-          <FaQuoteRight size={25} className="inline-block" />
+        <blockquote className="text-white lg:text-xl italic leading-7 font-inter group-hover:text-white text-justify w-full">
+          <div className="w-full flex justify-start mt-6">
+            <FaQuoteLeft size={25} className="mb-6" />
+          </div>
+          {quote}
+          <div className="w-full flex justify-end mt-6">
+            <FaQuoteRight size={25} />
+          </div>
         </blockquote>
         <div>
           <h2 className="text-lg font-semibold">{name}</h2>
