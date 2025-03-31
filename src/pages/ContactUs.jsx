@@ -4,6 +4,8 @@ import { MdEmail, MdLocationPin } from "react-icons/md";
 import { motion } from "framer-motion";
 import HeroSectionCard from "../ui/HeroSectionCard";
 import { heroSectionData } from "../data/data";
+import ContactForm from "../components/ContactForm";
+import { Toaster } from "react-hot-toast";
 
 
 function ContactUs() {
@@ -97,6 +99,14 @@ function ContactUs() {
           </motion.div>
         </motion.div>
       <div/>
+
+      
+      <div className="py-12">
+
+      <ContactForm />
+      </div>
+
+      <Toaster position="top-right"  reverseOrder={false}/>
     </div>
          )
   
