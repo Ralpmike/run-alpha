@@ -1,5 +1,5 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
 
 export const navLinksItems = [
   { name: "Home", href: "/home", id: 1 },
@@ -7,7 +7,6 @@ export const navLinksItems = [
   { name: "What we Offer", href: "/offerings", id: 3 },
   { name: "Team", href: "/team", id: 4 },
   { name: "Contact Us", href: "/contact", id: 5 },
-  // { name: "", href: "/getintouch" },
 ];
 
 export const socials = [
@@ -17,24 +16,6 @@ export const socials = [
     name: "LinkedIn",
     icon: FaLinkedin,
   },
-  // {
-  //   id: 2,
-  //   href: "",
-  //   name: "X(Twitter)",
-  //   icon: FaSquareXTwitter,
-  // },
-  // {
-  //   id: 3,
-  //   href: "",
-  //   name: "Facebook",
-  //   icon: FaFacebook,
-  // },
-  // {
-  //   id: 4,
-  //   href: "",
-  //   name: "Instagram",
-  //   icon: FaInstagram,
-  // },
 ];
 
 const teamMembers = [
@@ -206,53 +187,95 @@ export const strategiesData = [
   {
     id: "family-office",
     title: "Family Office",
-    description: `The event that will go down in history as the most significant transfer of wealth is right around the corner. Globally, it is projected that baby boomers will transfer more than USD60 trillion in wealth to millennials over the course of the next decade.
-    The great wealth transfer is happening. Millennials are on the cusp of an unprecedented shift in wealth. Beyond investment management, we provide an exclusive suite of family office services, ensuring a smooth transition of wealth to Millennials and Gen Z and aligning investment strategies with the family’s evolving investment preferences. Our services include:
-    Wealth planning and preservation – structuring portfolios for long-term financial security
-    Estate and planning succession – ensuring seamless wealth transfer across generations
-    Tax and legal coordination – collaborating with top-tier professionals for optimal financial efficiency
-    Philanthropy and legacy building – setting common family values and crafting strategies to align wealth with purpose
-    At Run Alpha, we believe that true alpha comes from resilience, innovation, adaptability, and a relentless pursuit of excellence. Whether in bull or bear markets, we remain committed to protecting and growing our investor’s capital with integrity, transparency, and a long-term perspective.
-`,
+    description: `
+      The event that will go down in history as the most significant transfer of wealth is right around the corner. 
+      The great wealth transfer is happening. Globally, it is projected that baby boomers will transfer more than USD60 trillion in wealth to millennials over the course of the next decade.
+      <br />
+      Beyond investment management, we provide an exclusive suite of family office services, ensuring a smooth transition of wealth to Millennials and Gen Z and aligning investment strategies with the family’s evolving investment preferences. Our services include:
+    `,
+    services: [
+  {
+    id: 1,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Wealth Planning and Preservation</span> – structuring portfolios for long-term financial security.</p>`
+  },
+  {
+    id: 2,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Estate and Planning Succession</span> – guiding families through effective investment strategies tailored to their goals.</p>`
+  },
+  {
+    id: 3,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Philanthropy and Legacy Building</span> – minimizing the tax burden and maximizing the growth potential of investments.</p>`
+  }
+    ],
     image: "/pexels-rdne-7951553.jpg",
   },
   {
     id: "private-wealth",
     title: "Private Wealth",
-    description: `Your wealth is more than money. At Run Alpha, our Private Wealth services are designed to help high-net-worth individuals and ultra high-net-worth individuals navigate the complexities of wealth management with confidence, transparency and clarity. We provide personalized strategies that focus on  liquidity management, financial planning and long-term wealth preservation, ensuring that your financial resources are optimized for both immediate needs and future goals.
-    Strategic Liquidity Management – we help clients:
-    Maintain the right balance between liquid and invested assets
-    Structure cash flows for major purchases, business investments or unforeseen expenses
-    Access customized lending solutions to maximize financial flexibility
-    Comprehensive Financial Planning – our team provides tailored guidance on:
-    Investment and portfolio management – building strategies that align with your risk tolerance and long-term objectives
-    Tax and estate planning – working alongside legal and tax professionals to structure assets efficiently
-    Wealth transfer and legacy planning- ensuring a seamless transition of wealth to future generations
-    Risk management – protecting assets against market volatility and economic shifts
-  `,
-    image: "/meditation-2262835.jpg",
+    description: `
+      Your wealth is more than money. Our Private Wealth services are designed to help High-Net-Worth Individuals and Ultra High-Net-Worth Individuals navigate the complexities of wealth management with confidence, transparency, and clarity.
+      <br />
+      We provide personalized strategies that focus on liquidity management, financial planning, and long-term wealth preservation, ensuring that your financial resources are optimized for both immediate needs and future goals. We help clients develop:
+    `,
+    services: [
+          {
+    id: 1,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Strategic Liquidity Management</span> – optimizing cash flow and liquidity to meet your immediate and future needs.</p>`
   },
+  {
+    id: 2,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Investment Risk Management</span> – managing and mitigating risks in investment portfolios to ensure stability.</p>`
+  },
+  {
+    id: 3,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Access to Customized Lending Solutions</span> – offering tailored credit solutions for wealth management.</p>`
+  },
+  {
+    id: 4,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Comprehensive Financial Planning</span> – helping clients develop long-term, sustainable wealth strategies.</p>`
+  }
+    ],
+
+    image: "/pexels-pixabay-235990.jpg",
+  },
+  
   {
     id: "hedge-fund",
     title: "Hedge Fund",
-    description: ` Just include a disclaimer that the offering cannot be accessed. Contact us for more information.,
-
-`,
+   description: `
+      Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
+      For more information, kindly 
+      <a href="/disclaimer" class="text-secondary underline">review the disclaimer</a> or contact us directly.
+    `,
+    services: [],
     image: "/pexels-rickyrecap-2295433.jpg",
   },
   {
     id: "fx-currency-solution",
     title: "FX Currency Solution",
-    description:`At Run Alpha, we provide strategic foreign exchange (FX) solutions to help clients manage currency exposure, optimize international transactions, and hedge against market volatility. Whether you are an investor, business owner, or family office managing global wealth, our FX services are designed to enhance financial efficiency and mitigate currency risks.
-    Our FX Currency Solutions include:
-    Currency Risk Management – we offer:
-    Hedging strategies to protect against currency depreciation and volatility
-    Forward contracts and options to lock in favourbale exchange rates
-    Customized FX risk assessments tailored to individual financial goals
-    Global Payments and Transactions – we facilitate seamless international payments for clients with cross-border financial commitments including liquidity management, fast and secure executin of FX transactions, efficient multi-currency transfers with competitive exchange rates.`,
+    description: `
+      At Run Alpha, we provide strategic foreign exchange (FX) solutions to help clients manage currency exposure, optimize international transactions, and hedge against market volatility.
+      <br />
+      Whether you are an investor, business owner, or family office managing global wealth, our FX services are designed to enhance financial efficiency and mitigate currency risks. Our FX Currency Solutions include:
+    `,
+    services: [
+      {
+        id: 1,
+        desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify">Currency Risk Management</p> `
+      },
+      {
+        id: 2,
+        desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify">Global Payments and Investment Transactions</p>`
+      },
+      {
+        id: 3,
+        desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify">FX Liquidity Management</p>`
+      }
+    ],
     image: "/pexels-pixabay-210600.jpg",
   },
 ];
+
 
 export const aboutSections = [
   {

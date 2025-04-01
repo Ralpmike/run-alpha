@@ -13,6 +13,7 @@ function Strategies() {
               title={strategy.title}
               description={strategy.description}
               image={strategy.image}
+              services={strategy.services}
               reverse={index % 2 == 0}
               index={index} // Alternates layout direction
             />
