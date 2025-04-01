@@ -27,37 +27,36 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white p-6 shadow-md rounded-md">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+    <div className="max-w-xl mx-auto bg-transparent px-8 py-20 shadow-md rounded-md">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 font-quicksand">
         <div>
-          <label className="block text-sm font-bold">Name</label>
+          <label className="block text-alpha text-sm">Name</label>
           <input
             type="text"
             {...register("name", { required: "Name is required" })}
-            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+            className="mt-1 w-full border-b border-alpha focus:outline-none"
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
         </div>
 
         <div>
-          <label className="block text-sm font-bold text-gray-700">Email</label>
+          <label className="block text-sm text-gray-700">Email</label>
           <input
             type="email"
             {...register("user_email", {
               required: "Email is required",
               pattern: { value: /^\S+@\S+$/i, message: "Invalid email format" },
             })}
-            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+            className="w-full border-b border-alpha focus:outline-none"
           />
           {errors.user_email && <p className="text-red-500 text-sm">{errors.user_email.message}</p>}
         </div>
 
         <div>
-          <label className="block text-sm font-bold text-gray-700">Message</label>
+          <label className="block text-sm text-gray-700">Message</label>
           <textarea
             {...register("message", { required: "Message is required" })}
-            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+            className="w-full border-b border-alpha focus:outline-none"
             rows="6"
           />
           {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}

@@ -27,8 +27,8 @@ export default function LandingPage() {
     <path fill="url(#gradient1)" d="M19.35 4.8L16.325 0H.115L3.14 4.8zM.115 24h16.21l3.025-4.8H3.14zM6.163 9.6h16.21l1.512 2.4l-1.512 2.4H6.163L7.675 12z"/>
   </svg>
 </div> */}
-      <div className="flex flex-col items-start justify-center lg:px-28 xl:px-36 h-full tracking-wider z-20 text-white gap-6">
-        <div className="space-y-3 px-8 pt-48">
+      <div className="flex flex-col items-start justify-center px-12 md:px-16 lg:px-28 xl:px-36 h-full tracking-wider z-20 text-white gap-6">
+        <div className="space-y-3 pt-48">
           <motion.h1 className="text-[1.8rem] md:text-5xl lg:text-8xl md:max-w-[1300px] leading-6 sm:leading-[1.2] max-w-sm w-[600px] font-quicksand font-bold"
             initial={{ y: '50%', opacity: 0 }}
             animate={{ y: '0', opacity: 1 }}

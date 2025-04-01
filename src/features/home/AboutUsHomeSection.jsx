@@ -12,7 +12,7 @@ function AboutUsHomeSection() {
     navigate("/aboutus"); // Navigates to the /aboutus route
   };
   return (
-    <div className="lg:px-28 xl:px-36 h-full md:h-screen px-6 text-alpha md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen bg-[url('/team/pexels-vanessa-loring-5082960.jpg')] bg-cover bg-right relative">
+    <div className="lg:px-28 md:px-16 xl:px-36 h-auto md:h-auto px-12 text-alpha md:py-32 py-12 w-full md:mb-0 lg:mb-0 max-w-screen bg-[url('/team/pexels-vanessa-loring-5082960.jpg')] bg-cover bg-center relative">
     <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-1"/>
      <div className="flex relative justify-between gap-6 lg:gap-8 z-10">
       <div className="flex flex-col items-start mb-16 xl:px-8">

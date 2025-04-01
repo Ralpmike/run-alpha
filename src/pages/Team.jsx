@@ -80,7 +80,7 @@ function Team() {
           <h2 className="md:text-3xl text-xl mb-8  font-lora text-alpha capitalize font-extrabold row-start-2">
             workplace & culture
           </h2>
-          <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand">
+          <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand mb-6">
             We believe that a successful and productive team is one where everyone feels valued and respected. Our culture values open communication, collaboration, and a growth mindset. We also strive to create a work environment that fosters a sense of belonging and purpose. Our focus is on providing a supportive and inclusive environment where employees feel comfortable expressing their thoughts, ideas, and concerns. As a team-oriented company, we believe that every member contributes to the success of our organization. We encourage collaboration, empathy, and a shared goal to create a harmonious and fulfilling work environment.
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ function Team() {
       </motion.div>
 
       <div className="mb-16">
-        <div className="grid grid-cols-1 xl:grid-cols-2 ">
+        <div className="grid grid-cols-1 xl:grid-cols-2">
           <motion.div 
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -137,7 +137,7 @@ function Team() {
         </div>
       </div>
 
-      <div className="my-28 px-6 md:text-center max-w-3xl md:mx-auto">
+      <div className="my-28 px-24 md:text-center max-w-3xl md:mx-auto">
         <h2 className="text-xl md:text-3xl mb-8  font-lora text-alpha font-extrabold">
           What We Offer
         </h2>
@@ -146,8 +146,8 @@ function Team() {
         </p>
       </div>
 
-      <div className="min-h-screen bg-gray-300 py-12 w-full max-w-screen relative">
-             <div className="flex justify-between absolute my-auto top-1/3 w-full px-4 mb-6">
+        <div className="min-h-screen bg-gray-300 py-12 w-full max-w-screen relative">
+             <div className=" justify-between absolute my-auto top-1/3 w-full z-20 px-4 hidden lg:flex">
           <button
             onClick={() => handleSwipe("left")}
             className="bg-alpha text-white p-3 rounded-full shadow-md hover:bg-opacity-80 transition"
@@ -167,10 +167,10 @@ function Team() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-xl md:text-4xl font-lora font-extrabold text-alpha text-center mb-6">Meet The Team</motion.p>
-        <div className="hidden lg:grid place-items-center mt-12">
+        <div className="hidden lg:grid place-items-center items-start lg:h-[100ch] mt-12 max-w-screen">
           {teamMembers.map((card) => (
             <SwipeCard
-             key={cards[0].id} 
+             key={cards[0].id++} 
               id={cards[0].id}
               cards={cards}
               setCards={setCards}

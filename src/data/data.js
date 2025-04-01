@@ -2,7 +2,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 export const navLinksItems = [
-  { name: "Home", href: "/home", id: 1 },
+  { name: "Home", href: "/", id: 1 },
   { name: "About Us", href: "/aboutus", id: 2 },
   { name: "What we Offer", href: "/offerings", id: 3 },
   { name: "Team", href: "/team", id: 4 },
@@ -179,7 +179,7 @@ export const heroSectionData = {
   contact: {
     title: "Contact Us",
     backgroundImage: "/pexels-mart-production-7709242.jpg",
-    description: "Contact"
+    description: "Get Intouch with us today"
   }
 };
 
@@ -245,7 +245,7 @@ export const strategiesData = [
    description: `
       Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
       For more information, kindly 
-      <a href="/disclaimer" class="text-secondary underline">review the disclaimer</a> or contact us directly.
+      <Link to="/disclaimer"><p class="text-secondary underline inline">review the disclaimer </p></Link> or contact us directly.
     `,
     services: [],
     image: "/pexels-rickyrecap-2295433.jpg",

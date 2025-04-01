@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhone, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { motion } from "framer-motion";
 import HeroSectionCard from "../ui/HeroSectionCard";
@@ -43,14 +43,14 @@ function ContactUs() {
         <div/>
         </div> */}
     <motion.div
-      className="h-screen px-8 md:px-32 py-8 flex flex-col  items-start bg-[url('/maps.png')] bg-cover bg-center"
+      className="h-auto px-8  py-38 flex md:flex-row  items-start bg-[url('/maps.png')] bg-cover bg-center"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
 
       <motion.div
-        className="md:p-10 p-2"
+        className="md:p-10 p-2 max-w-xl"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -67,48 +67,49 @@ function ContactUs() {
 
             <div className="space-y-8 text-base">
               {/* Address */}
-             <div>
-              <span className="font-bold text-alpha font-quicksand mb-8">Head Office</span>
+             <div className="space-y-4">
+              <p className="font-bold text-alpha font-quicksand mb-8">Head Office</p>
                <motion.p
                 className="flex flex-row gap-2 text-alpha font-quicksand items-center"
                 whileHover={{ scale: 1.05 }}
               >
-                <MdLocationPin size={30} className="text-secondary" />
+                <MdLocationPin size={30} className="text-alpha text-lg" />
                   1 Uwa Close, Off Billings Way, <br /> Oregun, Lagos.
               </motion.p>
              </div>
 
               {/* Email */}
-              <motion.p
-                className="flex gap-4 text-alpha font-quicksand items-center"
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="border-2 border-alpha rounded-full p-2">
-                  <MdEmail size={24} className="text-secondary" />
-                </div>
-                <a href="mailto:info@example.com">info@example.com</a>
-              </motion.p>
+             
 
               {/* Phone */}
               <motion.p
-                className="flex gap-4 text-white font-quicksand items-center"
+                className="flex gap-4 text-alpha font-quicksand items-center border-b pb-4"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="border-2 border-white rounded-full p-2">
-                  <FaPhoneAlt className="text-secondary" />
+                <div className="">
+                  {/* <FaPhone size={24} className="text-alpha" /> */}
+                  TEL:
                 </div>
-                +234 567 890 1234
+                <a className="" href="tel:+2349093717972">+234 909 371 7972</a>
+              </motion.p>
+               <motion.p
+                className="flex gap-4 text-alpha font-quicksand items-center"
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="">
+                  {/* <MdEmail size={30} className="text-a" /> */}
+                  EMAIL:
+                </div>
+                <a className="underline" href="mailto:info@example.com">info@example.com</a>
               </motion.p>
             </div>
           </motion.div>
-        </motion.div>
-      <div/>
-
-      
-      <div className="py-12">
-
-      <ContactForm />
+      <div className="w-1/2">
+        <ContactForm />
       </div>
+      </motion.div>
+    <div/>
+
 
       <Toaster position="top-right"  reverseOrder={false}/>
     </div>
