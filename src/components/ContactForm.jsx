@@ -10,12 +10,6 @@ const ContactForm = () => {
     formState: { errors, isSubmitting },
   } = useForm();
 
-
-  console.log(useForm());
-  
-  // console.log(formState);
-  
-
   const onSubmit = async (data) => {
 
     console.log(data);

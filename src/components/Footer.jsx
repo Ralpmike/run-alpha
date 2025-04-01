@@ -31,17 +31,6 @@ function Footer() {
             </div>
           </div>
 
-            <ul className="flex gap-3 flex-col text-base">
-          {
-            navLinksItems
-              .filter(link => link.name !== "Home") // Filter out the "Home" link
-              .map((link) => (
-                <li key={link.name}>
-                  <Link to={link.href}>{link.name}</Link>
-                </li>
-              ))
-          }
-        </ul>
 
         <div className="flex flex-col gap-4 text-base">
           <Link to={`disclaimer`}>
