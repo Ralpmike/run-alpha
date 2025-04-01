@@ -10,13 +10,13 @@ const StatisticsSection = () => {
   const { ref: assetsRef, inView: assetsInView } = useInView({ triggerOnce: false });
 
   return (
-    <div className="md:h-[625px] h-fit flex flex-col md:flex-row justify-center lg:gap-48 gap-8 px-8 lg:p-32 p-12 md:p-16 items-center font-quicksand text-alpha bg-gray-100 max-w-screen">
+    <div className="md:h-[625px] h-fit flex flex-col md:flex-row  justify-center lg:gap-48 gap-8 px-8 lg:p-32 p-16 md:p-16 items-center font-quicksand text-alpha bg-gray-100 max-w-screen">
       {/* Left Section */}
       <motion.div 
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="space-y-4 text-center mt-24 md:mt-0 md:text-start"
+        className="space-y-4 text-center md:text-start"
       >
         <p className="md:text-xl">Est. since</p>
         <h1 className="text-2xl md:text-6xl font-bold">2021</h1>
