@@ -11,14 +11,13 @@ function Footer() {
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/map.jpg')] -z-1" />
       
 
+            <Logo className={"md:w-50 md:h-50 mb-6"} src="/logos/run-logo.png" />
       <div className="w-full text-white flex flex-wrap flex-row justify-between gap-8 font-normal items-center">
-
          
           <div className="space-y-4 text-base flex flex-col">
             {/* <p className="text-white">Driven by Alpha. Powered by Data</p> */}
-             <Logo className={"w-50 h-50 "} src="/logos/run-logo.png" />
             <p className="">
-              1 Uwa, Close, Off Billings Way, Oregun <br />
+              1 Uwa, Close, Off Billings Way, <br /> Oregun Ikeja, <br />
               Lagos, Nigeria</p>
             <div>
               <p className="">
@@ -31,7 +30,7 @@ function Footer() {
             </div>
           </div>
 
-            <ul className="flex gap-3 flex-col text-base">
+            <ul className="flex gap-1 flex-col text-base">
           {
             navLinksItems
               .filter(link => link.name !== "Home") // Filter out the "Home" link
@@ -53,7 +52,7 @@ function Footer() {
           
         </div>
 
-        <ul className="flex gap-6 flex-col text-base justify-end items-end">
+        <ul className="flex gap-6 flex-col text-base justify-end justify-self-end h-full items-end">
           {
             socials.map((link) => (
               <li key={link.name}>

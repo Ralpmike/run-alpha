@@ -25,7 +25,7 @@ function AboutUsHomeSection() {
           animate={{ y: '0', opacity: 1 }}
           transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
           whileInView="visible"
-          className="text-4xl md:text-6xl xl:text-7xl capitalize mb-8 font-lora font-medium md:max-w-6xl text-white leading-snug">
+          className="text-4xl md:text-6xl xl:text-7xl capitalize mb-16 font-lora font-medium md:max-w-6xl text-white leading-snug">
           About <span className="text-[]">Us</span>  
         </motion.h1>
         <motion.p
@@ -37,7 +37,7 @@ function AboutUsHomeSection() {
           animate={{ x: '0', opacity: 1 }}
           transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
           whileInView="visible"
-          className="lg:tracking-wide text-white font-quicksand xl:text-5xl md:text-3xl text-xl leading-9 lg:leading-13 w-full md:max-w-xl lg:max-w-5xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
+          className="lg:tracking-wide text-white font-quicksand xl:text-5xl md:text-3xl text-xl leading-7 md:leading-9 lg:leading-13 w-full md:max-w-xl lg:max-w-5xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
       
         </motion.p>
 
@@ -52,76 +52,6 @@ function AboutUsHomeSection() {
           />
         </div>
       </div>
-
-       {/* <div className="hidden md:grid grid-cols-6 h-[500px] w-[500px] gap-1 perspective-[1000px] justify-items-end">
-        <motion.img
-        src="/team/pexels-vanessa-loring-5082960.jpg"
-        alt=""
-        className="hidden h-full translate-y-4 lg:block object-cover object-[14%] rounded-2xl shadow-2xl"
-        initial={{ scale: 0.8, y: 0 }}
-        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
-        transition={{
-          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
-        }}
-      />
-      <motion.img
-        src="/team/pexels-vanessa-loring-5082960.jpg"
-        alt=""
-        className="hidden h-full translate-y-4 md:block object-cover object-[26%] rounded-2xl shadow-2xl"
-        initial={{ scale: 0.8, y: 0 }}
-        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
-        transition={{
-          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
-        }}
-      />
-      <motion.img
-        src="/team/pexels-vanessa-loring-5082960.jpg"
-        alt=""
-        className="hidden h-full md:block object-cover object-[40%] rounded-2xl shadow-2xl"
-        initial={{ scale: 0.8, y: 0 }}
-        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
-        transition={{
-          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
-        }}
-      />
-      <motion.img
-        src="/team/pexels-vanessa-loring-5082960.jpg"
-        alt=""
-        className="hidden h-full md:block object-cover object-[54%] rounded-2xl shadow-2xl"
-        initial={{ scale: 0.8, y: 0 }}
-        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
-        transition={{
-          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
-        }}
-      />
-      <motion.img
-        src="/team/pexels-vanessa-loring-5082960.jpg"
-        alt=""
-        className="hidden h-full md:block object-cover object-[67%] rounded-2xl shadow-2xl"
-        initial={{ scale: 0.8, y: 0 }}
-        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
-        transition={{
-          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
-        }}
-      />
-      <motion.img
-        src="/team/pexels-vanessa-loring-5082960.jpg"
-        alt=""
-        className="hidden h-full md:block object-cover object-[79%] rounded-2xl translate-y-0 shadow-2xl"
-        initial={{ scale: 0.8, y: 0 }}
-        animate={{ scale: [0.8, 1.2, 1], y: [0, -20, 0] }}
-        transition={{
-          scale: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          y: { duration: 2, ease: 'easeInOut', loop: Infinity },
-          delay: 0.5, // Adding delay for second image
-        }}
-      />
-      </div> */}
       </div>
 
     </div>

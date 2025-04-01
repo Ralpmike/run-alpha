@@ -13,9 +13,6 @@ const StrategiesHomeSection = () => {
   return (
     <section className="text-center bg-alpha pt-32 max-w-screen">
       <h2 className="mb-12 text-3xl md:text-4xl xl:text-5xl capitalize  mx-auto font-semibold py-2 font-lora text-white">Business Offerings</h2>
-      {/* <p className="text-gray-600 py-3 md:tracking-wider md:text-xl md:leading-loose">
-        Strategic Investing, Powered by Data and Driven by Experience.
-      </p> */}
 
      <div className="flex flex-col">
   {strategies.map((strategy, index) => (
@@ -42,7 +39,7 @@ const StrategiesHomeSection = () => {
       {/* Title and Icon */}
       <div className="absolute inset-0 flex items-end bg-opacity-30 p-4 z-10 rounded-lg">
         <div
-          className="absolute rounded left-20 md:left-0 top-38 md:top-[50%] md:group-hover:left-[42%] bg-alpha md:px-16 px-8 font-quicksand py-3 flex gap-4 sm:gap-8 shadow-2xl transition-all duration-1000 opacity-100 md:opacity-0 group-hover:opacity-100 group-hover:top-[45%] items-center"
+          className="absolute rounded left-1/4 md:left-0 top-38 md:top-[50%] md:group-hover:left-[42%] bg-alpha md:px-16 px-8 font-quicksand py-3 flex gap-4 sm:gap-8 shadow-2xl transition-all duration-1000 opacity-100 md:opacity-0 group-hover:opacity-100 group-hover:top-[45%] items-center"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32"><path fill="#ffca28" d="m8 16l8-8l8 8l-8 8z"/><path fill="#ffca28" d="M29.39 14.527L17.474 2.609a2.085 2.085 0 0 0-2.946 0L2.609 14.527a2.085 2.085 0 0 0 0 2.946l11.918 11.918a2.085 2.085 0 0 0 2.946 0l11.918-11.918a2.085 2.085 0 0 0 0-2.946M16 28.036L3.965 16L16 3.964L28.036 16Z"/></svg>
           <h3 className="font-semibold text-xs sm:text-base uppercase text-[#ffca28]">

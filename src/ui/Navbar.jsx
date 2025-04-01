@@ -58,6 +58,7 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="flex items-center">
+       <NavLink to={'/home'}>
         <img 
             src="/logos/run-logo.svg" 
             className={`${!scrolled && 'mt-3'} text-black w-20 md:w-25`} 
@@ -66,6 +67,7 @@ const Navbar = () => {
                 filter: `${scrolled ? 'invert(74%) sepia(59%) saturate(497%) hue-rotate(176deg) brightness(92%) contrast(100%)' : ''}`
             }}
           />
+       </NavLink>
 
 
       </div>
@@ -89,6 +91,7 @@ const Navbar = () => {
              <NavLink
               key={link.name}
               to={link.href}
+              style={{ position: 'relative', top: 0 }} // Added positioning to ensure it stays at the top
               className={({ isActive }) =>
                 classNames(`font-quicksand hover:cursor-none hover:text-secondary transition text-[1.14rem] ${scrolled ? isActive ? "text-secondary font-bold" : "text-alpha" : ""}`, {
                   "text-secondary text-base font-bold": isActive,

@@ -121,7 +121,7 @@ function Team() {
           {[
           "/team/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg",
           "/team/helena-lopes-PGnqT0rXWLs-unsplash.jpg",
-          "/pexels-edmond-dantes-8553867.jpg",
+          "/ninthgrid-4-RLopzTVQ8-unsplash.jpg",
           "/team/chang-duong-Sj0iMtq_Z4w-unsplash.jpg",
         ].map((src, index) => (
           <motion.img
