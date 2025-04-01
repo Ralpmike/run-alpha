@@ -43,7 +43,7 @@ function ContactUs() {
         <div/>
         </div> */}
     <motion.div
-      className="h-auto px-8  py-38 flex md:flex-row  items-start bg-[url('/maps.png')] bg-cover bg-center"
+      className="h-auto px-8  py-38 flex flex-col md:flex-row  items-start bg-[url('/maps.png')] bg-cover bg-center"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -104,7 +104,7 @@ function ContactUs() {
               </motion.p>
             </div>
           </motion.div>
-      <div className="w-1/2">
+      <div className="md:w-1/2 w-full">
         <ContactForm />
       </div>
       </motion.div>

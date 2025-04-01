@@ -245,7 +245,7 @@ export const strategiesData = [
    description: `
       Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
       For more information, kindly 
-      <Link to="/disclaimer"><p class="text-secondary underline inline">review the disclaimer </p></Link> or contact us directly.
+      <a href="/disclaimer" class="text-secondary underline">review the disclaimer</a> or contact us directly.
     `,
     services: [],
     image: "/pexels-rickyrecap-2295433.jpg",
