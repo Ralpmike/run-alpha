@@ -137,8 +137,8 @@ function Team() {
         </div>
       </div>
 
-      <div className="my-28 px-24 md:text-center max-w-3xl md:mx-auto">
-        <h2 className="text-xl md:text-3xl mb-8  font-lora text-alpha font-extrabold">
+      <div className="my-28 md:px-24 px-8 md:text-center md:max-w-3xl md:mx-auto">
+        <h2 className="text-xl md:text-3xl mb-8 font-lora text-alpha font-extrabold">
           What We Offer
         </h2>
         <p className="tracking-[2] text-sm md:text-base lg:text-[22px] max-w-sm md:max-w-4xl  md:mx-auto  leading-relaxed font-quicksand">

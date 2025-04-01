@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 function AboutUsHomeSection() {
   const navigate = useNavigate();
 
-    const handleScrollToTop = () => {
+  const handleScrollToTop = () => {
     window.scrollTo(0, 0); // Scrolls to the top of the page
     navigate("/aboutus"); // Navigates to the /aboutus route
   };
@@ -38,20 +38,19 @@ function AboutUsHomeSection() {
           transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
           whileInView="visible"
           className="lg:tracking-wide text-white font-quicksand xl:text-5xl md:text-3xl text-xl leading-7 md:leading-9 lg:leading-13 w-full md:max-w-xl lg:max-w-5xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
-      
         </motion.p>
 
-        <p className="mt-12 lg:max-w-lg xl:max-w-4xl max-w-xl text-white font-quicksand text-base lg:text-xl">
+          <p className="mt-12 lg:max-w-lg xl:max-w-4xl max-w-xl text-white font-quicksand text-base lg:text-xl">
             We are committed to providing our investors with the highest level of service and transparency, and we strive to build long-term relationships based on trust and mutual respect. Our team of experienced professionals is dedicated to delivering exceptional results for our clients, and we are constantly seeking new opportunities to enhance our investment strategies and drive growth.
-        </p>
+          </p>
 
-        <div className="flex flex-col">
-          <Button 
-          onClick={handleScrollToTop} title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora mt-16`} icon={<BsChevronRight />  
-          } 
-          />
+          <div className="flex flex-col py-12">
+            <Button
+              onClick={handleScrollToTop} title="Read More" type="button" size="large" className={`md:text-[1rem] font-lora`} icon={<BsChevronRight />
+              }
+            />
+          </div>
         </div>
-      </div>
       </div>
 
     </div>
