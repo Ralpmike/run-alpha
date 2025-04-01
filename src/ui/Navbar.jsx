@@ -59,7 +59,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img 
-            src="/logos/run-logo.png" 
+            src="/logos/run-logo.svg" 
             className={`${!scrolled && 'mt-3'} text-black w-20 md:w-25`} 
             alt="" 
             style={{
@@ -142,9 +142,10 @@ const Navbar = () => {
               >
                 
                 {<NavLink
-                  key={link.name}
+                  // key={link.name}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
+                  style={{ position: 'relative', top: 0 }} // Added positioning to ensure it stays at the top
                   className={({ isActive }) =>
                     classNames(`font-light text-alpha transition text-[1.14rem]`, {
                       "text-secondary font-lora hover:cursor-none": isActive,

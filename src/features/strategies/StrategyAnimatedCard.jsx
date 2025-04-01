@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import { FaCircle } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
-const StrategyAnimatedCard = ({ title, description, image, index }) => {
+const StrategyAnimatedCard = ({ title, description, image, index, services }) => {
   return (
     <div
       className={`flex  flex-col overflow-hidden w-full mx-auto  sm:flex-row relative py-12 md:py-0  gap-6 sm:gap-12 items-center h-auto md:h-[700px]
@@ -18,7 +19,7 @@ const StrategyAnimatedCard = ({ title, description, image, index }) => {
       <div className="flex h-full w-full px-6 lg:px-36 py-6 sm:py-12 items-center justify-content-center rounded-md">
 
         <div className={`flex flex-col max-w-5xl text-white gap-3 md:backdrop-blur-3xl sm:gap-6 ${(index + 1) % 2 === 0 ? "ml-auto" : "mr-auto"} mx-0  md:p-8`}>
-          <motion.h2
+          <motion.h2   
             className={`text-2xl sm:text-3xl md:text-5xl font-semibold font-lora underline decoration-secondary/80 mb-8 underline-offset-8`}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,16 +29,36 @@ const StrategyAnimatedCard = ({ title, description, image, index }) => {
             {title}
           </motion.h2>
           <motion.p
+            dangerouslySetInnerHTML={{ __html: description }}
             className="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: false }}
-          >
-            {description}
-          </motion.p>
+          />
+          {services && (
+            <div 
+                
+                className="flex flex-wrap gap-3">
+              {services.map((service) => (
+                <div 
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false }} key={service.id} className="flex items-center gap-4">
+                  <FaCircle className="text-secondary text-xs" />
+                  <p
+                    dangerouslySetInnerHTML={{ __html: service.desc }}
+                    className="text-base font-medium"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
+
         </div>
-      </div>
+  </div>
     </div>
   );
 };

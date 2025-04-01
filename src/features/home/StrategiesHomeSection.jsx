@@ -1,11 +1,15 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { strategies } from "../../data/data";
 import { motion } from "framer-motion";
 
 
-
-
 const StrategiesHomeSection = () => {
+    const navigate = useNavigate();
+  
+      const handleScrollToTop = () => {
+      window.scrollTo(0, 0); // Scrolls to the top of the page
+      navigate("/offerings"); // Navigates to the /aboutus route
+    };
   return (
     <section className="text-center bg-alpha pt-32 max-w-screen">
       <h2 className="mb-12 text-3xl md:text-4xl xl:text-5xl capitalize  mx-auto font-semibold py-2 font-lora text-white">Business Offerings</h2>
@@ -15,7 +19,8 @@ const StrategiesHomeSection = () => {
 
      <div className="flex flex-col">
   {strategies.map((strategy, index) => (
-    <Link 
+    <button
+      onClick={handleScrollToTop} 
       to={`/offerings`}
       key={strategy.id}
     >
@@ -46,7 +51,7 @@ const StrategiesHomeSection = () => {
         </div>
       </div>
     </motion.div>
-  </Link>
+  </button>
   ))}
 </div>
 
