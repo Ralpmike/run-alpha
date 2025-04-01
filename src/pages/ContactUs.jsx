@@ -43,7 +43,7 @@ function ContactUs() {
         <div/>
         </div> */}
     <motion.div
-      className="h-screen px-8 md:px-32 py-8 flex flex-col justify-center items-start"
+      className="h-screen px-8 md:px-32 py-8 flex flex-col  items-start bg-[url('/maps.png')] bg-cover bg-center"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -56,29 +56,34 @@ function ContactUs() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-white font-bold text-3xl font-dm-serif mb-8">
-          Get In Touch with us
+        <h2 className="text-alpha font-quicksand font-bold text-sm mb-4">
+          Contact
         </h2>
+
+        <p className="font-quicksand mb-6 text-alpha max-w-3xl">
+          Run alpha Investments is based in Lagos, Nigeria. We are always happy to
+          hear from you. Please reach out to us using the contact form below or contact us at the email address or phone number provided.
+        </p>
 
             <div className="space-y-8 text-base">
               {/* Address */}
-              <motion.p
-                className="flex gap-4 text-white font-playfair items-center"
+             <div>
+              <span className="font-bold text-alpha font-quicksand mb-8">Head Office</span>
+               <motion.p
+                className="flex flex-row gap-2 text-alpha font-quicksand items-center"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="border-2 border-white rounded-full p-2">
-                  <MdLocationPin size={24} className="text-secondary" />
-                </div>
-                15, Jakande Estate, Ikeja <br />
-                Lagos, Nigeria
+                <MdLocationPin size={30} className="text-secondary" />
+                  1 Uwa Close, Off Billings Way, <br /> Oregun, Lagos.
               </motion.p>
+             </div>
 
               {/* Email */}
               <motion.p
-                className="flex gap-4 text-white font-playfair items-center"
+                className="flex gap-4 text-alpha font-quicksand items-center"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="border-2 border-white rounded-full p-2">
+                <div className="border-2 border-alpha rounded-full p-2">
                   <MdEmail size={24} className="text-secondary" />
                 </div>
                 <a href="mailto:info@example.com">info@example.com</a>
@@ -86,7 +91,7 @@ function ContactUs() {
 
               {/* Phone */}
               <motion.p
-                className="flex gap-4 text-white font-playfair items-center"
+                className="flex gap-4 text-white font-quicksand items-center"
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="border-2 border-white rounded-full p-2">
