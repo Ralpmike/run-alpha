@@ -60,7 +60,7 @@ function Team() {
         >
           <h2 className="md:text-3xl text-2xl mb-4 font-lora text-alpha font-extrabold text-">Join Us</h2>
           <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand">
-            We develop systematic investment models based on scientific methods, rigorous research and analysis that rely on advanced technology. In order to achieve success, we rely on our most important asset: the collaborative effort, resourcefulness and talent of our employees. Our continued success is truly determined by our ability to attract and retain exceptional talent. We are always on the lookout for team-oriented individuals with a capacity to apply creative and scientific thinking to solve challenging problems. Perhaps you can join us?
+          In order to achieve success, we rely on our most important asset: the collaborative effort, resourcefulness and talent of our employees. Our continued success is truly determined by our ability to attract and retain exceptional talent. We are always on the lookout for team-oriented individuals with a capacity to apply creative and scientific thinking to solve challenging problems. Perhaps you can join us?
           </p>
         </motion.div>
       </motion.div>
@@ -81,7 +81,7 @@ function Team() {
             workplace & culture
           </h2>
           <p className="tracking-[2] text-sm lg:text-xl leading-relaxed font-quicksand mb-6">
-            We believe that a successful and productive team is one where everyone feels valued and respected. Our culture values open communication, collaboration, and a growth mindset. We also strive to create a work environment that fosters a sense of belonging and purpose. Our focus is on providing a supportive and inclusive environment where employees feel comfortable expressing their thoughts, ideas, and concerns. As a team-oriented company, we believe that every member contributes to the success of our organization. We encourage collaboration, empathy, and a shared goal to create a harmonious and fulfilling work environment.
+            We believe that a successful and productive team is one where everyone feels valued and respected. Our culture values open communication, collaboration, and a growth mindset. We also strive to create a work environment that fosters a sense of belonging and purpose. Our focus is on providing a supportive and inclusive environment where employees feel comfortable expressing their thoughts, ideas, and concerns. As a team-oriented company, we believe that every member contributes to the success of our organization.
           </p>
         </motion.div>
 

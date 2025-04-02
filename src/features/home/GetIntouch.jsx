@@ -14,13 +14,13 @@ const GetIntouch = () => {
 
       <Link to={'/contact'}>
       <motion.h2
-        className="font-bold text-3xl flex justify-center items-center gap-4 md:gap-16 font-dm-serif mb-8 w-full group duration-300 ease-in-out"
+        className="font-bold text-2xl md:text-3xl flex justify-center items-center gap-4 md:gap-16 font-dm-serif mb-8 w-full group duration-300 ease-in-out"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-          Get In Touch <BsArrowRight className="group-hover:translate-x-8 duration-300 ease-in-out" size={44} />
+          Get In Touch <BsArrowRight className="group-hover:translate-x-8 duration-300 ease-in-out text-base" size={44} />
         </motion.h2>
       </Link>
 

@@ -128,7 +128,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "-100vw" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="fixed top-0 left-0 w-[80%] sm:w-[70%] h-full bg-[url('/v1016-a-08.jpg')] bg-cover bg-right-top shadow-lg md:hidden flex items-start pt-32 flex-col space-y-8 p-6 z-50"
+            className="fixed top-0 left-0 w-[80%] sm:w-[70%] h-full bg-[url('/v1016-a-08.jpg')] bg-cover bg-right-top shadow-lg md:hidden flex items-start pt-32 flex-col space-y-8 p-6 z-49"
           >
             <button
               className="absolute top-4 right-4 text-gray-600"

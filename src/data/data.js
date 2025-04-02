@@ -1,4 +1,5 @@
 import { FaLinkedin } from "react-icons/fa";
+import {Link, useNavigate} from "react-router-dom";
 
 
 export const navLinksItems = [
@@ -38,7 +39,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Ayooluwade Ogunwale",
-    title: "Head, Fixed Income/Strategy",
+    title: "Head, Fixed Income/Macro Strategy",
     quote:
       `Ayooluwade Ogunwale has over 4 years of experience in the financial services industry,
       spanning Research, Portfolio/Fund management. He leverages macro data to maximize
@@ -93,7 +94,20 @@ const teamMembers = [
       degree: "B.Sc. Accounting, University of Lagos, Nigeria",
      }
   },
-  
+  {
+    id: 6,
+    name: "Tochukwu Njoku",
+    title: "Head, Business Development",
+    quote:
+      `Tochukwu is a dynamic business development strategist with a strong track record in scaling and unlocking new revenue streams and high-impact partnerships.
+      <br />
+      He previously worked with MoetHennessy Nigeria and CNN Nigeria as the country representatives, driving market expansion plans and strategic partnerships.",
+`,
+    image: "/team/Picture6.png",
+    qualification: {
+    
+     }
+  },
 ];
 
 export default teamMembers;
@@ -183,6 +197,10 @@ export const heroSectionData = {
   }
 };
 
+export const navigateToDisclaimer = () => {
+  window.location.href = "/disclaimer"; // This will redirect the page to /disclaimer
+};
+
 export const strategiesData = [
   {
     id: "family-office",
@@ -200,12 +218,19 @@ export const strategiesData = [
   },
   {
     id: 2,
-    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Estate and Planning Succession</span> – guiding families through effective investment strategies tailored to their goals.</p>`
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Estate and Planning Succession</span> – ensuring seamless wealth transfer across
+    generations.</p>`
   },
   {
     id: 3,
-    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Philanthropy and Legacy Building</span> – minimizing the tax burden and maximizing the growth potential of investments.</p>`
-  }
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Tax and Legal Coordination</span> – collaborating with top-tier professionals for optimal
+    financial efficiency.</p>`
+  },
+  {
+    id: 4,
+    desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Philanthropy and Legacy Building</span> – setting common family values and crafting
+    strategies to align wealth with purpose.</p>`
+  }, 
     ],
     image: "/pexels-rdne-7951553.jpg",
   },
@@ -242,12 +267,16 @@ export const strategiesData = [
   {
     id: "hedge-fund",
     title: "Hedge Fund",
-   description: `
+   description:  `
       Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
       For more information, kindly 
-      <button>
-      <a href="/disclaimer" class="text-secondary underline">review the disclaimer</a>
-      </button> or contact us directly.
+      <span 
+        class="text-secondary underline" 
+        onClick={navigateToDisclaimer} 
+        style={{ cursor: "pointer" }}
+      >
+        review the disclaimer
+      </span> or contact us directly.
     `,
     services: [],
     image: "/pexels-rickyrecap-2295433.jpg",

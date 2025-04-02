@@ -32,31 +32,29 @@ function ContactUs() {
         <HeroSectionCard data={heroSectionData.contact} />
       </motion.div>
       
-        {/* <div className="absolute flex top-[36rem] left-[34%] md:left-[43%]">
-                <div className="animate-pulse">
-                  <MdLocationPin size={32} />
-                </div>
-                  <p className="text-lg font-lora">Lagos</p>
-        </div> */}
-         {/* <div className="absolute right-0 md:w-[300px] w-[300px] z-8 bg-[url('/bulb.jpg')] bg-cover bg-center h-full">
-        <div className="absolute top-0 right-0 w-full h-full bg-black/50 opacity-50 z-10"/>
-        <div/>
-        </div> */}
+       
     <motion.div
-      className="h-auto px-8  py-38 flex flex-col md:flex-row  items-start bg-[url('/maps.png')] bg-cover bg-center"
+      className="h-auto px-8 lg:px-32 py-38 flex flex-col lg:flex-row justify-center items-center bg-[url('/maps.png')] bg-cover bg-center relative"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
 
+       {/* <div className="absolute flex top-[36rem] left-[34%] md:left-[43%] z-70">
+                <div className="animate-pulse text-black h-full">
+                  <MdLocationPin size={32} />
+                </div>
+                  <p className="text-lg font-lora">Lagos</p>
+        </div> */}
+
       <motion.div
-        className="md:p-10 p-2 max-w-xl"
+        className="md:p-10 p-2 max-w-xl py-8 rounded-lg shadow-md bg-white/50 backdrop-blur-sm border border-gray-200"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-alpha font-quicksand font-bold text-sm mb-4">
+        <h2 className="text-alpha font-quicksand font-bold text-base mb-4">
           Contact
         </h2>
 
@@ -83,7 +81,7 @@ function ContactUs() {
 
               {/* Phone */}
               <motion.p
-                className="flex gap-4 text-alpha font-quicksand items-center border-b pb-4"
+                className="flex gap-4 text-alpha font-quicksand items-center pb-4"
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="">
@@ -98,15 +96,15 @@ function ContactUs() {
               >
                 <div className="">
                   {/* <MdEmail size={30} className="text-a" /> */}
-                  EMAIL:
+                  E:
                 </div>
-                <a className="underline" href="mailto:info@example.com">info@example.com</a>
+                <a className="underline" href="mailto:info@example.com">hello@runalpha.co</a>
               </motion.p>
             </div>
           </motion.div>
-      <div className="md:w-1/2 w-full">
+      {/* <div className="lg:w-1/2 mx-auto w-full">
         <ContactForm />
-      </div>
+      </div> */}
       </motion.div>
     <div/>
 

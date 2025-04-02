@@ -1,8 +1,11 @@
 import HeroSectionCard from "../ui/HeroSectionCard"
-import { heroSectionData, strategiesData } from "../data/data"
+import { heroSectionData, strategiesData, } from "../data/data"
 import StrategyAnimatedCard from "../features/strategies/StrategyAnimatedCard"
 
 function Strategies() {
+  const navigateToDisclaimer = () => {
+  window.location.href = "/disclaimer"; // This will redirect the page to /disclaimer
+};
   return (
     <div className="w-full relative">
       <HeroSectionCard data={heroSectionData.strategies} />

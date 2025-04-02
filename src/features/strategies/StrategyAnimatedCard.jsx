@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { FaCircle } from "react-icons/fa";
+import { navigateToDisclaimer } from "../../data/data";
+
 
 // eslint-disable-next-line react/prop-types
 const StrategyAnimatedCard = ({ title, description, image, index, services }) => {
+  navigateToDisclaimer
   return (
     <div
       className={`flex  flex-col overflow-hidden w-full mx-auto  sm:flex-row relative py-12 md:py-0  gap-6 sm:gap-12 items-center h-auto md:h-[700px]

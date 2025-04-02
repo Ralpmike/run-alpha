@@ -27,7 +27,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-transparent px-8 py-20 shadow-md rounded-md">
+    <div className="max-w-4xl bg-transparent px-4 py-6 mt-16 lg:mt-0 mx-auto rounded-lg shadow-md bg-white/50 backdrop-blur-sm border border-gray-200">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 font-quicksand">
         <div>
           <label className="block text-alpha text-sm">Name</label>
@@ -37,6 +37,16 @@ const ContactForm = () => {
             className="mt-1 w-full border-b border-alpha focus:outline-none"
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+        </div>
+
+        <div>
+          <label className="block text-sm text-gray-700">Phone</label>
+          <input
+            type="tel"
+            {...register("phone", { required: "Phone is required" })}
+            className="mt-1 w-full border-b border-alpha focus:outline-none"
+          />
+          {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
         </div>
 
         <div>
