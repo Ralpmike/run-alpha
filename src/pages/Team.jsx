@@ -4,7 +4,6 @@ import teamMembers, { heroSectionData } from "../data/data"
 import HeroSectionCard from "../ui/HeroSectionCard"
 import { motion } from "framer-motion"
 import TeamSection from "../features/team/TeamSection"
-import { BiArrowFromRight, BiChevronLeft, BiChevronRight } from "react-icons/bi"
 import { PiArrowBendUpLeftBold, PiArrowBendUpRightBold } from "react-icons/pi"
 
 function Team() {

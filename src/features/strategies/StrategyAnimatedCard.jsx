@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import { FaCircle } from "react-icons/fa";
-import { navigateToDisclaimer } from "../../data/data";
-
+import { useNavigate } from "react-router";
 
 // eslint-disable-next-line react/prop-types
-const StrategyAnimatedCard = ({ title, description, image, index, services }) => {
-  navigateToDisclaimer
+const StrategyAnimatedCard = ({ title, description, image, index, services,disclaimerButton }) => {
+
+  const navigate = useNavigate(); // Hook for navigation
+  const handleDisclaimerClick = () => {
+    navigate('/disclaimer'); 
+  };
   return (
     <div
       className={`flex  flex-col overflow-hidden w-full mx-auto  sm:flex-row relative py-12 md:py-0  gap-6 sm:gap-12 items-center h-auto md:h-[700px]
@@ -39,10 +42,16 @@ const StrategyAnimatedCard = ({ title, description, image, index, services }) =>
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: false }}
           />
+          {disclaimerButton && (
+            <button 
+              onClick={handleDisclaimerClick} 
+              className="bg-secondary px-4 py-2 border-none rounded-md md:w-1/4 font-semibold hover:bg-secondary/60 transition duration-300 ease-in-out"
+            >
+              Review Disclaimer
+            </button>
+          )}
           {services && (
-            <div 
-                
-                className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3">
               {services.map((service) => (
                 <div 
                 initial={{ opacity: 0, y: -100 }}
@@ -58,8 +67,6 @@ const StrategyAnimatedCard = ({ title, description, image, index, services }) =>
               ))}
             </div>
           )}
-
-
         </div>
   </div>
     </div>

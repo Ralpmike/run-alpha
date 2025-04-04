@@ -3,9 +3,6 @@ import { heroSectionData, strategiesData, } from "../data/data"
 import StrategyAnimatedCard from "../features/strategies/StrategyAnimatedCard"
 
 function Strategies() {
-  const navigateToDisclaimer = () => {
-  window.location.href = "/disclaimer"; // This will redirect the page to /disclaimer
-};
   return (
     <div className="w-full relative">
       <HeroSectionCard data={heroSectionData.strategies} />
@@ -18,7 +15,8 @@ function Strategies() {
               image={strategy.image}
               services={strategy.services}
               reverse={index % 2 == 0}
-              index={index} // Alternates layout direction
+              index={index} // Alternates layout 
+              disclaimerButton={strategy.disclaimerButton} // Show disclaimer button if true
             />
         
         ))}

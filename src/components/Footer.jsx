@@ -9,13 +9,10 @@ function Footer() {
   return (
     <footer className="px-12 sm:px-8 lg:px-36 py-12 md:py-28 bg-alpha/90 bg-cover bg-center h-auto md:h-fit md:text-[18.5px] relative font-quicksand max-w-screen">
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/map.jpg')] -z-1" />
-      
-
-            <Logo className={"md:w-50 md:h-50 mb-6"} src="/logos/run-logo.png" />
+      <Logo className={"md:w-50 md:h-50 mb-6"} src="/logos/run-logo.png" />
       <div className="w-full text-white flex flex-wrap flex-row justify-between gap-8 font-normal items-center">
          
           <div className="space-y-4 text-base flex flex-col">
-            {/* <p className="text-white">Driven by Alpha. Powered by Data</p> */}
             <p className="">
               1 Uwa, Close, Off Billings Way, <br /> Oregun Ikeja, <br />
               Lagos, Nigeria</p>

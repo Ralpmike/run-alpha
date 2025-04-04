@@ -1,8 +1,7 @@
-import { Link, useNavigate } from "react-router"
+import { useNavigate } from "react-router"
 import Button from "../../ui/button"
 import { BsChevronRight } from "react-icons/bs"
 import { motion } from "framer-motion"
-
 
 function AboutUsHomeSection() {
   const navigate = useNavigate();
@@ -37,10 +36,11 @@ function AboutUsHomeSection() {
           animate={{ x: '0', opacity: 1 }}
           transition={{ duration: 1.2, ease: 'easeInOut', delay: 0.4 }}
           whileInView="visible"
-          className="lg:tracking-wide text-white font-quicksand xl:text-5xl md:text-3xl text-xl leading-7 md:leading-9 lg:leading-13 w-full md:max-w-xl lg:max-w-5xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
+          className="lg:tracking-wide text-white font-quicksand xl:text-5xl md:text-3xl text-xl leading-7 md:leading-9 lg:leading-11
+          xl:leading-13 w-full md:max-w-xl lg:max-w-5xl font-semibold">Our investment policy focuses on delivering sustainable, <span className="text-secondary">risk-adjusted returns</span> through <span className="text-secondary">data-driven strategies</span> and disciplined portfolio management.
         </motion.p>
 
-          <p className="mt-12 lg:max-w-lg xl:max-w-4xl max-w-xl text-white font-quicksand text-base lg:text-xl">
+          <p className="mt-12 lg:max-w-2xl xl:max-w-4xl md:max-w-xl max-w-xl text-white font-quicksand text-base lg:text-xl">
             We are committed to providing our investors with the highest level of service and transparency, and we strive to build long-term relationships based on trust and mutual respect. Our team of experienced professionals is dedicated to delivering exceptional results for our clients, and we are constantly seeking new opportunities to enhance our investment strategies and drive growth.
           </p>
 

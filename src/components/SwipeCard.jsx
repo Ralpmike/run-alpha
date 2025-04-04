@@ -1,7 +1,5 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useEffect } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
-import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 
 const SwipeCard = ({ id, cards, setCards, image, quote, title, name, qualification }) => {
   const x = useMotionValue(0);
@@ -77,19 +75,23 @@ const SwipeCard = ({ id, cards, setCards, image, quote, title, name, qualificati
             <FaQuoteRight size={25} />
           </div>
         </blockquote>
-        <div className="text-start">
-          <h2 className="text-lg font-semibold">Qualification</h2>
-          <p className="flex items-center gap-2 pl-4">
-            <div className="w-2 h-2 rounded-full bg-white"/>
-            {qualification.degree}</p>
-          <p className="flex items-center gap-2 pl-4">
-             <div className="w-2 h-2 rounded-full bg-white"/>
-            {qualification.institute}</p>
-        </div>
-        <div>
-          <h2 className="text-lg font-semibold">{name}</h2>
-          <p className="mb-8">{title}</p>
-        </div>
+        {qualification.degree ?
+        <>
+          <div className="text-start">
+            <h2 className="text-lg font-semibold">Qualification</h2>
+            <p className="flex items-center gap-2 pl-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-white" />
+              {qualification.degree}</p>
+              <p className="flex items-center gap-2 pl-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-white" />
+              {qualification.institute}</p>
+             </div>
+           
+          </> : <div className='hidden'></div>}
+           <div>
+              <h2 className="text-lg font-semibold">{name}</h2>
+              <p className="mb-8">{title}</p>
+            </div>
       </div>
     </motion.div>
   );

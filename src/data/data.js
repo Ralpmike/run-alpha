@@ -1,7 +1,5 @@
 import { FaLinkedin } from "react-icons/fa";
 
-
-
 export const navLinksItems = [
   { name: "Home", href: "/", id: 1 },
   { name: "About Us", href: "/aboutus", id: 2 },
@@ -83,7 +81,7 @@ const teamMembers = [
       degree: "B.Sc. Accounting, University of Lagos, Nigeria",
      }
   },
-  {
+/*  {
     id: 5,
     name: "Bashir Lawal",
     title: "Head, Growth/Strategy",
@@ -93,14 +91,13 @@ const teamMembers = [
     qualification: {
       degree: "B.Sc. Accounting, University of Lagos, Nigeria",
      }
-  },
+  }, */
   {
     id: 6,
     name: "Tochukwu Njoku",
     title: "Head, Business Development",
     quote:
       `Tochukwu is a dynamic business development strategist with a strong track record in scaling and unlocking new revenue streams and high-impact partnerships.
-      <br />
       He previously worked with MoetHennessy Nigeria and CNN Nigeria as the country representatives, driving market expansion plans and strategic partnerships.",
 `,
     image: "/team/Picture6.png",
@@ -267,19 +264,13 @@ export const strategiesData = [
   {
     id: "hedge-fund",
     title: "Hedge Fund",
-   description:  `
-      Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
-      For more information, kindly 
-      <span 
-        class="text-secondary underline" 
-        onClick={navigateToDisclaimer} 
-        style={{ cursor: "pointer" }}
-      >
-        review the disclaimer
-      </span> or contact us directly.
-    `,
+   description: `
+    Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
+    For more information, kindly review the disclaimer or contact us directly.
+  `,
     services: [],
     image: "/pexels-rickyrecap-2295433.jpg",
+    disclaimerButton: true,
   },
   {
     id: "fx-currency-solution",

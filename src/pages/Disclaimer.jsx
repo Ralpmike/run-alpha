@@ -8,9 +8,9 @@ const Disclaimer = () => {
   };
 
   return (
-    <div className='bg-secondary'>
-    <div className="container px-32 py-32">
-      <div className="max-w-3xl mx-auto text-gray-700">
+    <div className='bg-black/20 font-quicksand'>
+    <div className="px-8 md:px-34 xl:max-w-7xl xl:px-48 mx-start py-32">
+      <div className=" text-gray-700">
         <h1 className="text-3xl font-bold mb-6">Disclaimer</h1>
 
         <section className="mb-6">

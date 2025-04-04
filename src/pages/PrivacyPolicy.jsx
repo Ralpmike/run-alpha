@@ -2,8 +2,8 @@ import React from 'react';
 
 const PrivacyPolicyPage = () => {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="max-w-3xl mx-auto text-gray-700">
+    <div className='bg-black/20 font-quicksand'>
+    <div className="px-8 md:px-34 xl:max-w-7xl xl:px-48 mx-start py-32">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
         <section className="mb-6">
@@ -44,7 +44,9 @@ const PrivacyPolicyPage = () => {
 
           <h3 className="text-xl font-semibold mt-4">8. Contact Us</h3>
           <p className="text-base">
-            If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:privacy@runalpha.com" className="text-blue-500">privacy@runalpha.com</a>.
+            If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:privacy@runalpha.com" className="text-blue-500">
+               hello@runalpha.co
+              </a>.
           </p>
         </section>
       </div>

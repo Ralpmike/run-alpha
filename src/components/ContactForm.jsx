@@ -27,7 +27,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-4xl bg-transparent px-4 py-6 mt-16 lg:mt-0 mx-auto rounded-lg shadow-md bg-white/50 backdrop-blur-sm border border-gray-200">
+    <div className="max-w-4xl bg-transparent px-4 py-6 mt-16 lg:mt-0 mx-auto rounded-lg shadow-md backdrop-blur-sm border border-gray-200">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 font-quicksand">
         <div>
           <label className="block text-alpha text-sm">Name</label>
