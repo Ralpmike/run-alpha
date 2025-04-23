@@ -32,7 +32,7 @@ const teamMembers = [
         degree: "BSc. Accounting University of Lagos, Nigeria",
         institute: "Institute of Certified Chartered Accountant of Nigeria (ACCA)",
       },
-    image: "/team/Picture3.jpg",
+    image: "/team-assets/Picture3.jpg",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const teamMembers = [
       Prior to joining Run Alpha, he worked at FBNQuest Asset Management Ltd where he
       developed macro-driven investment strategies for NGN500bn in funds managed under his
       purview.`,
-    image: "/team/Picture1.jpg",
+    image: "/team-assets/Picture1.jpg",
     qualification: {
       degree: "BSc. Accounting,Ekiti State University, Nigeria",
       institute: "Institute of Chartered Accountant of Nigeria (ACA)",
@@ -60,9 +60,9 @@ const teamMembers = [
       statement audits of corporate listed and regulated entities in the UK.
       With extensive experience in auditing complex financial structures and internal controls, she
       has developed a deep understanding of regulatory requirements, risk assessment, and
-      compliance within highly regulated industries.  
+      compliance within highly regulated industries.
 `,
-    image: "/team/Picture4.jpg",
+    image: "/team-assets/Picture4.jpg",
     qualification: {
       degree: "B.Sc. Accounting, University of Swansea, England",
       institute: "Member, Association of Certified Chartered Accountants (ACCA)",
@@ -76,7 +76,7 @@ const teamMembers = [
       `Folashade has over six years in Risk Management specializing in developing compliance
       initiatives for Systemically Important Banks and leading regulatory change management
       initiatives for FAANG companies.`,
-    image: "/team/Picture2.jpg",
+    image: "/team-assets/Picture2.jpg",
      qualification: {
       degree: "B.Sc. Accounting, University of Lagos, Nigeria",
      }
@@ -87,7 +87,7 @@ const teamMembers = [
     title: "Head, Growth/Strategy",
     quote:
       "Bashir Lawal has over 5 years of experience in the financial services industry, spanning Research, Portfolio/Fund management. Prior to joining Run Alpha, he worked at FBNQuest Asset Management Ltd where he developed macro-driven investment strategies for NGN500bn in funds managed under his purview. He leverages macro data to maximize financial returns by identifying optimal investment opportunities. In his role, he provides insights through comprehensive analyses of fiscal and monetary policies, along with other influencing factors.",
-    image: "/team/Picture5.jpg",
+    image: "/team-assets/Picture5.jpg",
     qualification: {
       degree: "B.Sc. Accounting, University of Lagos, Nigeria",
      }
@@ -100,9 +100,9 @@ const teamMembers = [
       `Tochukwu is a dynamic business development strategist with a strong track record in scaling and unlocking new revenue streams and high-impact partnerships.
       He previously worked with MoetHennessy Nigeria and CNN Nigeria as the country representatives, driving market expansion plans and strategic partnerships.",
 `,
-    image: "/team/Picture6.png",
+    image: "/team-assets/Picture6.png",
     qualification: {
-    
+
      }
   },
 ];
@@ -203,7 +203,7 @@ export const strategiesData = [
     id: "family-office",
     title: "Family Office",
     description: `
-      The event that will go down in history as the most significant transfer of wealth is right around the corner. 
+      The event that will go down in history as the most significant transfer of wealth is right around the corner.
       The great wealth transfer is happening. Globally, it is projected that baby boomers will transfer more than USD60 trillion in wealth to millennials over the course of the next decade.
       <br />
       Beyond investment management, we provide an exclusive suite of family office services, ensuring a smooth transition of wealth to Millennials and Gen Z and aligning investment strategies with the family’s evolving investment preferences. Our services include:
@@ -227,7 +227,7 @@ export const strategiesData = [
     id: 4,
     desc: `<p class="text-base md:text-base xl:text-xl leading-8 font-quicksand text-justify"><span class="font-bold">Philanthropy and Legacy Building</span> – setting common family values and crafting
     strategies to align wealth with purpose.</p>`
-  }, 
+  },
     ],
     image: "/pexels-rdne-7951553.jpg",
   },
@@ -260,12 +260,12 @@ export const strategiesData = [
 
     image: "/pexels-pixabay-235990.jpg",
   },
-  
+
   {
     id: "hedge-fund",
     title: "Hedge Fund",
    description: `
-    Please note that the offering cannot proceed until clients have reviewed the disclaimer. 
+    Please note that the offering cannot proceed until clients have reviewed the disclaimer.
     For more information, kindly review the disclaimer or contact us directly.
   `,
     services: [],

@@ -3,6 +3,12 @@ import React from 'react';
 const PrivacyPolicyPage = () => {
   return (
     <div className='bg-black/20 font-quicksand'>
+
+       <SEO
+        title="Privacy Policy | Run Alpha"
+        description="Understand the terms, risks, and limitations associated with the financial strategies presented by Run Alpha."
+        url="https://runalpha.co/privacy-policy"
+      />
     <div className="px-8 md:px-34 xl:max-w-7xl xl:px-48 mx-start py-32">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 

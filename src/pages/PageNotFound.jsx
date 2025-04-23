@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useMoveBack } from "../hooks/useMoveBack";
 
 
@@ -6,6 +7,11 @@ function PageNotFound() {
 
   return (
     <main className="h-screen bg-gray-100 flex items-center justify-center p-12">
+      <Helmet>
+      <title>Page Not Found | Run Alpha</title>
+      <meta name="robots" content="noindex" />
+    </Helmet>
+
       <div className="bg-white border border-gray-200 rounded-md p-12 flex-1 max-w-4xl text-center font-quicksand">
         <h1 className="mb-8">
           The page you are looking for could not be found 😢

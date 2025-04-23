@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import HeroSectionCard from "../ui/HeroSectionCard";
 import { heroSectionData } from "../data/data";
 import { Toaster } from "react-hot-toast";
+import SEO from "../components/SEO";
 
 
 function ContactUs() {
@@ -22,6 +23,12 @@ function ContactUs() {
   }, []);
   return (
     <div className="w-full relative bg-gray-200">
+
+      <SEO
+        title="Contact Us | Get In Touch"
+        description="We'd love to hear from you! Reach out to Run for inquiries, consultations, or collaborations."
+        url="https://runalpha.co/contact"
+      />
      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,8 +36,8 @@ function ContactUs() {
       >
         <HeroSectionCard data={heroSectionData.contact} />
       </motion.div>
-      
-       
+
+
     <motion.div
       className="h-auto px-8 lg:px-32 py-38 flex flex-col lg:flex-row justify-center items-center bg-[url('/maps.png')] bg-cover bg-center relative"
       initial={{ opacity: 0, x: 50 }}
@@ -67,7 +74,7 @@ function ContactUs() {
              </div>
 
               {/* Email */}
-             
+
 
               {/* Phone */}
               <motion.p
@@ -97,7 +104,7 @@ function ContactUs() {
       <Toaster position="top-right"  reverseOrder={false}/>
     </div>
          )
-  
+
 }
 
 export default  ContactUs

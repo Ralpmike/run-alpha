@@ -5,6 +5,7 @@ import HeroSectionCard from "../ui/HeroSectionCard"
 import { motion } from "framer-motion"
 import TeamSection from "../features/team/TeamSection"
 import { PiArrowBendUpLeftBold, PiArrowBendUpRightBold } from "react-icons/pi"
+import SEO from "../components/SEO"
 
 function Team() {
 
@@ -22,9 +23,14 @@ function Team() {
       });
     };
 
-  
+
   return (
     <section>
+       <SEO
+        title="Meet the Team | Run Alpha"
+        description="Get to know the experts behind Run's success — professionals with a passion for strategic finance and innovation."
+        url="https://runalpha.co/team"
+      />
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -85,7 +91,7 @@ function Team() {
         </motion.div>
 
         <motion.img
-          src="/team/annie-spratt-QckxruozjRg-unsplash.jpg"
+          src="/team-assets/annie-spratt-QckxruozjRg-unsplash.jpg"
           alt=""
           className="rounded-2xl"
           initial={{ scale: 0.9 }}
@@ -96,7 +102,7 @@ function Team() {
 
       <div className="mb-16">
         <div className="grid grid-cols-1 xl:grid-cols-2">
-          <motion.div 
+          <motion.div
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -108,26 +114,26 @@ function Team() {
               We specialize in developing innovative and sustainable solutions that help our clients achieve their goals. Our team of experts combines expertise in various fields, such as engineering, environmental science, and business management. We continuously strive to improve our processes, technology, and communication to ensure that our clients receive the best possible results.
             </p>
           </motion.div>
-          <motion.div 
+          <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="">
-            <img className="object-cover h-full" src="/pexels-olly-3769021.jpg" alt="" />
+            <img className="" src="/pexels-olly-3769021.jpg" alt="" />
           </motion.div>
         </div>
         <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4">
           {[
-          "/team/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg",
-          "/team/helena-lopes-PGnqT0rXWLs-unsplash.jpg",
+          "/team-assets/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg",
+          "/team-assets/helena-lopes-PGnqT0rXWLs-unsplash.jpg",
           "/ninthgrid-4-RLopzTVQ8-unsplash.jpg",
-          "/team/chang-duong-Sj0iMtq_Z4w-unsplash.jpg",
+          "/team-assets/chang-duong-Sj0iMtq_Z4w-unsplash.jpg",
         ].map((src, index) => (
           <motion.img
             key={index}
             src={src}
             alt={`Gallery ${index}`}
-            className="object-cover w-fit h-fit"
+            className=""
             initial={{ opacity: 0, scale: 0.6 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.4 }}
@@ -160,7 +166,7 @@ function Team() {
             <PiArrowBendUpRightBold size={32} />
           </button>
         </div>
-        
+
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -169,11 +175,11 @@ function Team() {
         <div className="hidden lg:grid place-items-center items-start lg:h-[100ch] mt-12 max-w-screen">
           {teamMembers.map((card) => (
             <SwipeCard
-             key={cards[0].id++} 
+             key={cards[0].id++}
               id={cards[0].id}
               cards={cards}
               setCards={setCards}
-              {...cards[0]} 
+              {...cards[0]}
             />
           ))}
         </div>

@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router";// Updated import for react-router-dom
+import { NavLink, useLocation } from "react-router-dom";
 import { navLinksItems } from "../data/data";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import classNames from "classnames";
 import { motion, AnimatePresence, } from "framer-motion";
-import Logo from "./Logo";
-import Button from "./button";
 
 
 const Navbar = () => {
@@ -17,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     // Scroll to top on route change
     window.scrollTo(0, 0);
-  }, [location.pathname]); 
+  }, [location.pathname]);
 
   const linkVariants = {
     hidden: { opacity: 0, x: -50 },
@@ -65,10 +63,10 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
        <NavLink to={'/'}>
-        <img 
-            src="/logos/run-logo.svg" 
-            className={`${!scrolled && 'mt-3'} text-black w-20 md:w-25`} 
-            alt="" 
+        <img
+            src="/logos/run-logo.svg"
+            className={`${!scrolled && 'mt-3'} text-black w-20 md:w-25`}
+            alt=""
             style={{
                 filter: `${scrolled ? 'invert(74%) sepia(59%) saturate(497%) hue-rotate(176deg) brightness(92%) contrast(100%)' : ''}`
             }}
@@ -137,7 +135,7 @@ const Navbar = () => {
             >
               <RxCross2 size={30} className={`${scrolled ? 'text-white' : 'text-alpha'}`} />
             </button>
-            
+
 
             {/* Mobile Links */}
             {navLinksItems.map((link, index) => (
@@ -149,7 +147,7 @@ const Navbar = () => {
                 animate="visible"
                 className="flex justify-center w-full"
               >
-                
+
                 {<NavLink
                   // key={link.name}
                   to={link.href}

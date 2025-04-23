@@ -43,27 +43,32 @@ const StrategyAnimatedCard = ({ title, description, image, index, services,discl
             viewport={{ once: false }}
           />
           {disclaimerButton && (
-            <button 
+            <motion.button
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: false }} 
               onClick={handleDisclaimerClick} 
               className="bg-secondary px-4 py-2 border-none rounded-md md:w-1/4 font-semibold hover:bg-secondary/60 transition duration-300 ease-in-out"
             >
               Review Disclaimer
-            </button>
+            </motion.button>
           )}
           {services && (
             <div className="flex flex-wrap gap-3">
               {services.map((service) => (
-                <div 
-                initial={{ opacity: 0, y: -100 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                <motion.div 
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                viewport={{ once: false }} key={service.id} className="flex items-center gap-4">
+                viewport={{ once: false }}
+                key={service.id} className="flex items-center gap-4">
                   <FaCircle className="text-secondary text-xs" />
                   <p
                     dangerouslySetInnerHTML={{ __html: service.desc }}
                     className="text-base font-medium"
                   />
-                </div>
+                </motion.div>
               ))}
             </div>
           )}

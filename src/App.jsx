@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router"
+import {  Routes, Route, } from "react-router-dom"
 import Home from "./pages/Home"
 import Strategies from "./pages/Strategies"
 import GetInTouch from "./pages/ContactUs"
@@ -9,16 +9,13 @@ import AboutUs from "./pages/Aboutus"
 import Disclaimer from "./pages/Disclaimer"
 import PrivacyPolicyPage from "./pages/PrivacyPolicy"
 
-
-
 function App() {
 
   return (
-    <BrowserRouter>
+
       <Routes>
         <Route element={<Applayout />}>
           <Route index element={<Home />} />
-          {/* <Route path="home" element={<Home />} /> */}
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="offerings" element={<Strategies />} />
           <Route path="team" element={<Team />} />
@@ -28,8 +25,6 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
-
   )
 }
 

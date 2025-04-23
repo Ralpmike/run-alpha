@@ -10,15 +10,12 @@ function Applayout() {
     <div className="mx-auto grid grid-cols-[auto] grid-rows-[auto,1fr,auto,auto] max-w-screen overflow-hidden">
       <div className="hidden lg:flex">
         <CustomCursor />
-
       </div>
       <Navbar />
       <main className="">
         <Outlet />
       </main>
       <Jump />
-  
-        
       <Footer />
 
     </div>

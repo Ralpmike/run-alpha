@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 
 const Disclaimer = () => {
   const [accepted, setAccepted] = useState(false);
@@ -9,6 +10,12 @@ const Disclaimer = () => {
 
   return (
     <div className='bg-black/20 font-quicksand'>
+
+       <SEO
+        title="Disclaimer | Run Alpha"
+        description="Understand the terms, risks, and limitations associated with the financial strategies presented by Run Alpha."
+        url="https://runalpha.co/disclaimer"
+      />
     <div className="px-8 md:px-34 xl:max-w-7xl xl:px-48 mx-start py-32">
       <div className=" text-gray-700">
         <h1 className="text-3xl font-bold mb-6">Disclaimer</h1>
@@ -21,7 +28,7 @@ const Disclaimer = () => {
 
           <h3 className="text-xl font-semibold mt-4">2. Purpose of the Site: No Offer of Securities; No Advice</h3>
           <p className="text-base">
-            The Site is intended to provide an overview of Run Alpha and its products, and is for general information purposes only. The Site is not intended to provide investment, accounting, tax, or legal advice. You should consult your own investment, legal and/or tax professionals regarding your specific situation. 
+            The Site is intended to provide an overview of Run Alpha and its products, and is for general information purposes only. The Site is not intended to provide investment, accounting, tax, or legal advice. You should consult your own investment, legal and/or tax professionals regarding your specific situation.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">3. Summary of Risk Factors</h3>
