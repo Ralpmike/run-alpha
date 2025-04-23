@@ -119,7 +119,7 @@ function Team() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="">
-            <img className="" src="/pexels-olly-3769021.jpg" alt="" />
+            <img className="" src="/pexels-olly-3769021.jpg" alt="img" />
           </motion.div>
         </div>
         <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4">
